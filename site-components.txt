@@ -1,0 +1,648 @@
+		komponen komponen yang penting
+	dalam pembuatan website klien ardhya web studio
+		atau bisa gua pake sendiri
+
+# comercial
+
+1. Hero section
+
+<section style="padding:60px 20px; text-align:center; background:#f2f6ff;">
+  <h1 style="font-size:48px; margin-bottom:20px; font-weight:800; color:#1a1a1a;">
+    Selamat Datang di Website Kami
+  </h1>
+  <p style="font-size:18px; max-width:600px; margin:0 auto 30px; color:#333;">
+    Solusi terbaik untuk kebutuhan digital kamu — cepat, modern, dan terjangkau.
+  </p>
+  <a href="#contact" 
+     style="display:inline-block; padding:14px 28px; background:#0066ff; color:white; 
+     border-radius:8px; text-decoration:none; font-weight:600;">
+    Mulai Sekarang
+  </a>
+</section>
+
+
+2. Pricing table
+
+<section style="padding:50px 20px; background:#ffffff;">
+  <div style="max-width:900px; margin:auto; display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
+    
+    <div style="flex:1; min-width:260px; background:#fafafa; padding:25px; 
+                border-radius:12px; box-shadow:0 0 12px rgba(0,0,0,0.08); text-align:center;">
+      <h3 style="margin-bottom:10px;">Basic</h3>
+      <p style="font-size:28px; font-weight:700; margin-bottom:20px;">Rp24.999</p>
+      <ul style="list-style:none; padding:0; margin-bottom:20px;">
+        <li>1 Halaman</li>
+        <li>Responsive</li>
+        <li>Hosting Cloudflare Pages</li>
+      </ul>
+      <a href="#order" style="padding:10px 20px; background:#0077ff; color:white; 
+         text-decoration:none; border-radius:8px;">Pesan</a>
+    </div>
+
+    <div style="flex:1; min-width:260px; background:#fafafa; padding:25px; 
+                border-radius:12px; box-shadow:0 0 12px rgba(0,0,0,0.08); text-align:center;">
+      <h3 style="margin-bottom:10px;">Pro</h3>
+      <p style="font-size:28px; font-weight:700; margin-bottom:20px;">Rp35.999</p>
+      <ul style="list-style:none; padding:0; margin-bottom:20px;">
+        <li>Interaktif</li>
+        <li>Multi Section</li>
+        <li>Cloudflare Pages</li>
+      </ul>
+      <a href="#order" style="padding:10px 20px; background:#0077ff; color:white; 
+         text-decoration:none; border-radius:8px;">Pesan</a>
+    </div>
+
+  </div>
+</section>
+
+
+3. Testimonical
+
+<section style="padding:50px 20px; background:#f9fbfd;">
+  <h2 style="text-align:center; margin-bottom:30px;">Apa Kata Mereka</h2>
+  <div style="max-width:900px; margin:auto; display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
+
+    <div style="flex:1; min-width:260px; background:white; border-radius:12px; padding:20px; 
+                border:1px solid #eee;">
+      <p style="font-style:italic;">“Layanan cepat, harga murah, hasil mantap!”</p>
+      <h4 style="margin-top:15px;">— Andi</h4>
+    </div>
+
+    <div style="flex:1; min-width:260px; background:white; border-radius:12px; padding:20px; 
+                border:1px solid #eee;">
+      <p style="font-style:italic;">“Website nya ringan, modern, cocok buat UMKM.”</p>
+      <h4 style="margin-top:15px;">— Putu</h4>
+    </div>
+
+  </div>
+</section>
+
+
+4. Gallery grid
+
+<section style="padding:40px 20px; background:#ffffff;">
+  <h2 style="text-align:center; margin-bottom:30px;">Galeri</h2>
+  <div style="
+    display:grid; 
+    grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); 
+    gap:10px; 
+    max-width:900px; 
+    margin:auto;
+  ">
+    <img src="img1.jpg" alt="" style="width:100%; border-radius:8px;">
+    <img src="img2.jpg" alt="" style="width:100%; border-radius:8px;">
+    <img src="img3.jpg" alt="" style="width:100%; border-radius:8px;">
+    <img src="img4.jpg" alt="" style="width:100%; border-radius:8px;">
+  </div>
+</section>
+
+
+5. CTA bar
+
+<section style="padding:25px 20px; background:#0066ff; color:white; text-align:center;">
+  <h2 style="margin-bottom:10px; font-size:26px;">Siap Membuat Website Impian Kamu?</h2>
+  <a href="#order" style="padding:12px 24px; background:white; color:#0066ff; 
+                         font-weight:700; border-radius:6px; text-decoration:none;">
+    Pesan Sekarang
+  </a>
+</section>
+
+
+6. Blok link
+
+<section style="padding:40px 20px; background:#f9f9f9;">
+  <h3 style="margin-bottom:20px;">Navigasi Cepat</h3>
+  <div style="display:flex; flex-direction:column; gap:12px;">
+
+    <a href="#home" 
+       style="padding:12px 16px; background:white; border-radius:8px; 
+              text-decoration:none; color:#222; border:1px solid #eee;">
+      Home
+    </a>
+
+    <a href="#pricing" 
+       style="padding:12px 16px; background:white; border-radius:8px; 
+              text-decoration:none; color:#222; border:1px solid #eee;">
+      Harga
+    </a>
+
+    <a href="#contact" 
+       style="padding:12px 16px; background:white; border-radius:8px; 
+              text-decoration:none; color:#222; border:1px solid #eee;">
+      Kontak
+    </a>
+
+  </div>
+</section>
+
+open hours block:
+
+<section style="padding:30px; max-width:400px; margin:auto; background:#f7f7f7; border-radius:12px; border:1px solid #ddd;">
+  <h2 style="margin:0 0 15px; font-size:22px; font-weight:700;">Lorem ipsum dolor.</h2>
+
+  <p style="margin-bottom:20px; color:#444;">
+    Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.
+  </p>
+
+  <div style="display:flex; flex-direction:column; gap:10px;">
+
+    <div style="display:flex; justify-content:space-between; background:white; padding:10px 15px; border-radius:8px; border:1px solid #eee;">
+      <span>Senin - Jumat</span>
+      <span>08:00 - 17:00</span>
+    </div>
+
+    <div style="display:flex; justify-content:space-between; background:white; padding:10px 15px; border-radius:8px; border:1px solid #eee;">
+      <span>Sabtu</span>
+      <span>09:00 - 14:00</span>
+    </div>
+
+    <div style="display:flex; justify-content:space-between; background:white; padding:10px 15px; border-radius:8px; border:1px solid #eee;">
+      <span>Minggu</span>
+      <span>Tutup</span>
+    </div>
+
+  </div>
+</section>
+
+
+product card
+
+<div style="max-width:280px; border:1px solid #ddd; border-radius:12px; overflow:hidden; background:white;">
+  <img src="https://via.placeholder.com/400x250" alt="" style="width:100%; display:block;">
+
+  <div style="padding:15px;">
+    <h3 style="margin:0 0 8px; font-size:18px; font-weight:700;">Lorem ipsum dolor.</h3>
+
+    <p style="margin-bottom:12px; color:#555; font-size:14px;">
+      Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.
+    </p>
+
+    <p style="font-size:20px; font-weight:700; margin-bottom:15px;">Rp49.999</p>
+
+    <button style="width:100%; padding:10px 18px; background:#0077ff; color:white; font-weight:600; border:none; border-radius:8px; cursor:pointer;">
+      Tambah ke Keranjang
+    </button>
+  </div>
+</div>
+
+
+footer mini
+
+<footer style="padding:20px; background:#111; color:#fff; text-align:center;">
+  <h3 style="margin:0 0 10px; font-size:18px;">Lorem ipsum dolor.</h3>
+
+  <p style="max-width:500px; margin:0 auto; font-size:14px; color:#ddd;">
+    Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.
+  </p>
+
+  <p style="margin-top:12px; font-size:13px; color:#aaa;">
+    © 2026 Lorem ipsum dolor.
+  </p>
+</footer>
+
+
+pricing comparison:
+
+<section style="padding:40px 20px; background:#f7f9fc;">
+  <h2 style="text-align:center; margin-bottom:20px; font-size:26px; font-weight:700;">
+    Lorem ipsum dolor.
+  </h2>
+
+  <p style="max-width:600px; margin:0 auto 30px; text-align:center; color:#444;">
+    Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.
+  </p>
+
+  <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
+
+    <!-- Paket A -->
+    <div style="flex:1; min-width:260px; max-width:320px; background:white; padding:25px; border-radius:12px; border:1px solid #ddd;">
+      <h3 style="margin-top:0; font-size:20px; font-weight:700;">Lorem ipsum dolor.</h3>
+      <p style="font-size:28px; font-weight:700; margin:10px 0;">Rp24.999</p>
+
+      <ul style="list-style:none; padding:0; margin:0 0 20px; color:#444;">
+        <li>• Lorem ipsum dolor.</li>
+        <li>• Lorem ipsum dolor.</li>
+        <li>• Lorem ipsum dolor.</li>
+      </ul>
+
+      <button style="width:100%; padding:10px; background:#0077ff; color:white; border:none; border-radius:8px; font-size:15px;">
+        Pilih Paket
+      </button>
+    </div>
+
+    <!-- Paket B -->
+    <div style="flex:1; min-width:260px; max-width:320px; background:white; padding:25px; border-radius:12px; border:1px solid #ddd;">
+      <h3 style="margin-top:0; font-size:20px; font-weight:700;">Lorem ipsum dolor.</h3>
+      <p style="font-size:28px; font-weight:700; margin:10px 0;">Rp35.999</p>
+
+      <ul style="list-style:none; padding:0; margin:0 0 20px; color:#444;">
+        <li>• Lorem ipsum dolor.</li>
+        <li>• Lorem ipsum dolor.</li>
+        <li>• Lorem ipsum dolor.</li>
+        <li>• Lorem ipsum dolor.</li>
+      </ul>
+
+      <button style="width:100%; padding:10px; background:#222; color:white; border:none; border-radius:8px; font-size:15px;">
+        Pilih Paket
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+
+# personal
+
+Bio block:
+
+<section style="padding:40px; max-width:600px; margin:auto; text-align:center;">
+  <img src="https://via.placeholder.com/120" style="border-radius:50%; margin-bottom:20px;">
+  <h1 style="margin:0 0 10px; font-size:28px; font-weight:700;">Lorem ipsum dolor.</h1>
+
+  <p style="color:#444;">
+    Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.
+  </p>
+
+  <div style="margin-top:20px; display:flex; justify-content:center; gap:15px;">
+    <a href="#" style="text-decoration:none; color:#0077ff;">GitHub</a>
+    <a href="#" style="text-decoration:none; color:#0077ff;">Instagram</a>
+    <a href="#" style="text-decoration:none; color:#0077ff;">LinkedIn</a>
+  </div>
+</section>
+
+
+experience timeline:
+
+<section style="padding:40px; max-width:700px; margin:auto;">
+  <h2 style="font-size:24px; font-weight:700; margin-bottom:20px;">Lorem ipsum dolor.</h2>
+
+  <div style="border-left:3px solid #0077ff; padding-left:20px;">
+    <div style="margin-bottom:25px;">
+      <h3 style="margin:0; font-size:18px;">2023 - Sekarang</h3>
+      <p style="color:#444;">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
+      </p>
+    </div>
+
+    <div style="margin-bottom:25px;">
+      <h3 style="margin:0; font-size:18px;">2021 - 2023</h3>
+      <p style="color:#444;">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+project showcase
+
+<section style="padding:40px;">
+  <h2 style="text-align:center; font-size:24px; font-weight:700;">Lorem ipsum dolor.</h2>
+
+  <div style="margin-top:25px; display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;">
+    <div style="border:1px solid #ddd; border-radius:12px; overflow:hidden;">
+      <img src="https://via.placeholder.com/400x250" style="width:100%;">
+      <div style="padding:15px;">
+        <h3 style="margin:0 0 8px;">Lorem ipsum dolor.</h3>
+        <p style="color:#555;">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <div style="border:1px solid #ddd; border-radius:12px; overflow:hidden;">
+      <img src="https://via.placeholder.com/400x250" style="width:100%;">
+      <div style="padding:15px;">
+        <h3 style="margin:0 0 8px;">Lorem ipsum dolor.</h3>
+        <p style="color:#555;">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+tools i use:
+
+<section style="padding:40px; text-align:center;">
+  <h2 style="font-size:24px; font-weight:700;">Lorem ipsum dolor.</h2>
+
+  <div style="margin-top:20px; display:grid; grid-template-columns:repeat(auto-fit,minmax(100px,1fr)); gap:20px; max-width:600px; margin:auto;">
+    <div><img src="https://via.placeholder.com/80" style="width:60px;"><p>VSCode</p></div>
+    <div><img src="https://via.placeholder.com/80" style="width:60px;"><p>Figma</p></div>
+    <div><img src="https://via.placeholder.com/80" style="width:60px;"><p>Node.js</p></div>
+    <div><img src="https://via.placeholder.com/80" style="width:60px;"><p>HTML/CSS</p></div>
+  </div>
+</section>
+
+
+achivements
+
+<section style="padding:40px;">
+  <h2 style="text-align:center; font-size:24px; font-weight:700;">Lorem ipsum dolor.</h2>
+
+  <div style="margin-top:25px; display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+    <div style="border:1px solid #ddd; padding:20px; border-radius:12px; width:260px;">
+      <h3 style="margin:0 0 10px;">Lorem ipsum dolor.</h3>
+      <p style="color:#555;">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+    </div>
+
+    <div style="border:1px solid #ddd; padding:20px; border-radius:12px; width:260px;">
+      <h3 style="margin:0 0 10px;">Lorem ipsum dolor.</h3>
+      <p style="color:#555;">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+    </div>
+  </div>
+</section>
+
+
+daily stats:
+
+<section style="padding:30px; max-width:450px; margin:auto; background:#f7f7f7; border-radius:12px;">
+  <h2 style="margin-top:0;">Lorem ipsum dolor.</h2>
+
+  <ul style="padding-left:20px; color:#444;">
+    <li>Mendengarkan: Lorem ipsum dolor.</li>
+    <li>Mengerjakan: Lorem ipsum dolor.</li>
+    <li>Belajar: Lorem ipsum dolor.</li>
+    <li>Target hari ini: Lorem ipsum dolor.</li>
+  </ul>
+</section>
+
+
+fav playlists
+
+<section style="padding:40px;">
+  <h2 style="text-align:center;">Lorem ipsum dolor.</h2>
+
+  <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:20px;">
+    <div style="width:220px; border:1px solid #ddd; border-radius:12px; overflow:hidden;">
+      <img src="https://via.placeholder.com/300" style="width:100%;">
+      <div style="padding:10px;">
+        <p style="margin:0;">Lorem ipsum dolor.</p>
+      </div>
+    </div>
+
+    <div style="width:220px; border:1px solid #ddd; border-radius:12px; overflow:hidden;">
+      <img src="https://via.placeholder.com/300" style="width:100%;">
+      <div style="padding:10px;">
+        <p style="margin:0;">Lorem ipsum dolor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+personal story block
+
+<section style="padding:40px; max-width:700px; margin:auto;">
+  <h2 style="font-size:24px; font-weight:700;">Lorem ipsum dolor.</h2>
+
+  <p style="color:#444; line-height:1.6;">
+    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+  </p>
+</section>
+
+
+galeri
+
+<section style="padding:40px;">
+  <h2 style="text-align:center;">Lorem ipsum dolor.</h2>
+
+  <div style="column-count:3; column-gap:15px; margin-top:25px;">
+    <img src="https://via.placeholder.com/400x300" style="width:100%; margin-bottom:15px;">
+    <img src="https://via.placeholder.com/400x500" style="width:100%; margin-bottom:15px;">
+    <img src="https://via.placeholder.com/400x350" style="width:100%; margin-bottom:15px;">
+    <img src="https://via.placeholder.com/400x450" style="width:100%; margin-bottom:15px;">
+  </div>
+</section>
+
+
+wave svg (hiasan)
+
+<div style="width:100%; overflow:hidden; line-height:0;">
+  <svg viewBox="0 0 500 100" preserveAspectRatio="none" style="width:100%; height:60px;">
+    <path d="M0,50 C150,0 350,100 500,50 L500,100 L0,100 Z" fill="#f0f0f0"></path>
+  </svg>
+</div>
+
+
+quote box:
+
+<section style="padding:30px; max-width:600px; margin:auto; border-left:5px solid #0077ff;">
+  <p style="font-style:italic; font-size:18px; color:#333;">“Lorem ipsum dolor sit amet consectetur adipiscing elit.”</p>
+</section>
+
+
+social links:
+
+<section style="padding:30px; text-align:center;">
+  <h2>Lorem ipsum dolor.</h2>
+
+  <div style="display:flex; justify-content:center; gap:15px; margin-top:15px;">
+    <a href="#" style="padding:10px 18px; background:#111; color:white; border-radius:8px; text-decoration:none;">GitHub</a>
+    <a href="#" style="padding:10px 18px; background:#0077ff; color:white; border-radius:8px; text-decoration:none;">Instagram</a>
+    <a href="#" style="padding:10px 18px; background:#444; color:white; border-radius:8px; text-decoration:none;">LinkedIn</a>
+  </div>
+</section>
+
+
+
+# double
+
+sidebar:
+
+# sidebar.html (edit sesuai kebutuhan):
+	<div class="sidebar" id="sidebar">
+    	    	<h2>Menu</h2>
+    		<a href="index.html">Beranda</a>
+    		<a href="paket-website.html">Paket Website</a>
+    		<a href="biaya-update.html">Biaya Update</a>
+    		<a href="FAQ.html">FAQ</a>
+    		<a href="s&k.html">Syarat dan Ketentuan</a>
+	</div>
+
+# sidebar.js (untuk atur auto update):
+	fetch("sidebar.html")
+    		.then(res => res.text())
+    		.then(html => {
+      			document.getElementById("sidebar-container").innerHTML = html;
+   		 });
+
+# sidebar style (include <style> di html
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    left: -250px; /* awalnya tersembunyi */
+    top: 0;
+    transition: left 0.3s;
+  }
+
+  .sidebar.active {
+    left: 0; /* tampil */
+  }
+
+  .sidebar h2 {
+    margin-top: 0;
+  }
+
+  .sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+
+  /* Konten */
+  .content {
+    margin-left: 0;
+    padding: 20px;
+    transition: margin-left 0.3s;
+  }
+
+  .content.shift {
+    margin-left: 250px; /* geser pas sidebar muncul */
+  }
+
+  /* Tombol */
+  .toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #1e1e1e;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+# panggil sidebar
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+
+# atur sidebar aktif
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('content');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <script type="module" src="src/sidebar.js"></script>
+
+
+catatan: KASIH <section class="content"> biar bisa geser sidebar nya (kalo gak ya udah deh☠)
+
+
+
+upperbar:
+
+# upperbar.html (ubah sesuai kebutuhan)
+
+    <!-- ubah kata sesuai nama website -->
+    <div class="logo">MyWebsite</div>
+    <nav>
+      <!-- ubah # jadi url atau nama halaman -->
+      <a href="#">Beranda</a>
+      <a href="#">Tentang</a>
+      <a href="#">Layanan</a>
+      <a href="#">Kontak</a>
+    </nav>
+
+# upperbar.js
+fetch("upperbar.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("upperbar-container").innerHTML = html;
+    });
+
+# upperbar style
+    /* Upperbar */
+    .upperbar {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .upperbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .upperbar nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .upperbar nav a:hover {
+      color: pink;
+      cursor: pointer;
+    }
+
+# panggil upperber
+<header id="upperbar-container"></header>
+
+# panggil script upperbar
+
+<script type="module" src="src/sidebar.js"></script>
+
+
+
+
+Zoom in out:
+
+#contoh gambar
+<img class="img" src="gambar.png" alt="gambar">
+
+#css nya
+
+        .img {
+            width: 90%;
+            max-width: 400px;
+            border-radius: 12px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        } 
+
+        .img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            cursor: zoom-in;
+        }
+
+        .img.active {
+            transform: scale(2);
+            cursor: zoom-out;
+        }
+
+
+# script buat atur zoom
+
+    <script>
+        document.querySelectorAll(".img").forEach(img => {
+            img.onclick = () => {
+            img.classList.toggle("active");
+         };
+        });
+    </script>
+
+
+favicon (Taruh di <head>)
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">

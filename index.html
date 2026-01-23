@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang=id>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=google-site-verification content=oDoZXjTr8u2-cF-4oykRxiQc2NQEdXIR8UfpE3fzvkE>
+<meta name=keywords content="HMLilder, html builder, tutorial HTML pemula, cara membuat website untuk pemula">
+<meta name=description content="HMLilder adalah sebuah website yang menyediakan alat alat untuk membantu pemula memulai pemrograman website.">
+<title>HMLilder Studio - Html Builder</title>
+<script src=https://challenges.cloudflare.com/turnstile/v0/api.js async defer></script>
+<script>!function(e){e.dataset.zone="10506120",e.src="https://nap5k.com/tag.min.js"}([document.documentElement,document.body].filter(Boolean).pop().appendChild(document.createElement("script")))</script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css>
+<link rel=stylesheet href="src/sidebar.css?v=1.0">
+<link rel=icon type=image/x-icon href="public/fav.ico?v=2">
+<link rel=preconnect href=https://challenges.cloudflare.com>
+<style>:root{--primary:#4361ee;--secondary:#3a0ca3;--dark:#2b2d42;--light:#f8f9fa;--gray:#6c757d;--success:#4cc9f0;--danger:#f72585;--warning:#ffd166;--border-radius:12px;--shadow:0 8px 20px rgba(0,0,0,0.08);--transition:all 0.3s ease}*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,-apple-system,sans-serif}body{background:linear-gradient(135deg,#f5f7fa 0,#e4edf5 100%);color:var(--dark);min-height:100vh;padding:20px;line-height:1.6}.container{max-width:1400px;margin:0 auto}.header{text-align:center;margin-bottom:30px;padding:25px;background:#fff;border-radius:var(--border-radius);box-shadow:var(--shadow)}.logo{font-size:2.8rem;font-weight:800;background:linear-gradient(90deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:10px}.tagline{color:var(--gray);font-size:1.2rem;margin-bottom:15px}.coming-soon-badge{display:inline-block;background:linear-gradient(90deg,#ff9a00,#ff5e00);color:#fff;padding:8px 20px;border-radius:50px;font-weight:700;font-size:1rem;margin-top:10px;animation:pulse 2s infinite;box-shadow:0 4px 15px rgba(255,94,0,.3)}.coming-soon-badge:hover{cursor:pointer;box-shadow:0 6px 20px rgba(255,94,0,.5)}@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}.main-layout{display:flex;flex-wrap:wrap;gap:25px;margin-bottom:40px}.editor-panel,.preview-panel{flex:1;min-width:300px;background:#fff;border-radius:var(--border-radius);box-shadow:var(--shadow);padding:25px}.panel-title{font-size:1.5rem;color:var(--primary);margin-bottom:20px;padding-bottom:10px;border-bottom:2px solid #f0f0f0;display:flex;align-items:center;gap:10px}.panel-title i{font-size:1.3rem}.control-group{margin-bottom:25px}.control-label{display:block;font-weight:600;margin-bottom:8px;color:var(--dark)}.template-options{display:flex;gap:15px;flex-wrap:wrap}.template-option{flex:1;min-width:120px;border:2px solid #e0e0e0;border-radius:10px;padding:15px;text-align:center;cursor:pointer;transition:var(--transition)}.template-option:hover{border-color:var(--primary);transform:translateY(-3px)}.template-option.active{border-color:var(--primary);background-color:rgba(67,97,238,.05)}.template-icon{font-size:2rem;margin-bottom:10px;color:var(--primary)}.template-name{font-weight:600;font-size:.95rem}input,select,textarea{width:100%;padding:12px 15px;border:2px solid #e0e0e0;border-radius:8px;font-size:1rem;transition:var(--transition)}input:focus,select:focus,textarea:focus{outline:0;border-color:var(--primary);box-shadow:0 0 0 3px rgba(67,97,238,.1)}textarea{min-height:100px;resize:vertical}.color-options{display:flex;gap:10px;flex-wrap:wrap}.color-option{width:40px;height:40px;border-radius:50%;cursor:pointer;border:3px solid transparent;transition:var(--transition)}.color-option:hover{transform:scale(1.1)}.color-option.active{border-color:var(--dark)}.preview-container{border:2px dashed #e0e0e0;border-radius:10px;padding:20px;min-height:400px;background:#f9fafb;overflow:auto;margin-bottom:20px;transition:var(--transition)}.preview-container:hover{border-color:var(--primary)}.device-toggle{display:flex;justify-content:center;gap:10px;margin-bottom:20px}.device-btn{padding:8px 20px;background:#f0f0f0;border:none;border-radius:6px;cursor:pointer;font-weight:600;transition:var(--transition)}.device-btn.active{background:var(--primary);color:#fff}.output-panel{background:#fff;border-radius:var(--border-radius);box-shadow:var(--shadow);padding:25px;margin-top:20px}.action-buttons{display:flex;gap:15px;flex-wrap:wrap}.btn{padding:14px 28px;border:none;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer;transition:var(--transition);display:flex;align-items:center;justify-content:center;gap:10px;flex:1;min-width:200px}.btn-primary{background:var(--primary);color:#fff}.btn-primary:hover{background:var(--secondary);transform:translateY(-3px);box-shadow:0 10px 20px rgba(67,97,238,.2)}.btn-secondary{background:#f0f0f0;color:var(--dark)}.btn-secondary:hover{background:#e0e0e0;transform:translateY(-3px)}.btn-premium{background:linear-gradient(90deg,#ff9a00,#ff5e00);color:#fff}.btn-premium:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(255,94,0,.2)}.footer{text-align:center;margin-top:40px;color:var(--gray);font-size:.9rem;padding:20px}.generated-page{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:800px;margin:0 auto;padding:20px}.hero-section{text-align:center;padding:50px 20px;border-radius:15px;margin-bottom:40px}.hero-title{font-size:2.5rem;margin-bottom:15px}.hero-tagline{font-size:1.3rem;margin-bottom:25px;color:#555}.hero-description{font-size:1.1rem;line-height:1.7;margin-bottom:30px;color:#666;max-width:700px;margin-left:auto;margin-right:auto}.cta-button{display:inline-block;padding:15px 35px;background:var(--primary);color:#fff;text-decoration:none;border-radius:8px;font-weight:700;font-size:1.1rem;transition:var(--transition);border:none;cursor:pointer}.cta-button:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,.1)}.features-section{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin:40px 0}.feature-card{background:#f9f9f9;padding:25px;border-radius:10px;border-left:5px solid var(--primary)}@media (max-width:768px){.main-layout{flex-direction:column}.editor-panel,.preview-panel{width:100%}.template-options{flex-direction:column}.btn{min-width:100%}.hero-title{font-size:2rem}.logo{font-size:2.2rem}}.font-options{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:10px}.font-option{border:2px solid #e0e0e0;border-radius:8px;padding:10px;text-align:center;cursor:pointer;transition:all .3s;background:#fff}.font-option:hover{border-color:#4361ee;transform:translateY(-2px)}.font-option.active{border-color:#4361ee;background:#4361ee10;box-shadow:0 0 0 2px #4361ee40}.font-preview{font-size:24px;font-weight:700;margin-bottom:5px;height:40px;display:flex;align-items:center;justify-content:center}.font-name{font-size:12px;color:#555;display:block}.font-option.active .font-name{color:#4361ee;font-weight:600}.footer-img{max-width:40%;max-height:40%;border-radius:10px;box-shadow:rgba(0,0,0,.08) 0 8px 20px}li{margin-bottom:20px}.cf-turnstile{display:flex;justify-content:center;margin-top:20px}article[id]{transition:opacity .3s ease,transform .3s ease}article:not(.active){display:none!important;opacity:0;height:0;overflow:hidden;pointer-events:none;margin:0!important;padding:0!important}article.active{display:block!important;opacity:1;height:auto}</style>
+</head>
+<body>
+<div id=sidebar-container></div>
+<button class=toggle-btn onclick=toggleSidebar()>☰ Menu</button>
+<script type=module src="src/sidebar.js?v=sidebar-1.3"></script>
+<script>function toggleSidebar(){const t=document.getElementById("sidebar"),e=document.getElementById("container");t.classList.toggle("active"),e.classList.toggle("shift")}</script>
+<div class=container>
+<header class=header>
+<h1 class=logo><i class="fas fa-code"></i> HMLilder</h1>
+<p class=tagline>Tools untuk programmer, maupun untuk orang awam seputar website.</p>
+<br><br>
+<p>Support untuk membantu developer membuat HMLilder selangkah lebih bagus setiap harinya:</p>
+<a class=cta-button style=justify-self:center href=https://saweria.co/ArdhyaDigital>Support</a>
+<p style=margin-top:20px>*Iklan dalam situs berfungsi untuk membantu developer mengembangkan HMLilder. Jika mengganggu, pertimbangkan gunakan AdBlock pada browser anda.
+</p>
+</header>
+<div class=cf-turnstile data-sitekey=0x4AAAAAACLoncF9yY-TLB2g></div>
+<div class=cf-turnstile data-sitekey=0x4AAAAAACLoncF9yY-TLB2g data-theme=light data-size=normal data-callback=onSuccess></div>
+<p>Artikel di halaman ini (klik salah satu link untuk melihat artikel):</p>
+<ul id=articleIndex>
+<li><a href=#tutorialHTML>Bagaimana cara membuat website HTML? (HTML dasar)</a></li>
+<li><a href=#tutorialDeployWebsite>Bagaimana Cara Membuat Website HTML Agar Bisa Diakses Orang Lain?</a></li>
+<li><a href=#domainAdalah>Apa itu domain?</a></li>
+<li><a href=#navigasi>Bagaimana cara memberikan navigasi pada halaman HTML? (navigasi website)</a></li>
+<li><a href=#tutorialCSS>Bagaimana cara memperbagus tampilan website HTML? (CSS dasar)</a></li>
+<li><a href=#caraMemakaiAI>Cara memakai AI untuk membantu pemrograman.</a></li>
+<li><a href=#caraMinifyHTML>Mengapa Ukuran File HTML membesar?</a></li>
+</ul>
+<hr>
+<article id=tutorialHTML class=post style=margin-top:100px>
+<h1 style=justify-self:center>
+Bagaimana Cara Membuat Website HTML?
+</h1>
+<h2>Berikut adalah langkah-langkah membuat website HTML dasar untuk pemula.</h2>
+<ol>
+<li>
+<strong>Pilih Editor Teks</strong><br>
+Gunakan editor teks seperti Notepad (Windows), TextEdit (Mac), atau editor kode seperti Visual Studio Code, Sublime Text, dan Atom.
+</li>
+<img src="public/vscode-icon_11zon.png?v=1" alt="Visual Studio Code" style=max-width:100px;max-height:100px>
+<li>
+<strong>Buat File HTML Baru</strong><br>
+Buat file baru dan simpan dengan ekstensi <code>.html</code>. Jika file ini adalah halaman utama (beranda), beri nama
+<code>index.html</code>.
+</li>
+<li>
+<strong>Tulis Struktur Dasar HTML</strong>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Judul Halaman&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Halo, Dunia!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+</li>
+<img src="public/html_11zon.png?v=1" alt="Contoh kode HTML" style=max-width:600px;max-height:400px>
+<li>
+<strong>Penjelasan Tiap Bagian</strong><br>
+<code>&lt;!DOCTYPE html&gt;</code> → Menandakan bahwa dokumen ini adalah HTML.<br>
+<code>&lt;html lang="id"&gt;</code> → Elemen utama HTML, dengan bahasa Indonesia sebagai default.<br>
+<code>&lt;head&gt;</code> → Bagian kepala halaman (tidak tampil di layar).<br>
+<code>&lt;meta charset="UTF-8"&gt;</code> → Agar halaman mendukung karakter unik dan emoji.<br>
+<code>&lt;meta viewport&gt;</code> → Membuat tampilan responsif di perangkat mobile.<br>
+<code>&lt;title&gt;</code> → Judul halaman di tab browser.<br>
+<code>&lt;body&gt;</code> → Bagian utama yang berisi konten halaman.<br>
+<code>&lt;h1&gt;</code> → Judul utama halaman.<br>
+</li>
+<li>
+<strong>Simpan dan Buka File</strong><br>
+Simpan file dengan nama <code>index.html</code>, lalu buka dengan cara klik dua kali. Pastikan nama file bukan <code>index.html.txt</code>.
+</li>
+<li>
+<strong>Tag HTML Penting Lainnya</strong><br>
+<code>&lt;h1&gt; - &lt;h6&gt;</code> → Judul (semakin besar angka, semakin kecil ukurannya).<br>
+<code>&lt;p&gt;</code> → Paragraf.<br>
+<code>&lt;style&gt;</code> → Mengatur tampilan dengan CSS (di dalam <code>&lt;head&gt;</code>).<br>
+<code>&lt;img&gt;</code> → Menampilkan gambar.<br>
+<code>&lt;a&gt;</code> → Membuat tautan (link).<br>
+<code>&lt;ul&gt;</code> → List tidak berurutan.<br>
+<code>&lt;ol&gt;</code> → List berurutan.<br>
+<code>&lt;li&gt;</code> → Item dalam list.<br>
+<code>&lt;br&gt;</code> → Baris baru.<br>
+<code>&lt;hr&gt;</code> → Garis horizontal.
+</li>
+</ol>
+<p>
+<strong>Tips:</strong> Gunakan page builder agar lebih mudah saat pertama kali belajar HTML.
+<a href=builder.html>Klik di sini untuk menggunakan page builder</a>
+</p>
+<p>
+Itu dia cara membuat website HTML dasar untuk pemula. Selanjutnya: cara membuat website HTML agar bisa diakses orang lain.
+</p>
+</article>
+<hr>
+<article id=tutorialDeployWebsite>
+<h2>Bagaimana Cara Membuat Website HTML Agar Bisa Diakses Orang Lain?</h2>
+<p>
+Agar website HTML bisa diakses orang lain, kamu perlu mengunggahnya ke layanan hosting. Untuk tujuan belajar atau website pribadi, kamu bisa menggunakan hosting gratis.
+</p>
+<ol>
+<li>GitHub Pages — <a href=https://github.com>github.com</a></li>
+<li>Netlify (Free Tier) — <a href=https://netlify.com>netlify.com</a></li>
+<li>Vercel Hobby — <a href=https://vercel.com>vercel.com</a></li>
+<li>Firebase Hosting — <a href=https://firebase.google.com>firebase.google.com</a></li>
+<li>Cloudflare Pages — <a href=https://pages.cloudflare.com>pages.cloudflare.com</a></li>
+<li>Surge — <a href=https://surge.sh>surge.sh</a></li>
+<li>InfinityFree — <a href=https://infinityfree.com>infinityfree.com</a></li>
+<li>GoogieHost — <a href=https://googiehost.com>googiehost.com</a></li>
+</ol>
+<p>
+Untuk website bisnis atau website dengan performa tinggi, disarankan menggunakan hosting berbayar.
+</p>
+</article>
+<hr>
+<article id=domainAdalah style=margin-top:100px>
+<h2 style=justify-self:center>Apa Itu Domain?</h2>
+<p>
+Domain adalah alamat website agar dapat diakses dengan mudah oleh orang lain. Domain terdiri dari dua bagian utama:
+</p>
+<ul>
+<li>
+<strong>Custom Domain</strong>
+<p>
+Custom domain adalah alamat website khusus seperti
+<code>google.com</code>, <code>archive.org</code>, dan <code>itch.io</code>.
+</p>
+<ol>
+<li>
+<strong>.com</strong><br>
+Domain paling umum dan cocok untuk hampir semua jenis website.
+</li>
+<li>
+<strong>.id</strong><br>
+Domain Indonesia, termasuk <code>.my.id</code>, <code>.web.id</code>.
+</li>
+<li>
+<strong>.org</strong><br>
+Domain organisasi dan banyak digunakan oleh proyek open source.
+</li>
+</ol>
+</li>
+<li style=margin-top:50px>
+<strong>Subdomain</strong>
+<p>
+Subdomain adalah bagian depan dari domain, seperti
+<code>www.situsanda.com</code> atau <code>blog.situsanda.com</code>. Pada beberapa layanan hosting gratis, subdomain digunakan sebagai alamat website, misalnya <code>situsanda.pages.dev</code>.
+</p>
+</li>
+</ul>
+<p>
+Itulah tutorial dasar HTML dari membuat file hingga mempublikasikannya. Selamat mengerjakan proyek website pertamamu! Jika ada pertanyaan, tulis di kolom komentar dengan awalan
+<strong>"Pertanyaan tutorial HTML dasar: ..."</strong>
+<a href=#disqus_thread>Klik di sini</a>
+</p>
+</article>
+<hr>
+<article id=navigasi class=post style=margin-top:250px>
+<h1 style=justify-self:center>
+Bagaimana Cara Memberikan Navigasi pada Halaman HTML?
+</h1>
+<p>
+Navigasi pada halaman HTML berfungsi untuk berpindah dari satu halaman ke halaman lain, atau menuju website lain. Navigasi dasar dapat dibuat menggunakan <strong>link</strong> dan <strong>tombol</strong>.
+</p>
+<ul>
+<li>
+<strong>Link</strong>
+<p>
+Link adalah cara paling umum untuk membuat navigasi. Kamu dapat menggunakan tag <code>&lt;a&gt;</code>. Contohnya, untuk berpindah ke halaman lain dalam satu website:
+</p>
+<pre>
+&lt;a href="halaman.html"&gt;Halaman Lain&lt;/a&gt;
+            </pre>
+<p>
+Jika ingin menuju ke website lain:
+</p>
+<pre>
+&lt;a href="https://namadomain.com"&gt;Website Lain&lt;/a&gt;
+            </pre>
+<img src="public/test-hyperlink.png?v=1" alt="Contoh hyperlink HTML" style=max-width:600px;max-height:400px>
+</li>
+<li style=margin-top:50px>
+<strong>Tombol</strong>
+<p>
+Selain link, navigasi juga dapat dibuat menggunakan tombol. Tombol biasanya dikombinasikan dengan JavaScript sederhana menggunakan atribut <code>onclick</code>.
+</p>
+<p>
+Contoh tombol untuk menuju halaman lain:
+</p>
+<pre>
+&lt;button onclick="window.location.href='halaman-lain.html'"&gt;
+    Klik!
+&lt;/button&gt;
+            </pre>
+<p>
+Contoh tombol untuk menuju website lain:
+</p>
+<pre>
+&lt;button onclick="window.location.href='https://website.com'"&gt;
+    Klik!
+&lt;/button&gt;
+            </pre>
+<img src="public/test-button.png?v=1" alt="Contoh tombol navigasi HTML" style=max-width:600px;max-height:400px>
+</li>
+</ul>
+<p>
+Tampilan link dan tombol dapat diatur menggunakan CSS agar terlihat lebih menarik dan konsisten dengan desain website. Itulah cara membuat navigasi dasar pada halaman HTML.
+</p>
+<p>
+Jika kamu memiliki pertanyaan, silakan tulis di
+<a href=#disqus_thread>kolom komentar</a>
+dengan awalan
+<strong>"Pertanyaan tutorial navigasi dasar: ..."</strong>
+</p>
+</article>
+<hr>
+<article id=tutorialCSS class=post style=margin-top:250px>
+<h1 style=margin-bottom:50px;justify-self:center>
+Cara Memperbagus Tampilan Website HTML dengan CSS
+</h1>
+<p>
+Untuk memperbagus tampilan website HTML, kamu dapat menggunakan CSS. Salah satu cara paling dasar adalah dengan menuliskan CSS langsung di dalam tag <code>&lt;style&gt;</code> yang berada di dalam tag <code>&lt;head&gt;</code>. Berikut contoh penggunaannya:
+</p>
+<br>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Judul Halaman&lt;/title&gt;
+
+    &lt;style&gt;
+        /* Style untuk seluruh halaman */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Style untuk judul */
+        h1 {
+            color: #4361ee;
+            text-align: center;
+        }
+
+        /* Style untuk paragraf */
+        p {
+            line-height: 1.6;
+            margin: 20px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Halo, Dunia!&lt;/h1&gt;
+    &lt;p&gt;Ini adalah paragraf pertama di halaman HTML saya.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+<p>
+Contoh di atas menunjukkan penggunaan CSS paling dasar untuk mempercantik tampilan website HTML. Selanjutnya, berikut beberapa properti CSS dasar yang sering digunakan untuk mengatur tampilan website.
+</p>
+<ul>
+<li><strong>color</strong>: Mengatur warna teks. Contoh: black, red, blue.</li>
+<li><strong>background-color</strong>: Mengatur warna latar belakang. Contoh: black, white, pink.</li>
+<li><strong>font-family</strong>: Mengatur jenis font. Contoh: Arial, Times New Roman, Courier New.</li>
+<li><strong>font-size</strong>: Mengatur ukuran teks. Contoh: 15px.</li>
+<li><strong>text-align</strong>: Mengatur perataan teks. Contoh: left, center, right.</li>
+<li><strong>margin</strong>: Mengatur jarak di luar elemen. Contoh: 10px, 20px.</li>
+<li><strong>padding</strong>: Mengatur jarak di dalam elemen. Contoh: 10px, 20px.</li>
+<li><strong>justify-self</strong>: Mengatur posisi satu elemen tertentu (pada grid/flex). Contoh: center, start, end.</li>
+<li><strong>justify-content</strong>: Mengatur posisi seluruh elemen di dalam container. Contoh: center, start, end.</li>
+<li><strong>justify-items</strong>: Mengatur posisi elemen di dalam ruang masing-masing. Contoh: center, start, end.</li>
+</ul>
+<p>
+Untuk menerapkan properti CSS tersebut ke elemen HTML, cukup tuliskan nama elemen lalu tambahkan properti CSS di dalam tag <code>&lt;style&gt;</code>. Contohnya, jika ingin mengatur tampilan elemen <code>&lt;body&gt;</code>:
+</p>
+<pre>
+body {
+    /* warna teks */
+    color: black;
+
+    /* warna latar belakang */
+    background-color: white;
+
+    /* jenis font */
+    font-family: Arial, sans-serif;
+}
+    </pre>
+<p>
+Itulah beberapa properti CSS dasar yang penting untuk memperbagus tampilan website HTML, beserta contoh penerapannya. Semoga bermanfaat! Jika kamu memiliki pertanyaan terkait artikel ini, silakan tulis di kolom komentar dengan awalan
+<strong>"Pertanyaan tutorial CSS dasar: ..."</strong>. Kolom komentar: <a href=#disqus_thread>klik di sini</a>
+</p>
+</article>
+<hr>
+<article id=caraMemakaiAI style=margin-top:250px>
+<h1 style=margin-bottom:50px;justify-self:center>
+Cara Menggunakan AI untuk Membantu Pemrograman
+</h1>
+<p>
+Saat ini, banyak programmer memanfaatkan teknologi AI untuk membantu proses pengembangan proyek. Namun, tidak sedikit juga—terutama pemula—yang keliru dalam menggunakan AI untuk coding. Oleh karena itu, artikel ini akan membahas cara memakai AI untuk membantu pemrograman dengan baik dan benar.
+</p>
+<br>
+<h2>1. Gunakan Prompt dengan Bahasa yang Jelas dan Mendetail</h2>
+<p>
+Prompt berperan penting dalam menentukan hasil yang diberikan oleh AI. Jika prompt terlalu singkat atau tidak jelas, kode yang dihasilkan berpotensi error atau tidak sesuai dengan ekspektasi. Semakin jelas prompt yang diberikan, semakin baik pula hasilnya.
+</p>
+<p>
+Berikut contoh prompt AI yang baik, misalnya untuk membuat website profil pribadi:
+</p>
+<br>
+<p>
+"Saya ingin membuat website profil pribadi dengan tema terang (light theme), font modern, dan animasi sederhana. Website ini memiliki konten sebagai berikut:
+</p>
+<p>1. ...</p>
+<p>2. ...</p>
+<p>... (dan seterusnya)</p>
+<p>
+Tolong berikan struktur folder dan file, beserta potongan kode (snippet). Sertakan penjelasan pada setiap bagian. Jangan gunakan framework tertentu."
+</p>
+<br>
+<p>
+Sebaliknya, berikut contoh prompt yang kurang tepat:
+</p>
+<br>
+<p>
+"Buatkan saya sebuah website pribadi"
+</p>
+<br>
+<p>
+Hal-hal penting yang perlu diperhatikan saat membuat prompt yang baik:
+</p>
+<ul>
+<li>Konteks yang jelas</li>
+<li>Detail kebutuhan</li>
+<li>Batasan atau aturan</li>
+</ul>
+<br>
+<h2>2. Gunakan Metode "Copy – Paste – Modifikasi"</h2>
+<p>
+Metode ini berarti menyalin kode yang dihasilkan oleh AI, menempelkannya ke dalam proyek, lalu memodifikasinya sesuai kebutuhan. Cara ini tergolong sehat dalam penggunaan AI untuk coding.
+</p>
+<p>
+AI membantu menghemat waktu dalam menulis kode, sementara kita tetap belajar dengan memahami dan mengubah hasilnya. Dengan begitu, kita tidak terjebak pada pola
+<i>"copy–paste–selesai"</i> tanpa memahami kode yang digunakan.
+</p>
+<p>
+Jika memiliki pertanyaan, kolom komentar <a href=#disqus_thread>klik disini</a>
+</p>
+</article>
+<article id=caraMinifyHTML style=margin-top:50px>
+<h1 style=margin-bottom:50px;justify-self:center>
+Mengapa Ukuran File HTML Bisa Membesar?
+</h1>
+<p>
+Ukuran file HTML bisa membesar karena berisi banyak karakter, seperti tag yang berlebihan, spasi dan baris kosong, komentar, JavaScript inline, serta CSS inline. Selain itu, penggunaan framework juga dapat menambah ukuran file website.
+</p>
+<p>
+Jika kamu menggunakan HTML murni tanpa framework, ada beberapa cara sederhana untuk mengurangi ukuran file HTML.
+</p>
+<br>
+<h2>1. Gunakan JavaScript dan CSS Eksternal</h2>
+<p>
+JavaScript dan CSS eksternal adalah kode yang ditulis di file terpisah, seperti <code>.js</code> untuk JavaScript dan <code>.css</code> untuk CSS. Berbeda dengan inline (kode langsung di dalam HTML), metode ini membuat file HTML menjadi lebih ringan dan rapi, terutama jika kodenya kompleks.
+</p>
+<ul>
+<li>
+Buat file yang diperlukan, misalnya <code>index.js</code> atau
+<code>index.css</code>.
+</li>
+<li>
+Salin kode dari tag <code>&lt;script&gt;</code> (JavaScript) atau
+<code>&lt;style&gt;</code> (CSS) tanpa menyertakan tag-nya.
+</li>
+<li>
+Tempelkan kode tersebut ke file eksternal yang sesuai.
+<p>
+Contoh: jika JavaScript inline berisi
+<code>console.log('Halo dunia!');</code>, maka isi file <code>index.js</code> menjadi:
+</p>
+<pre>
+console.log('Halo dunia!');
+            </pre>
+</li>
+<li>
+Panggil file eksternal ke dalam file HTML.
+<p>
+Untuk memanggil file <code>index.js</code>:
+</p>
+<pre>
+&lt;script src="index.js"&gt;&lt;/script&gt;
+            </pre>
+<p>
+Untuk memanggil file <code>index.css</code>:
+</p>
+<pre>
+&lt;link rel="stylesheet" href="index.css"&gt;
+            </pre>
+</li>
+</ul>
+<p>
+<strong>Penting:</strong> Pastikan path (lokasi file) sudah benar. Jika file berada di folder <code>src/</code>, maka gunakan
+<code>src="src/namafile.js"</code> atau
+<code>href="src/namafile.css"</code>.
+</p>
+<br>
+<h2>2. Minify File HTML</h2>
+<p>
+Minify HTML adalah proses menghapus spasi berlebih, baris kosong, dan komentar agar ukuran file menjadi lebih kecil.
+</p>
+<ul>
+<li>
+Buat dua file: satu untuk development dan satu untuk deploy.
+<p>
+File development berisi kode yang rapi dan mudah dibaca, misalnya <code>index-dev.html</code>. File deploy adalah hasil minify yang siap diunggah ke hosting, biasanya bernama <code>index.html</code>.
+</p>
+</li>
+<li>
+Minify file development menggunakan tools minifier.
+<p>
+Kamu bisa menggunakan tools online seperti
+<a href=https://www.toptal.com/developers/html-minifier target=_blank>
+Toptal HTML Minifier
+</a>. Setelah proses selesai, salin hasil minify ke file deploy, lalu uji di browser atau localhost untuk memastikan tidak ada error.
+</p>
+</li>
+</ul>
+<p>
+Itulah beberapa cara sederhana untuk mengurangi ukuran file HTML. Jika kamu memiliki pertanyaan, silakan tulis di
+<a href=#disqus_thread>kolom komentar</a>.
+</p>
+</article>
+<br><hr>
+<section style="padding:40px 20px;background:#f9f9f9" id=navigation>
+<h3 style=margin-bottom:20px>Navigasi</h3>
+<div style=display:flex;flex-direction:column;gap:12px>
+<a href=about.html style="padding:12px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#222;border:1px solid #eee">
+Tentang HMLilder
+</a>
+<a href=https://discord.gg/Ez7WeHty style="padding:12px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#222;border:1px solid #eee">
+Server Discord HMLilder
+</a>
+<a href=privacy-policy.html style="padding:12px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#222;border:1px solid #eee">
+Kebijakan Privasi
+</a>
+<a href=builder.html style="padding:12px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#222;border:1px solid #eee">
+Page Builder
+</a>
+<a href=component.html style="padding:12px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#222;border:1px solid #eee">
+Generate Komponen HTML
+</a>
+<a href=builded-site.html style="padding:12px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#222;border:1px solid #eee">
+Contoh Website HTML yang Dibuat dengan HMLilder
+</a>
+</div>
+</section>
+</div>
+<p style=margin:40px>*Iklan</p>
+<script>!function(e){var r=document,n=r.createElement("script"),t=r.scripts[r.scripts.length-1];n.settings={}||{},n.src="//shockedmirror.com/bkX-VUs.dJGxl-0pYoWfcn/KeLmn9xuCZVUWlZk-PTTBY/3/NlTpMgyaNrjqMItKNtjacz1mMfzxIO2/NyAH",n.async=!0,n.referrerPolicy="no-referrer-when-downgrade",t.parentNode.insertBefore(n,t)}()</script>
+<br><br>
+<h2>Memiliki pertanyaan terhadap suatu artikel? Tulis disini!</h2>
+<div id=disqus_thread></div>
+<script>var disqus_config=function(){this.page.url=window.location.href,this.page.identifier=window.location.pathname};!function(){var t=document,e=t.createElement("script");e.src="https://ardhyawebstudio.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<footer class=footer>
+&copy; 2026 HMLilder Studio. All rights reserved.
+<br><br>
+</footer>
+<script>document.addEventListener("DOMContentLoaded",(function(){const t=document.querySelectorAll("article[id]");let e=null;t.forEach((t=>{t.classList.remove("active")}));const n=Array.from(document.querySelectorAll("p")).find((t=>t.textContent.includes("Artikel di halaman ini")));if(n){const t=n.nextElementSibling;t&&"UL"===t.tagName&&t.addEventListener("click",(function(t){const n=t.target.closest('a[href^="#"]');if(n){t.preventDefault();const o=n.getAttribute("href").substring(1);e&&e.classList.remove("active");const s=document.getElementById(o);s&&(s.classList.add("active"),e=s,window.location.hash=o,setTimeout((()=>{s.scrollIntoView({behavior:"smooth",block:"start"})}),50))}}))}const o=window.location.hash.substring(1);if(o&&document.getElementById(o)){const t=document.getElementById(o);t.classList.add("active"),e=t}else t.length>0&&(t[0].classList.add("active"),e=t[0])}))</script>
+<script async src=https://scripts.simpleanalyticscdn.com/latest.js></script>
+<noscript><img src=https://queue.simpleanalyticscdn.com/noscript.gif alt="" referrerpolicy=no-referrer-when-downgrade></noscript>
+</body></html>

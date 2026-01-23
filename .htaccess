@@ -1,0 +1,9 @@
+DirectoryIndex index.php index.html index.htm index2.html
+
+# Prevent directory listing
+Options -Indexes
+
+# Allow CORS
+Header set Access-Control-Allow-Origin "*"
+
+RewriteEngine On
