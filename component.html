@@ -3,8 +3,6 @@
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q49KY3ZE3V"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-Q49KY3ZE3V")</script>
-<script>!function(e){e.dataset.zone="10506120",e.src="https://nap5k.com/tag.min.js"}([document.documentElement,document.body].filter(Boolean).pop().appendChild(document.createElement("script")))</script>
-<meta charset=UTF-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=google-adsense-account content=ca-pub-3975087268988772>
 <title>HMLilder Studio - Html Builder</title>
@@ -18,7 +16,7 @@
 <button class=toggle-btn onclick=toggleSidebar()>☰ Menu</button>
 <script type=module src="src/sidebar.js?v=1.3"></script>
 <script>function toggleSidebar(){const t=document.getElementById("sidebar"),e=document.getElementById("container");t.classList.toggle("active"),e.classList.toggle("shift")}</script>
-<di class=container>
+<div class=container>
 <header class=header>
 <h1 class=logo><i class="fas fa-code"></i> HMLilder</h1>
 <p class=tagline>Generate komponen untuk website html dengan mudah. 100% gratis</p>
@@ -28,6 +26,8 @@
 <p style=margin-top:20px>*Iklan dalam situs berfungsi untuk membantu developer mengembangkan HMLilder. Jika mengganggu, pertimbangkan gunakan AdBlock pada browser anda.
 </p>
 </header>
+<script>atOptions={key:"b525b2db453861c6cbc8a079e750e4cf",format:"iframe",height:90,width:728,params:{}}</script>
+<script src=https://pitofficialfollower.com/b525b2db453861c6cbc8a079e750e4cf/invoke.js></script>
 <div class=main-layout>
 <div class=editor-panel>
 <h2 class=panel-title><i class="fas fa-sliders-h"></i> Pengaturan Komponen</h2>
@@ -86,5 +86,5 @@ Gunakan panel di sebelah kiri
 <script>let currentComponent="hero";const componentSelect=document.getElementById("component-select"),outputPanel=document.querySelector(".output-panel");function initComponentGenerator(){console.log("🚀 Component Generator initialized"),componentSelect.addEventListener("change",(function(){currentComponent=this.value,console.log("Component selected:",currentComponent),generateComponentCode()})),generateComponentCode()}function generateComponentCode(){const e=components[currentComponent];if(!e)return void console.error("Component not found:",currentComponent);const n=`\n      <h2 class="panel-title"><i class="fas fa-code"></i> ${e.name}</h2>\n      <p style="color: #666; margin-bottom: 20px;">${e.description}</p>\n      \n      <div style="background: #f8f9fa; border-radius: 10px; padding: 20px; margin-bottom: 20px; border-left: 4px solid #4361ee;">\n        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">\n          <h3 style="margin: 0; color: #2b2d42;">\n            <i class="fas fa-cube"></i> Preview Komponen\n          </h3>\n          <small style="color: #6c757d;">${e.name}</small>\n        </div>\n        <div id="component-preview" style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; background: white; overflow: auto;">\n          ${e.html}\n        </div>\n      </div>\n\n      <div style="background: #1e1e1e; border-radius: 10px; padding: 20px; margin-bottom: 20px;">\n        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">\n          <h3 style="margin: 0; color: #fff;">\n            <i class="fas fa-file-code"></i> Kode HTML\n          </h3>\n          <button id="copyBtn" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">\n            <i class="fas fa-copy"></i> Salin Kode\n          </button>\n        </div>\n        <pre id="code-output" style="background: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow: auto; font-family: 'Courier New', monospace; font-size: 14px; margin: 0; white-space: pre-wrap;">\n${escapeHTML(e.html)}</pre>\n      </div>\n      \n      <div style="background: #e3f2fd; border-radius: 10px; padding: 15px; border-left: 4px solid #2196f3;">\n        <h4 style="margin: 0 0 10px 0; color: #0d47a1;">\n          <i class="fas fa-lightbulb"></i> Cara Pakai\n        </h4>\n        <ol style="margin: 0; padding-left: 20px; color: #1565c0;">\n          <li>Salin kode HTML di atas</li>\n          <li>Tempelkan pada file HTML Anda</li>\n          <li>Customize sesuai kebutuhan</li>\n          <li>Simpan dan lihat hasilnya!</li>\n        </ol>\n      </div>\n    `;outputPanel.innerHTML=n,setupCopyButton(),console.log(`✅ ${e.name} code generated`)}function escapeHTML(e){return e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;")}function setupCopyButton(){const e=document.getElementById("copyBtn"),n=document.getElementById("code-output");e&&n&&e.addEventListener("click",(function(){const o=n.textContent;navigator.clipboard.writeText(o).then((()=>{const n=e.innerHTML;e.innerHTML='<i class="fas fa-check"></i> Tersalin!',e.style.background="#06d6a0",setTimeout((()=>{e.innerHTML=n,e.style.background=""}),2e3),console.log("✅ Code copied to clipboard")})).catch((e=>{console.error("❌ Failed to copy:",e),alert("Gagal menyalin kode. Coba salin manual dari kotak kode.")}))}))}function updateComponentDescription(){const e=components[currentComponent],n=document.getElementById("component-description");n&&e&&(n.innerHTML=`\n            <h4 style="margin-bottom: 10px; color: #4361ee;">${e.name}</h4>\n            <p style="color: #666; margin: 0;">${e.description}</p>\n        `)}function initComponentGenerator(){console.log("🚀 Component Generator initialized"),componentSelect.addEventListener("change",(function(){currentComponent=this.value,console.log("Component selected:",currentComponent),generateComponentCode(),updateComponentDescription()})),generateComponentCode(),updateComponentDescription()}</script>
 <script src="src/data-component.js?v=1.0"></script>
 <script>document.addEventListener("DOMContentLoaded",initComponentGenerator)</script>
-</di></body>
+</div></body>
 </html>
