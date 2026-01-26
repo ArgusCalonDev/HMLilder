@@ -1,5 +1,5 @@
 // sidebar.js
-fetch("sidebar.html")
+fetch("sidebar.html", { cache: 'no-cache' })
     .then(res => res.text())
     .then(html => {
         // 1. Inject sidebar HTML
