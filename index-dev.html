@@ -526,6 +526,20 @@ article.active {
     opacity: 1;
     height: auto;
 }
+
+img {
+    max-width: 50%;
+    max-height: 40%;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+.icon {
+    width: 20%;
+    height: 20%;
+    border-radius: 10px;
+    display: inline-block;
+}
     </style>
 </head>
 <body>
@@ -591,6 +605,7 @@ article.active {
         <li><a href="#tutorialCSS">Bagaimana cara memperbagus tampilan website HTML? (CSS dasar)</a></li>
         <li><a href="#caraMemakaiAI">Cara memakai AI untuk membantu pemrograman.</a></li>
         <li><a href="#caraMinifyHTML">Mengapa Ukuran File HTML membesar?</a></li>
+        <li><a href="#cacheAdalah">Apa itu cache?</a></li>
     </ul>
 
     <hr>
@@ -611,7 +626,6 @@ article.active {
     <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/1YSPsCG8/Call-Me-Fred-Boutique-Marketing-Agency.jpg" alt="Call Me Fred Boutique Marketing Agency" border="0" style="justify-self: center;"></a>
 </article>
 
-    <hr>
 <article id="tutorialHTML" class="post" style="margin-top: 100px;">
     <h1 style="justify-self: center;">
         Bagaimana Cara Membuat Website HTML?
@@ -707,7 +721,6 @@ article.active {
     </p>
 </article>
 
-<hr>
 <article id="tutorialDeployWebsite">
     <h2>Bagaimana Cara Membuat Website HTML Agar Bisa Diakses Orang Lain?</h2>
 
@@ -733,7 +746,6 @@ article.active {
     </p>
 </article>
 
-<hr>
 <article id="domainAdalah" style="margin-top: 100px;">
     <h2 style="justify-self: center;">Apa Itu Domain?</h2>
 
@@ -786,8 +798,6 @@ article.active {
     </p>
 </article>
 
-
-<hr>
 <article id="navigasi" class="post" style="margin-top: 250px;">
     <h1 style="justify-self: center;">
         Bagaimana Cara Memberikan Navigasi pada Halaman HTML?
@@ -877,7 +887,6 @@ article.active {
     </p>
 </article>
 
-<hr>
 <article id="tutorialCSS" class="post" style="margin-top: 250px;">
     <h1 style="margin-bottom: 50px; justify-self: center;">
         Cara Memperbagus Tampilan Website HTML dengan CSS
@@ -977,7 +986,6 @@ body {
     </p>
 </article>
 
-<hr>
 <article id="caraMemakaiAI" style="margin-top: 250px;">
     <h1 style="margin-bottom: 50px; justify-self: center;">
         Cara Menggunakan AI untuk Membantu Pemrograman
@@ -1180,11 +1188,56 @@ console.log('Halo dunia!');
     </p>
 </article>
 
+<article id="cacheAdalah" style="margin-top: 100px;">
+    <h1 style="justify-self: center;">Apa itu Cache Browser?</h1>
+
+    <p>
+        Cache browser adalah data sementara yang disimpan oleh browser dari sebuah website, seperti file HTML, CSS, gambar, dan JavaScript, agar saat pengguna membuka kembali halaman yang sama, website dapat dimuat lebih cepat. Dengan adanya cache, browser tidak perlu mengunduh ulang semua data dari server, sehingga waktu loading menjadi lebih singkat dan penggunaan bandwidth lebih efisien. Namun, cache juga dapat menyebabkan tampilan website tidak langsung menampilkan perubahan terbaru, karena browser masih menggunakan data lama yang tersimpan. Secara sederhana, cache dapat diibaratkan seperti catatan ringkas yang disimpan oleh browser, sehingga saat dibutuhkan kembali, browser tidak perlu mencari informasi dari awal.
+    </p>
+
+    <a href="https://ibb.co.com/LDVp5W2W"><img src="https://i.ibb.co.com/DP0KpySy/alur-cache.png" alt="alur-cache" border="0"></a>
+
+    <br><br>
+
+    <h2>Bagaimana cara mengatur waktu kadaluwarsa cache browser?</h2>
+
+    <p>
+        Waktu kadaluwarsa cache browser dapat diatur melalui konfigurasi server atau layanan yang digunakan oleh website. Pada server berbasis Apache, pengaturan ini biasanya dilakukan melalui file htaccess dengan menentukan header cache untuk jenis file tertentu. Untuk server atau engine lain seperti Nginx, pengaturan cache dilakukan melalui file konfigurasi masing masing engine. Selain itu, jika website menggunakan Content Delivery Network atau CDN, pengaturan waktu cache juga dapat dilakukan langsung melalui dashboard atau konfigurasi CDN tersebut. Dengan mengatur waktu kadaluwarsa cache secara tepat, website dapat tetap dimuat dengan cepat tanpa mengorbankan keakuratan konten, sehingga perubahan penting pada tampilan atau fungsi website tetap dapat diterima oleh browser pengguna pada waktu yang sesuai. Cara mengecek server atau engine biasanya adalah dengan melihat langsung pada control panel (misal cPanel) pada dashboard hosting. Jika menggunakan hosting web statis seperti Netlify, cache otomatis diperbarui setelah melakukan deploy.
+    </p>
+
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/qLPtsGf9/apache.jpg" alt="apache" border="0" class="icon" style="max-width: 40%;"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/35cYKH77/nginx.jpg" alt="nginx" border="0" class="icon" style="max-height: 160px;"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/GvmFR2NY/cdn.jpg" alt="cdn" border="0" class="icon" style="max-height: 10%;"></a>
+
+    <br><br>
+
+    <h2>Cara mengatur cache untuk setiap file</h2>
+
+    <ol>
+        <li><strong>HTML atau file halaman</strong></li>
+        <p>File HTML sebaiknya tidak disimpan terlalu lama di cache atau bahkan dilewati sepenuhnya, agar setiap perubahan konten dapat langsung ditampilkan kepada pengguna. Dengan pengaturan ini, browser akan selalu mengambil versi terbaru dari halaman, sehingga informasi yang ditampilkan tetap akurat dan sesuai dengan kondisi website saat ini.</p>
+
+        <li><strong>CSS dan JavaScript</strong></li>
+        <p>File CSS dan JavaScript dapat disimpan di cache browser dengan durasi sekitar satu minggu karena biasanya tidak sering berubah. Untuk memastikan pembaruan tetap terbaca oleh browser saat terjadi perubahan, versi file dapat dibedakan dengan menambahkan query string di akhir nama file, misalnya script.js?v=1.0. Cara ini membantu browser mengenali bahwa file tersebut adalah versi terbaru dan perlu dimuat ulang.</p>
+
+        <li><strong>Gambar dan file yang jarang berubah</strong></li>
+        <p>Gambar serta file lain yang jarang mengalami perubahan dapat disimpan di cache dengan durasi yang lebih lama, sekitar satu bulan, guna meningkatkan performa website. Jika suatu saat file tersebut diperbarui, penambahan query string seperti image.png?v=1.0 dapat digunakan untuk memaksa browser mengambil file terbaru dari server tanpa menunggu cache lama kedaluwarsa.</p>
+    </ol>
+
+    <br><br>
+
+    <p>
+        Dengan strategi pengaturan cache yang tepat untuk setiap jenis file, website dapat tetap terasa cepat saat diakses tanpa mengorbankan keakuratan konten dan kemudahan pembaruan.
+    </p>
+</article>
+
+<hr>
+
 <p style="margin: 40px;">*Iklan</p>
 <script async="async" data-cfasync="false" src="https://pitofficialfollower.com/26935b6baded7cceabda028fed0435e1/invoke.js"></script>
 <div id="container-26935b6baded7cceabda028fed0435e1"></div>
 
-<br><hr>
+<br>
 
         <section style="padding:40px 20px; background:#f9f9f9;" id="navigation">
             <h3 style="margin-bottom:20px;">Navigasi</h3>
@@ -1218,6 +1271,12 @@ console.log('Halo dunia!');
                 style="padding:12px 16px; background:white; border-radius:8px; 
                 text-decoration:none; color:#222; border:1px solid #eee;">
                 Generate Komponen HTML
+                </a>
+
+                <a href="html-editor.html" 
+                style="padding:12px 16px; background:white; border-radius:8px; 
+                text-decoration:none; color:#222; border:1px solid #eee;">
+                Editor HTML
                 </a>
 
                 <a href="builded-site.html"
