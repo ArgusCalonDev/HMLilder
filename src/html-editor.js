@@ -1,6 +1,8 @@
 // === DOM ===
 const codeInput = document.getElementById('code-input');
 const codeOutput = document.getElementById('output');
+// download button
+const downloadBtn = document.getElementById('download-btn');
 
 // === FUNCTIONS ===
 function updateOutput() {
@@ -21,8 +23,54 @@ function updateOutput() {
     codeOutput.appendChild(iframe);
 }
 
+// ===== DOWNLOAD HTML FILE FUNCTION =====
+function downloadHTMLFile() {
+    // AMBIL DARI TEXTAREA, BUKAN DARI OUTPUT
+    const code = codeInput.value;
+
+    if (!code.trim()) {
+        alert('❌ Tidak ada kode HTML untuk didownload!');
+        return;
+    }
+
+    const filename = `index.html`;
+
+    // Create blob and download link
+    const blob = new Blob([code], { type: 'text/html' });
+    const url = URL.createObjectURL(blob);
+
+    // Create temporary anchor element
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    a.style.display = 'none';
+
+    // Trigger download
+    document.body.appendChild(a);
+    a.click();
+
+    // Cleanup
+    setTimeout(() => {
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+
+        // Show success feedback
+        const downloadBtn = document.getElementById('download-btn'); // ID yang benar
+        const originalHTML = downloadBtn.innerHTML;
+        downloadBtn.innerHTML = '✓ Berhasil Download!';
+        downloadBtn.style.background = '#06d6a0';
+
+        setTimeout(() => {
+            downloadBtn.innerHTML = originalHTML;
+            downloadBtn.style.background = '';
+        }, 2000);
+
+    }, 100);
+}
+
 // === EVENT LISTENERS ===
 codeInput.addEventListener('input', updateOutput);
+downloadBtn.addEventListener('click', downloadHTMLFile);
 
 // Event listener untuk perubahan ukuran
 codeInput.addEventListener('input', updateOutput);
