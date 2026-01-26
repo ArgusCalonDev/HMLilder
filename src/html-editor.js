@@ -78,5 +78,14 @@ codeInput.addEventListener('input', updateOutput);
 // Initial output update
 updateOutput();
 
+// function init
+function init() {
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+}
+
 // Tambahkan juga event listener untuk resize (opsional)
 window.addEventListener('resize', updateOutput);
+
+// dom content loaded
+document.addEventListener('DOMContentLoaded', init);
