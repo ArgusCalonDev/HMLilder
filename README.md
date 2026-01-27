@@ -10,4 +10,4 @@ Component generator membantu membuat komponen website HTML berupa snippet (poton
 3. Online HTML Editor
 Online HTML Editor memungkinkan kamu mengedit kode HTML kamu secara online, tanpa menginstal editor kode di komputer kamu. 
 
-Untuk kolaborasi HMLilder, kamu dapat membaca file **How-To-Collab.md** untuk panduan.
+Untuk kolaborasi HMLilder, kamu dapat membaca file **How-To-Collab.md** untuk panduan. Baca juga file **Rules.md** untuk peraturan dalam kolaborasi.
