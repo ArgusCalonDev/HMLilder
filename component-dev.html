@@ -721,53 +721,85 @@
     }
     
     // Buat output HTML
-    const outputHTML = `
-      <h2 class="panel-title"><i class="fas fa-code"></i> ${component.name}</h2>
-      <p style="color: #666; margin-bottom: 20px;">${component.description}</p>
-      
-      <div style="background: #f8f9fa; border-radius: 10px; padding: 20px; margin-bottom: 20px; border-left: 4px solid #4361ee;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-          <h3 style="margin: 0; color: #2b2d42;">
-            <i class="fas fa-cube"></i> Preview Komponen
-          </h3>
-          <small style="color: #6c757d;">${component.name}</small>
-        </div>
-        <div id="component-preview" style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; background: white; overflow: auto;">
-          ${component.html}
-        </div>
-      </div>
+const outputHTML = `
+  <h2 class="panel-title">
+    <i class="fas fa-code"></i> ${component.name}
+  </h2>
 
-      <div style="background: #1e1e1e; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-          <h3 style="margin: 0; color: #fff;">
-            <i class="fas fa-file-code"></i> Kode HTML
-          </h3>
-          <button id="copyBtn" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">
-            <i class="fas fa-copy"></i> Salin Kode
-          </button>
-        </div>
-        <pre id="code-output" style="background: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow: auto; font-family: 'Courier New', monospace; font-size: 14px; margin: 0; white-space: pre-wrap;">
-${escapeHTML(component.html)}</pre>
-      </div>
-      
-      <div style="background: #e3f2fd; border-radius: 10px; padding: 15px; border-left: 4px solid #2196f3;">
-        <h4 style="margin: 0 0 10px 0; color: #0d47a1;">
-          <i class="fas fa-lightbulb"></i> Cara Pakai
-        </h4>
-        <ol style="margin: 0; padding-left: 20px; color: #1565c0;">
-          <li>Salin kode HTML di atas</li>
-          <li>Tempelkan pada file HTML Anda</li>
-          <li>Customize sesuai kebutuhan</li>
-          <li>Simpan dan lihat hasilnya!</li>
-        </ol>
-      </div>
-    `;
+  <p style="color: #666; margin-bottom: 20px;">
+    ${component.description}
+  </p>
+
+  <!-- PREVIEW -->
+  <div style="background: #f8f9fa; border-radius: 10px; padding: 20px; margin-bottom: 20px; border-left: 4px solid #4361ee;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+      <h3 style="margin: 0; color: #2b2d42;">
+        <i class="fas fa-cube"></i> Preview Komponen
+      </h3>
+      <small style="color: #6c757d;">${component.name}</small>
+    </div>
+
+    <div id="component-preview" style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; background: white; overflow: auto;">
+      <style>
+        ${component.css}
+      </style>
+      ${component.html}
+    </div>
+  </div>
+
+  <!-- HTML CODE -->
+  <div style="background: #1e1e1e; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+      <h3 style="margin: 0; color: #fff;">
+        <i class="fas fa-file-code"></i> Kode HTML
+      </h3>
+      <button id="copyHtmlBtn" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">
+        <i class="fas fa-copy"></i> Salin HTML
+      </button>
+    </div>
+
+    <pre style="background: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow: auto; font-family: 'Courier New', monospace; font-size: 14px; margin: 0;">
+${escapeHTML(component.html)}
+    </pre>
+  </div>
+
+  <!-- CSS CODE -->
+  <div style="background: #0f172a; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+      <h3 style="margin: 0; color: #e5e7eb;">
+        <i class="fab fa-css3-alt"></i> Kode CSS
+      </h3>
+      <button id="copyCssBtn" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.9rem;">
+        <i class="fas fa-copy"></i> Salin CSS
+      </button>
+    </div>
+
+    <pre style="background: #020617; color: #e5e7eb; padding: 15px; border-radius: 5px; overflow: auto; font-family: 'Courier New', monospace; font-size: 14px; margin: 0;" id="css-output">
+${escapeHTML(component.css)}
+    </pre>
+  </div>
+
+  <!-- CARA PAKAI -->
+  <div style="background: #e3f2fd; border-radius: 10px; padding: 15px; border-left: 4px solid #2196f3;">
+    <h4 style="margin: 0 0 10px 0; color: #0d47a1;">
+      <i class="fas fa-lightbulb"></i> Cara Pakai
+    </h4>
+    <ol style="margin: 0; padding-left: 20px; color: #1565c0;">
+      <li>Salin kode HTML</li>
+      <li>Salin kode CSS</li>
+      <li>Tempel CSS ke file <code>&lt;style&gt;</code> atau file .css</li>
+      <li>Sesuaikan class sesuai kebutuhan</li>
+    </ol>
+  </div>
+`;
+
     
     // Update output panel
     outputPanel.innerHTML = outputHTML;
     
     // Setup copy button
     setupCopyButton();
+    setupCopyCssButton
     
     console.log(`✅ ${component.name} code generated`);
   }
@@ -813,6 +845,38 @@ ${escapeHTML(component.html)}</pre>
       });
     }
   }
+
+function setupCopyCssButton() {
+  const copyCssBtn = document.getElementById('copyCssBtn');
+  const cssOutput = document.getElementById('css-output');
+
+  if (copyCssBtn && cssOutput) {
+    copyCssBtn.addEventListener('click', function () {
+      // Ambil teks CSS apa adanya
+      const textToCopy = cssOutput.textContent;
+
+      navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+          // Feedback visual
+          const originalHTML = copyCssBtn.innerHTML;
+          copyCssBtn.innerHTML = '<i class="fas fa-check"></i> Tersalin!';
+          copyCssBtn.style.background = '#38bdf8';
+
+          setTimeout(() => {
+            copyCssBtn.innerHTML = originalHTML;
+            copyCssBtn.style.background = '';
+          }, 2000);
+
+          console.log('✅ CSS copied to clipboard');
+        })
+        .catch(err => {
+          console.error('❌ Failed to copy CSS:', err);
+          alert('Gagal menyalin CSS. Coba salin manual dari kotak kode.');
+        });
+    });
+  }
+}
+
 
   function updateComponentDescription() {
     const component = components[currentComponent];
