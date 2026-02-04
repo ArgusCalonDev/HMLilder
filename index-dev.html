@@ -598,59 +598,83 @@ img {
     <p>Artikel di halaman ini (klik salah satu link untuk melihat artikel):</p>
     <ul id="articleIndex">
         <li><a href="#HTMLAdalah">Apa itu HTML?</a></li>
-        <li><a href="#tutorialHTML">Bagaimana cara membuat website HTML? (HTML dasar)</a></li>
+        <li><a href="#tutorialHTML">Panduan HTML Dasar</a></li>
         <li><a href="#tutorialDeployWebsite">Bagaimana Cara Membuat Website HTML Agar Bisa Diakses Orang Lain?</a></li>
         <li><a href="#domainAdalah">Apa itu domain?</a></li>
         <li><a href="#navigasi">Bagaimana cara memberikan navigasi pada halaman HTML? (navigasi website)</a></li>
-        <li><a href="#tutorialCSS">Bagaimana cara memperbagus tampilan website HTML? (CSS dasar)</a></li>
+        <li><a href="#CSS">Bagaimana cara memperbagus tampilan website HTML?</a></li>
+        <li><a href="#cssDasar">Panduan CSS Dasar</a></li>
         <li><a href="#caraMemakaiAI">Cara memakai AI untuk membantu pemrograman.</a></li>
-        <li><a href="#caraMinifyHTML">Mengapa Ukuran File HTML membesar?</a></li>
         <li><a href="#cacheAdalah">Apa itu cache?</a></li>
     </ul>
 
     <hr>
 <article id="HTMLAdalah" class="post" style="margin-top: 100px;">
-    <h1 style="justify-self: center;">
-        Apa itu HTML?
-    </h1>
+    <h1 style="justify-self: center;">Apa itu HTML?</h1>
 
     <p>
-        HTML (HyperText Markup Language) adalah bahasa markup dasar yang digunakan untuk membuat dan menyusun struktur halaman website. HTML berfungsi untuk menentukan elemen-elemen utama dalam sebuah halaman, seperti judul, paragraf, gambar, tautan, tabel, dan formulir, agar dapat ditampilkan dengan benar di browser.
-        Dengan HTML, pengembang dapat mengatur struktur dan urutan konten pada halaman website, namun HTML tidak digunakan untuk mengatur tampilan visual atau interaksi lanjutan.
+        HTML (HyperText Markup Language) adalah bahasa markup dasar yang digunakan
+        untuk membangun <strong>struktur</strong> sebuah halaman website.
+        HTML tidak berfungsi untuk mempercantik tampilan atau menambahkan logika interaktif,
+        melainkan untuk menyusun <em>kerangka informasi</em> agar bisa dipahami dengan baik
+        oleh browser, mesin pencari, dan manusia.
     </p>
 
     <p>
-        Oleh karena itu, HTML biasanya digunakan bersama CSS untuk mengatur tampilan, serta JavaScript untuk menambahkan interaksi pada website.
+        Dalam praktik jangka panjang, HTML bukan sekadar kumpulan tag.
+        HTML adalah cara berpikir tentang bagaimana konten disusun:
+        mana yang judul, mana yang paragraf, mana yang navigasi,
+        dan mana yang hanya pelengkap visual.
+        Struktur yang baik akan mempermudah perawatan website,
+        meningkatkan aksesibilitas, dan membuat pengembangan lanjutan
+        jauh lebih aman.
     </p>
 
-    <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/1YSPsCG8/Call-Me-Fred-Boutique-Marketing-Agency.jpg" alt="Call Me Fred Boutique Marketing Agency" border="0" style="justify-self: center;"></a>
+    <p>
+        HTML biasanya dipadukan dengan CSS untuk mengatur tampilan visual,
+        serta JavaScript untuk menambahkan interaksi.
+        Namun penting dipahami: CSS dan JavaScript yang baik
+        hampir selalu bergantung pada struktur HTML yang rapi dan konsisten.
+    </p>
+
+    <a href="https://imgbb.com/">
+        <img src="https://i.ibb.co.com/1YSPsCG8/Call-Me-Fred-Boutique-Marketing-Agency.jpg"
+             alt="Call Me Fred Boutique Marketing Agency"
+             border="0"
+             style="justify-self: center;">
+    </a>
 </article>
 
 <article id="tutorialHTML" class="post" style="margin-top: 100px;">
-    <h1 style="justify-self: center;">
-        Bagaimana Cara Membuat Website HTML?
-    </h1>
+    <h1 style="justify-self: center;">Panduan membuat halaman HTML Dasar</h1>
 
-    <h2>Berikut adalah langkah-langkah membuat website HTML dasar untuk pemula.</h2>
+    <p>
+        Membuat website HTML tidak membutuhkan software mahal atau alat khusus.
+        Yang dibutuhkan hanyalah editor teks, browser, dan pemahaman dasar
+        tentang struktur dokumen HTML.
+        Fokus utama di tahap awal adalah <strong>keterbacaan dan kerapian struktur</strong>,
+        bukan tampilan visual.
+    </p>
+
+    <h2>Langkah Dasar Membuat Website HTML</h2>
 
     <ol>
         <li>
             <strong>Pilih Editor Teks</strong><br>
-            Gunakan editor teks seperti Notepad (Windows), TextEdit (Mac),
-            atau editor kode seperti Visual Studio Code, Sublime Text, dan Atom.
+            Kamu bisa menggunakan editor bawaan seperti Notepad atau TextEdit,
+            namun editor kode seperti Visual Studio Code lebih disarankan
+            karena membantu penulisan kode dengan rapi dan minim kesalahan.
         </li>
 
-        <img
-            src="public/vscode-icon_11zon.png?v=1"
-            alt="Visual Studio Code"
-            style="max-width: 100px; max-height: 100px;"
-        >
+        <img src="public/vscode-icon_11zon.png?v=1"
+             alt="Visual Studio Code"
+             style="max-width: 100px; max-height: 100px;">
 
         <li>
             <strong>Buat File HTML Baru</strong><br>
-            Buat file baru dan simpan dengan ekstensi <code>.html</code>.
-            Jika file ini adalah halaman utama (beranda), beri nama
-            <code>index.html</code>.
+            Simpan file dengan ekstensi <code>.html</code>.
+            Untuk halaman utama website, gunakan nama <code>index.html</code>
+            karena ini adalah standar yang dikenali oleh hampir semua server.
         </li>
 
         <li>
@@ -670,79 +694,73 @@ img {
             </pre>
         </li>
 
-        <img
-            src="public/html_11zon.png?v=1"
-            alt="Contoh kode HTML"
-            style="max-width: 600px; max-height: 400px;"
-        >
+        <img src="public/html_11zon.png?v=1"
+             alt="Contoh kode HTML"
+             style="max-width: 600px; max-height: 400px;">
 
         <li>
-            <strong>Penjelasan Tiap Bagian</strong><br>
-            <code>&lt;!DOCTYPE html&gt;</code> → Menandakan bahwa dokumen ini adalah HTML.<br>
-            <code>&lt;html lang="id"&gt;</code> → Elemen utama HTML, dengan bahasa Indonesia sebagai default.<br>
-            <code>&lt;head&gt;</code> → Bagian kepala halaman (tidak tampil di layar).<br>
-            <code>&lt;meta charset="UTF-8"&gt;</code> → Agar halaman mendukung karakter unik dan emoji.<br>
-            <code>&lt;meta viewport&gt;</code> → Membuat tampilan responsif di perangkat mobile.<br>
-            <code>&lt;title&gt;</code> → Judul halaman di tab browser.<br>
-            <code>&lt;body&gt;</code> → Bagian utama yang berisi konten halaman.<br>
-            <code>&lt;h1&gt;</code> → Judul utama halaman.<br>
+            <strong>Makna Setiap Bagian</strong><br>
+            HTML bekerja seperti dokumen formal.
+            Setiap bagian memiliki peran yang jelas:
+            <br><br>
+            <code>&lt;!DOCTYPE html&gt;</code> → Menandakan standar HTML modern.<br>
+            <code>&lt;html lang="id"&gt;</code> → Bahasa utama konten halaman.<br>
+            <code>&lt;head&gt;</code> → Informasi halaman untuk browser dan mesin pencari.<br>
+            <code>&lt;meta charset="UTF-8"&gt;</code> → Mendukung karakter internasional.<br>
+            <code>&lt;meta viewport&gt;</code> → Kunci tampilan responsif.<br>
+            <code>&lt;title&gt;</code> → Identitas halaman di tab browser.<br>
+            <code>&lt;body&gt;</code> → Semua konten yang terlihat pengguna.
         </li>
 
         <li>
-            <strong>Simpan dan Buka File</strong><br>
-            Simpan file dengan nama <code>index.html</code>, lalu buka dengan cara
-            klik dua kali. Pastikan nama file bukan <code>index.html.txt</code>.
-        </li>
-
-        <li>
-            <strong>Tag HTML Penting Lainnya</strong><br>
-            <code>&lt;h1&gt; - &lt;h6&gt;</code> → Judul (semakin besar angka, semakin kecil ukurannya).<br>
-            <code>&lt;p&gt;</code> → Paragraf.<br>
-            <code>&lt;style&gt;</code> → Mengatur tampilan dengan CSS (di dalam <code>&lt;head&gt;</code>).<br>
-            <code>&lt;img&gt;</code> → Menampilkan gambar.<br>
-            <code>&lt;a&gt;</code> → Membuat tautan (link).<br>
-            <code>&lt;ul&gt;</code> → List tidak berurutan.<br>
-            <code>&lt;ol&gt;</code> → List berurutan.<br>
-            <code>&lt;li&gt;</code> → Item dalam list.<br>
-            <code>&lt;br&gt;</code> → Baris baru.<br>
-            <code>&lt;hr&gt;</code> → Garis horizontal.
+            <strong>Simpan dan Jalankan</strong><br>
+            Buka file HTML langsung di browser.
+            Pastikan ekstensi file benar dan tidak ganda
+            seperti <code>.html.txt</code>.
         </li>
     </ol>
 
     <p>
-        <strong>Tips:</strong> Gunakan page builder agar lebih mudah saat pertama kali
-        belajar HTML.
-        <a href="builder.html">Klik di sini untuk menggunakan page builder</a>
+        <strong>Catatan penting:</strong>
+        HTML yang rapi sejak awal akan sangat membantu
+        ketika website berkembang menjadi besar.
+        Hindari kebiasaan asal menulis tag tanpa struktur.
     </p>
 
     <p>
-        Itu dia cara membuat website HTML dasar untuk pemula.
-        Selanjutnya: cara membuat website HTML agar bisa diakses orang lain.
+        Untuk latihan awal, kamu bisa menggunakan page builder
+        agar fokus memahami struktur tanpa terganggu detail teknis.
+        <a href="builder.html">Gunakan page builder</a>
     </p>
 </article>
 
 <article id="tutorialDeployWebsite">
-    <h2>Bagaimana Cara Membuat Website HTML Agar Bisa Diakses Orang Lain?</h2>
+    <h2>Bagaimana Cara Membuat Website HTML Bisa Diakses Orang Lain?</h2>
 
     <p>
-        Agar website HTML bisa diakses orang lain, kamu perlu mengunggahnya ke layanan hosting.
-        Untuk tujuan belajar atau website pribadi, kamu bisa menggunakan hosting gratis.
+        File HTML di komputer hanya bisa diakses secara lokal.
+        Agar website dapat diakses oleh orang lain,
+        file tersebut harus diunggah ke layanan hosting.
+    </p>
+
+    <p>
+        Untuk belajar dan proyek personal,
+        layanan hosting gratis sudah lebih dari cukup.
+        Beberapa layanan populer:
     </p>
 
     <ol>
         <li>GitHub Pages — <a href="https://github.com">github.com</a></li>
-        <li>Netlify (Free Tier) — <a href="https://netlify.com">netlify.com</a></li>
-        <li>Vercel Hobby — <a href="https://vercel.com">vercel.com</a></li>
+        <li>Netlify — <a href="https://netlify.com">netlify.com</a></li>
+        <li>Vercel — <a href="https://vercel.com">vercel.com</a></li>
         <li>Firebase Hosting — <a href="https://firebase.google.com">firebase.google.com</a></li>
         <li>Cloudflare Pages — <a href="https://pages.cloudflare.com">pages.cloudflare.com</a></li>
-        <li>Surge — <a href="https://surge.sh">surge.sh</a></li>
-        <li>InfinityFree — <a href="https://infinityfree.com">infinityfree.com</a></li>
-        <li>GoogieHost — <a href="https://googiehost.com">googiehost.com</a></li>
     </ol>
 
     <p>
-        Untuk website bisnis atau website dengan performa tinggi,
-        disarankan menggunakan hosting berbayar.
+        Untuk kebutuhan bisnis atau performa tinggi,
+        hosting berbayar lebih disarankan karena stabilitas,
+        kontrol penuh, dan dukungan teknis.
     </p>
 </article>
 
@@ -750,486 +768,253 @@ img {
     <h2 style="justify-self: center;">Apa Itu Domain?</h2>
 
     <p>
-        Domain adalah alamat website agar dapat diakses dengan mudah oleh orang lain.
-        Domain terdiri dari dua bagian utama:
+        Domain adalah alamat unik sebuah website di internet.
+        Domain berfungsi sebagai pengganti alamat IP
+        agar website mudah diingat dan diakses.
     </p>
 
     <ul>
         <li>
             <strong>Custom Domain</strong>
             <p>
-                Custom domain adalah alamat website khusus seperti
-                <code>google.com</code>, <code>archive.org</code>, dan <code>itch.io</code>.
+                Domain seperti <code>google.com</code> atau <code>itch.io</code>.
+                Cocok untuk website profesional dan jangka panjang.
             </p>
-
-            <ol>
-                <li>
-                    <strong>.com</strong><br>
-                    Domain paling umum dan cocok untuk hampir semua jenis website.
-                </li>
-                <li>
-                    <strong>.id</strong><br>
-                    Domain Indonesia, termasuk <code>.my.id</code>, <code>.web.id</code>.
-                </li>
-                <li>
-                    <strong>.org</strong><br>
-                    Domain organisasi dan banyak digunakan oleh proyek open source.
-                </li>
-            </ol>
         </li>
 
         <li style="margin-top: 50px;">
             <strong>Subdomain</strong>
             <p>
-                Subdomain adalah bagian depan dari domain, seperti
-                <code>www.situsanda.com</code> atau <code>blog.situsanda.com</code>.
-                Pada beberapa layanan hosting gratis, subdomain digunakan sebagai
-                alamat website, misalnya <code>situsanda.pages.dev</code>.
+                Subdomain adalah bagian tambahan di depan domain,
+                seperti <code>blog.situsanda.com</code>.
+                Banyak hosting gratis menggunakan subdomain.
             </p>
         </li>
     </ul>
 
     <p>
-        Itulah tutorial dasar HTML dari membuat file hingga mempublikasikannya.
-        Selamat mengerjakan proyek website pertamamu!
-        Jika ada pertanyaan, tulis di kolom komentar dengan awalan
-        <strong>"Pertanyaan tutorial HTML dasar: ..."</strong>
-        <a href="#disqus_thread">Klik di sini</a>
+        Pemilihan domain yang baik membantu membangun identitas
+        dan kredibilitas website dalam jangka panjang.
     </p>
 </article>
 
 <article id="navigasi" class="post" style="margin-top: 250px;">
-    <h1 style="justify-self: center;">
-        Bagaimana Cara Memberikan Navigasi pada Halaman HTML?
-    </h1>
+    <h1 style="justify-self: center;">Bagaimana Cara Memberikan Navigasi pada HTML?</h1>
 
     <p>
-        Navigasi pada halaman HTML berfungsi untuk berpindah dari satu halaman
-        ke halaman lain, atau menuju website lain. Navigasi dasar dapat dibuat
-        menggunakan <strong>link</strong> dan <strong>tombol</strong>.
+        Navigasi adalah fondasi pengalaman pengguna.
+        Navigasi yang jelas membuat website mudah digunakan,
+        sedangkan navigasi buruk membuat pengguna cepat pergi.
     </p>
 
     <ul>
         <li>
             <strong>Link</strong>
-            <p>
-                Link adalah cara paling umum untuk membuat navigasi.
-                Kamu dapat menggunakan tag <code>&lt;a&gt;</code>.
-                Contohnya, untuk berpindah ke halaman lain dalam satu website:
-            </p>
-
             <pre>
 &lt;a href="halaman.html"&gt;Halaman Lain&lt;/a&gt;
             </pre>
-
-            <p>
-                Jika ingin menuju ke website lain:
-            </p>
-
-            <pre>
-&lt;a href="https://namadomain.com"&gt;Website Lain&lt;/a&gt;
-            </pre>
-
-            <img
-                src="public/test-hyperlink.png?v=1"
-                alt="Contoh hyperlink HTML"
-                style="max-width: 600px; max-height: 400px;"
-            >
         </li>
 
         <li style="margin-top: 50px;">
             <strong>Tombol</strong>
-            <p>
-                Selain link, navigasi juga dapat dibuat menggunakan tombol.
-                Tombol biasanya dikombinasikan dengan JavaScript sederhana
-                menggunakan atribut <code>onclick</code>.
-            </p>
-
-            <p>
-                Contoh tombol untuk menuju halaman lain:
-            </p>
-
             <pre>
-&lt;button onclick="window.location.href='halaman-lain.html'"&gt;
-    Klik!
+&lt;button onclick="window.location.href='halaman.html'"&gt;
+    Klik
 &lt;/button&gt;
             </pre>
-
-            <p>
-                Contoh tombol untuk menuju website lain:
-            </p>
-
-            <pre>
-&lt;button onclick="window.location.href='https://website.com'"&gt;
-    Klik!
-&lt;/button&gt;
-            </pre>
-
-            <img
-                src="public/test-button.png?v=1"
-                alt="Contoh tombol navigasi HTML"
-                style="max-width: 600px; max-height: 400px;"
-            >
         </li>
     </ul>
 
     <p>
-        Tampilan link dan tombol dapat diatur menggunakan CSS agar terlihat
-        lebih menarik dan konsisten dengan desain website.
-        Itulah cara membuat navigasi dasar pada halaman HTML.
-    </p>
-
-    <p>
-        Jika kamu memiliki pertanyaan, silakan tulis di
-        <a href="#disqus_thread">kolom komentar</a>
-        dengan awalan
-        <strong>"Pertanyaan tutorial navigasi dasar: ..."</strong>
+        Untuk website profesional, navigasi sebaiknya konsisten,
+        mudah dipahami, dan tidak bergantung sepenuhnya pada JavaScript.
     </p>
 </article>
 
-<article id="tutorialCSS" class="post" style="margin-top: 250px;">
-    <h1 style="margin-bottom: 50px; justify-self: center;">
-        Cara Memperbagus Tampilan Website HTML dengan CSS
-    </h1>
+<article id="CSS" class="post" style="margin-top: 250px;">
+    <h1 style="justify-self: center;">Memperindah HTML dengan CSS</h1>
 
     <p>
-        Untuk memperbagus tampilan website HTML, kamu dapat menggunakan CSS. CSS (Cascading Style Sheets) adalah bahasa stylesheet yang digunakan untuk mengatur tampilan dan tata letak halaman website, seperti warna, ukuran teks, jarak, dan posisi elemen HTML. 
-        Salah satu cara paling dasar adalah dengan menuliskan CSS langsung 
-        di dalam tag <code>&lt;style&gt;</code> yang berada di dalam tag <code>&lt;head&gt;</code>.
-        Berikut contoh penggunaannya:
+        CSS digunakan untuk mengatur tampilan visual website.
+        HTML yang baik tanpa CSS akan terlihat polos,
+        dan CSS yang baik tanpa HTML yang rapi akan sulit dirawat.
     </p>
 
-    <br>
+    <p>
+        Untuk jangka panjang, CSS sebaiknya dipisahkan
+        ke file eksternal agar kode lebih bersih dan mudah dikelola.
+    </p>
+</article>
+
+<article id="cssDasar" class="post" style="margin-top: 250px;">
+    <h1 style="justify-self: center; margin-bottom: 100px;">Panduan Dasar CSS untuk Website yang Rapi & Tahan Lama</h1>
+
+    <p>
+        CSS (Cascading Style Sheets) adalah bahasa yang digunakan
+        untuk mengatur tampilan visual dari struktur HTML.
+        Jika HTML adalah kerangka,
+        maka CSS adalah cara kita mengatur bagaimana kerangka itu terlihat
+        dan dirasakan oleh pengguna.
+    </p>
+
+    <p>
+        CSS yang baik bukan soal membuat tampilan paling ramai,
+        tapi soal konsistensi, keterbacaan,
+        dan kemudahan perawatan saat website berkembang.
+        Banyak masalah jangka panjang pada website
+        berawal dari CSS yang ditulis tanpa pola.
+    </p>
+
+    <h2>Menghubungkan CSS ke HTML</h2>
+
+    <p>
+        Praktik paling sehat adalah memisahkan CSS ke file tersendiri.
+        Ini membuat kode lebih bersih dan mudah dikembangkan.
+    </p>
 
     <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="id"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Judul Halaman&lt;/title&gt;
-
-    &lt;style&gt;
-        /* Style untuk seluruh halaman */
-        body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-
-        /* Style untuk judul */
-        h1 {
-            color: #4361ee;
-            text-align: center;
-        }
-
-        /* Style untuk paragraf */
-        p {
-            line-height: 1.6;
-            margin: 20px;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;h1&gt;Halo, Dunia!&lt;/h1&gt;
-    &lt;p&gt;Ini adalah paragraf pertama di halaman HTML saya.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
     </pre>
 
     <p>
-        Contoh di atas menunjukkan penggunaan CSS paling dasar untuk mempercantik tampilan website HTML. 
-        Selanjutnya, berikut beberapa properti CSS dasar yang sering digunakan untuk mengatur tampilan website.
+        Dengan cara ini, struktur HTML tetap fokus pada konten,
+        sementara CSS fokus pada tampilan.
     </p>
 
-    <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/m5ZNNNFL/Css-3-free-icons-designed-by-Freepik.jpg" alt="Css 3 free icons designed by Freepik" border="0"></a>
-
-    <ul>
-        <li><strong>color</strong>: Mengatur warna teks. Contoh: black, red, blue.</li>
-        <li><strong>background-color</strong>: Mengatur warna latar belakang. Contoh: black, white, pink.</li>
-        <li><strong>font-family</strong>: Mengatur jenis font. Contoh: Arial, Times New Roman, Courier New.</li>
-        <li><strong>font-size</strong>: Mengatur ukuran teks. Contoh: 15px.</li>
-        <li><strong>text-align</strong>: Mengatur perataan teks. Contoh: left, center, right.</li>
-        <li><strong>margin</strong>: Mengatur jarak di luar elemen. Contoh: 10px, 20px.</li>
-        <li><strong>padding</strong>: Mengatur jarak di dalam elemen. Contoh: 10px, 20px.</li>
-        <li><strong>justify-self</strong>: Mengatur posisi satu elemen tertentu (pada grid/flex). Contoh: center, start, end.</li>
-        <li><strong>justify-content</strong>: Mengatur posisi seluruh elemen di dalam container. Contoh: center, start, end.</li>
-        <li><strong>justify-items</strong>: Mengatur posisi elemen di dalam ruang masing-masing. Contoh: center, start, end.</li>
-    </ul>
+    <h2>Selector Elemen</h2>
 
     <p>
-        Untuk menerapkan properti CSS tersebut ke elemen HTML, 
-        cukup tuliskan nama elemen lalu tambahkan properti CSS di dalam tag <code>&lt;style&gt;</code>.
-        Contohnya, jika ingin mengatur tampilan elemen <code>&lt;body&gt;</code>:
+        Selector elemen digunakan untuk memberi gaya
+        langsung ke tag HTML tertentu.
+        Cocok untuk gaya umum dan global.
     </p>
 
     <pre>
-body {
-    /* warna teks */
-    color: black;
+h1 {
+    color: #333;
+    font-size: 32px;
+}
 
-    /* warna latar belakang */
-    background-color: white;
-
-    /* jenis font */
-    font-family: Arial, sans-serif;
+p {
+    line-height: 1.6;
+    color: #555;
 }
     </pre>
 
     <p>
-        Itulah beberapa properti CSS dasar yang penting untuk memperbagus tampilan website HTML, 
-        beserta contoh penerapannya. Semoga bermanfaat!
-        Jika kamu memiliki pertanyaan terkait artikel ini, silakan tulis di kolom komentar dengan awalan
-        <strong>"Pertanyaan tutorial CSS dasar: ..."</strong>.
-        Kolom komentar: <a href="#disqus_thread">klik di sini</a>
+        Gunakan selector elemen untuk aturan dasar.
+        Hindari memberi terlalu banyak aturan spesifik di level ini,
+        karena bisa menyulitkan penyesuaian di masa depan.
+    </p>
+
+    <h2>Menggunakan Class</h2>
+
+    <p>
+        Class adalah cara paling fleksibel dalam CSS.
+        Dengan class, satu gaya bisa digunakan ulang
+        di banyak elemen tanpa mengikat ke struktur tertentu.
+    </p>
+
+    <pre>
+&lt;div class="card"&gt;
+    &lt;h2&gt;Judul&lt;/h2&gt;
+    &lt;p&gt;Isi konten&lt;/p&gt;
+&lt;/div&gt;
+    </pre>
+
+    <pre>
+.card {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+}
+    </pre>
+
+    <p>
+        Biasakan memberi nama class berdasarkan fungsi,
+        bukan tampilan.
+        Nama seperti <code>.card</code>, <code>.container</code>,
+        atau <code>.button</code> lebih tahan lama
+        dibanding <code>.kotak-abu</code> atau <code>.teks-besar</code>.
+    </p>
+
+    <h2>Menggabungkan Elemen dan Class</h2>
+
+    <p>
+        Untuk kontrol yang lebih rapi,
+        CSS bisa menargetkan elemen tertentu di dalam class.
+        Ini membantu menjaga struktur tetap jelas
+        tanpa perlu class berlebihan.
+    </p>
+
+    <pre>
+.card h2 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+}
+    </pre>
+
+    <p>
+        Pendekatan ini membuat CSS mudah dibaca
+        dan mencerminkan struktur HTML yang sebenarnya.
+    </p>
+
+    <h2>Catatan Penting untuk Jangka Panjang</h2>
+
+    <ul>
+        <li>Jangan terlalu sering memakai selector yang terlalu panjang</li>
+        <li>Gunakan class sebagai alat utama styling</li>
+        <li>Hindari inline CSS kecuali benar-benar darurat</li>
+        <li>Tulis CSS seolah orang lain akan membacanya nanti</li>
+    </ul>
+
+    <p>
+        CSS yang rapi tidak terasa efeknya di proyek kecil,
+        tapi akan sangat terasa ketika website tumbuh,
+        tim bertambah, atau desain berubah.
     </p>
 </article>
+
 
 <article id="caraMemakaiAI" style="margin-top: 250px;">
-    <h1 style="margin-bottom: 50px; justify-self: center;">
-        Cara Menggunakan AI untuk Membantu Pemrograman
-    </h1>
+    <h1 style="justify-self: center;">Cara Menggunakan AI untuk Membantu Pemrograman</h1>
 
     <p>
-        Saat ini, banyak programmer memanfaatkan teknologi AI untuk membantu proses pengembangan proyek. 
-        Namun, tidak sedikit juga—terutama pemula—yang keliru dalam menggunakan AI untuk coding. 
-        Oleh karena itu, artikel ini akan membahas cara memakai AI untuk membantu pemrograman dengan baik dan benar.
-    </p>
-
-    <br>
-
-    <h2>1. Gunakan Prompt dengan Bahasa yang Jelas dan Mendetail</h2>
-
-    <p>
-        Prompt berperan penting dalam menentukan hasil yang diberikan oleh AI. 
-        Jika prompt terlalu singkat atau tidak jelas, kode yang dihasilkan berpotensi error 
-        atau tidak sesuai dengan ekspektasi. Semakin jelas prompt yang diberikan, semakin baik pula hasilnya.
+        AI dapat membantu mempercepat proses coding,
+        namun tidak menggantikan pemahaman konsep.
+        Gunakan AI sebagai asisten,
+        bukan sebagai pengganti belajar.
     </p>
 
     <p>
-        Berikut contoh prompt AI yang baik, misalnya untuk membuat website profil pribadi:
-    </p>
-
-    <br>
-
-    <p>
-        "Saya ingin membuat website profil pribadi dengan tema terang (light theme), 
-        font modern, dan animasi sederhana. Website ini memiliki konten sebagai berikut:
-    </p>
-    <p>1. ...</p>
-    <p>2. ...</p>
-    <p>... (dan seterusnya)</p>
-    <p>
-        Tolong berikan struktur folder dan file, beserta potongan kode (snippet). 
-        Sertakan penjelasan pada setiap bagian. Jangan gunakan framework tertentu."
-    </p>
-
-    <br>
-
-    <p>
-        Sebaliknya, berikut contoh prompt yang kurang tepat:
-    </p>
-
-    <br>
-
-    <p>
-        "Buatkan saya sebuah website pribadi"
-    </p>
-
-    <br>
-
-    <p>
-        Hal-hal penting yang perlu diperhatikan saat membuat prompt yang baik:
-    </p>
-
-    <ul>
-        <li>Konteks yang jelas</li>
-        <li>Detail kebutuhan</li>
-        <li>Batasan atau aturan</li>
-    </ul>
-
-    <br>
-
-    <h2>2. Gunakan Metode "Copy – Paste – Modifikasi"</h2>
-
-    <p>
-        Metode ini berarti menyalin kode yang dihasilkan oleh AI, 
-        menempelkannya ke dalam proyek, lalu memodifikasinya sesuai kebutuhan. 
-        Cara ini tergolong sehat dalam penggunaan AI untuk coding.
-    </p>
-
-    <p>
-        AI membantu menghemat waktu dalam menulis kode, 
-        sementara kita tetap belajar dengan memahami dan mengubah hasilnya. 
-        Dengan begitu, kita tidak terjebak pada pola 
-        <i>"copy–paste–selesai"</i> tanpa memahami kode yang digunakan.
-    </p>
-
-    <p>
-        Jika memiliki pertanyaan, kolom komentar <a href="#disqus_thread">klik disini</a>
-    </p>
-</article>
-
-<article id="caraMinifyHTML" style="margin-top: 50px;">
-    <h1 style="margin-bottom: 50px; justify-self: center;">
-        Mengapa Ukuran File HTML Bisa Membesar?
-    </h1>
-
-    <p>
-        Ukuran file HTML bisa membesar karena berisi banyak karakter, seperti
-        tag yang berlebihan, spasi dan baris kosong, komentar, JavaScript inline,
-        serta CSS inline. Selain itu, penggunaan framework juga dapat menambah
-        ukuran file website.
-    </p>
-
-    <p>
-        Jika kamu menggunakan HTML murni tanpa framework, ada beberapa cara
-        sederhana untuk mengurangi ukuran file HTML.
-    </p>
-
-    <br>
-    <h2>1. Gunakan JavaScript dan CSS Eksternal</h2>
-
-    <p>
-        JavaScript dan CSS eksternal adalah kode yang ditulis di file terpisah,
-        seperti <code>.js</code> untuk JavaScript dan <code>.css</code> untuk CSS.
-        Berbeda dengan inline (kode langsung di dalam HTML), metode ini membuat
-        file HTML menjadi lebih ringan dan rapi, terutama jika kodenya kompleks.
-    </p>
-
-    <ul>
-        <li>
-            Buat file yang diperlukan, misalnya <code>index.js</code> atau
-            <code>index.css</code>.
-        </li>
-
-        <li>
-            Salin kode dari tag <code>&lt;script&gt;</code> (JavaScript) atau
-            <code>&lt;style&gt;</code> (CSS) tanpa menyertakan tag-nya.
-        </li>
-
-        <li>
-            Tempelkan kode tersebut ke file eksternal yang sesuai.
-            <p>
-                Contoh: jika JavaScript inline berisi
-                <code>console.log('Halo dunia!');</code>,
-                maka isi file <code>index.js</code> menjadi:
-            </p>
-
-            <pre>
-console.log('Halo dunia!');
-            </pre>
-        </li>
-
-        <li>
-            Panggil file eksternal ke dalam file HTML.
-            <p>
-                Untuk memanggil file <code>index.js</code>:
-            </p>
-
-            <pre>
-&lt;script src="index.js"&gt;&lt;/script&gt;
-            </pre>
-
-            <p>
-                Untuk memanggil file <code>index.css</code>:
-            </p>
-
-            <pre>
-&lt;link rel="stylesheet" href="index.css"&gt;
-            </pre>
-        </li>
-    </ul>
-
-    <p>
-        <strong>Penting:</strong> Pastikan path (lokasi file) sudah benar.
-        Jika file berada di folder <code>src/</code>, maka gunakan
-        <code>src="src/namafile.js"</code> atau
-        <code>href="src/namafile.css"</code>.
-    </p>
-
-    <br>
-    <h2>2. Minify File HTML</h2>
-
-    <p>
-        Minify HTML adalah proses menghapus spasi berlebih, baris kosong,
-        dan komentar agar ukuran file menjadi lebih kecil.
-    </p>
-
-    <ul>
-        <li>
-            Buat dua file: satu untuk development dan satu untuk deploy.
-            <p>
-                File development berisi kode yang rapi dan mudah dibaca,
-                misalnya <code>index-dev.html</code>.
-                File deploy adalah hasil minify yang siap diunggah ke hosting,
-                biasanya bernama <code>index.html</code>.
-            </p>
-        </li>
-
-        <li>
-            Minify file development menggunakan tools minifier.
-            <p>
-                Kamu bisa menggunakan tools online seperti
-                <a href="https://www.toptal.com/developers/html-minifier" target="_blank">
-                    Toptal HTML Minifier
-                </a>.
-                Setelah proses selesai, salin hasil minify ke file deploy,
-                lalu uji di browser atau localhost untuk memastikan tidak ada error.
-            </p>
-        </li>
-    </ul>
-
-    <p>
-        Itulah beberapa cara sederhana untuk mengurangi ukuran file HTML.
-        Jika kamu memiliki pertanyaan, silakan tulis di
-        <a href="#disqus_thread">kolom komentar</a>.
+        Praktik sehat adalah membaca,
+        memahami, lalu memodifikasi kode dari AI.
     </p>
 </article>
 
 <article id="cacheAdalah" style="margin-top: 100px;">
-    <h1 style="justify-self: center;">Apa itu Cache Browser?</h1>
+    <h1 style="justify-self: center;">Apa Itu Cache Browser?</h1>
 
     <p>
-        Cache browser adalah data sementara yang disimpan oleh browser dari sebuah website, seperti file HTML, CSS, gambar, dan JavaScript, agar saat pengguna membuka kembali halaman yang sama, website dapat dimuat lebih cepat. Dengan adanya cache, browser tidak perlu mengunduh ulang semua data dari server, sehingga waktu loading menjadi lebih singkat dan penggunaan bandwidth lebih efisien. Namun, cache juga dapat menyebabkan tampilan website tidak langsung menampilkan perubahan terbaru, karena browser masih menggunakan data lama yang tersimpan. Secara sederhana, cache dapat diibaratkan seperti catatan ringkas yang disimpan oleh browser, sehingga saat dibutuhkan kembali, browser tidak perlu mencari informasi dari awal.
+        Cache browser adalah mekanisme penyimpanan sementara
+        untuk mempercepat pemuatan website.
+        Pengaturan cache yang tepat meningkatkan performa
+        tanpa mengorbankan akurasi konten.
     </p>
 
-    <a href="https://ibb.co.com/LDVp5W2W"><img src="https://i.ibb.co.com/DP0KpySy/alur-cache.png" alt="alur-cache" border="0"></a>
-
-    <br><br>
-
-    <h2>Bagaimana cara mengatur waktu kadaluwarsa cache browser?</h2>
+    <a href="https://ibb.co.com/LDVp5W2W">
+        <img src="https://i.ibb.co.com/DP0KpySy/alur-cache.png" alt="alur-cache" border="0">
+    </a>
 
     <p>
-        Waktu kadaluwarsa cache browser dapat diatur melalui konfigurasi server atau layanan yang digunakan oleh website. Pada server berbasis Apache, pengaturan ini biasanya dilakukan melalui file htaccess dengan menentukan header cache untuk jenis file tertentu. Untuk server atau engine lain seperti Nginx, pengaturan cache dilakukan melalui file konfigurasi masing masing engine. Selain itu, jika website menggunakan Content Delivery Network atau CDN, pengaturan waktu cache juga dapat dilakukan langsung melalui dashboard atau konfigurasi CDN tersebut. Dengan mengatur waktu kadaluwarsa cache secara tepat, website dapat tetap dimuat dengan cepat tanpa mengorbankan keakuratan konten, sehingga perubahan penting pada tampilan atau fungsi website tetap dapat diterima oleh browser pengguna pada waktu yang sesuai. Cara mengecek server atau engine biasanya adalah dengan melihat langsung pada control panel (misal cPanel) pada dashboard hosting. Jika menggunakan hosting web statis seperti Netlify, cache otomatis diperbarui setelah melakukan deploy.
-    </p>
-
-    <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/qLPtsGf9/apache.jpg" alt="apache" border="0" class="icon" style="max-width: 40%;"></a>
-    <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/35cYKH77/nginx.jpg" alt="nginx" border="0" class="icon" style="max-height: 160px;"></a>
-    <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/GvmFR2NY/cdn.jpg" alt="cdn" border="0" class="icon" style="max-height: 10%;"></a>
-
-    <br><br>
-
-    <h2>Cara mengatur cache untuk setiap file</h2>
-
-    <ol>
-        <li><strong>HTML atau file halaman</strong></li>
-        <p>File HTML sebaiknya tidak disimpan terlalu lama di cache atau bahkan dilewati sepenuhnya, agar setiap perubahan konten dapat langsung ditampilkan kepada pengguna. Dengan pengaturan ini, browser akan selalu mengambil versi terbaru dari halaman, sehingga informasi yang ditampilkan tetap akurat dan sesuai dengan kondisi website saat ini.</p>
-
-        <li><strong>CSS dan JavaScript</strong></li>
-        <p>File CSS dan JavaScript dapat disimpan di cache browser dengan durasi sekitar satu minggu karena biasanya tidak sering berubah. Untuk memastikan pembaruan tetap terbaca oleh browser saat terjadi perubahan, versi file dapat dibedakan dengan menambahkan query string di akhir nama file, misalnya script.js?v=1.0. Cara ini membantu browser mengenali bahwa file tersebut adalah versi terbaru dan perlu dimuat ulang.</p>
-
-        <li><strong>Gambar dan file yang jarang berubah</strong></li>
-        <p>Gambar serta file lain yang jarang mengalami perubahan dapat disimpan di cache dengan durasi yang lebih lama, sekitar satu bulan, guna meningkatkan performa website. Jika suatu saat file tersebut diperbarui, penambahan query string seperti image.png?v=1.0 dapat digunakan untuk memaksa browser mengambil file terbaru dari server tanpa menunggu cache lama kedaluwarsa.</p>
-    </ol>
-
-    <br><br>
-
-    <p>
-        Dengan strategi pengaturan cache yang tepat untuk setiap jenis file, website dapat tetap terasa cepat saat diakses tanpa mengorbankan keakuratan konten dan kemudahan pembaruan.
+        Dengan strategi cache yang baik,
+        website terasa cepat sekaligus tetap mudah diperbarui.
     </p>
 </article>
+
 
 <hr>
 
