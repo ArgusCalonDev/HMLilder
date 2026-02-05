@@ -207,6 +207,18 @@
         <button type="submit">🚀 Minify HTML Sekarang!</button>
     </form>
 
+    <!-- Monetisasi -->
+    <script>
+        atOptions = {
+            'key' : 'b525b2db453861c6cbc8a079e750e4cf',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script src="https://pitofficialfollower.com/b525b2db453861c6cbc8a079e750e4cf/invoke.js"></script>
+
     <?php if ($minified && empty($error)): ?>
         <div class="output">
             <label>Hasil HTML Minified (copy & gunakan):</label>
