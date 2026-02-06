@@ -318,6 +318,7 @@ code {
         <li><a href="#HTMLAdalah">Apa itu HTML?</a></li>
         <li><a href="#tutorialHTML">Panduan HTML Dasar</a></li>
         <li><a href="#navigasi">Bagaimana cara memberikan navigasi pada halaman HTML? (navigasi website)</a></li>
+        <li><a href="#heroSection">Pengertian Hero Section</a></li>
 
         <p class="article-category">Kategori: Hosting</p>
         <li><a href="#tutorialDeployWebsite">Bagaimana Cara Membuat Website HTML Agar Bisa Diakses Orang Lain?</a></li>
@@ -330,12 +331,18 @@ code {
 
         <p class="article-category">Kategori: JavaScript</p>
         <li><a href="#JavaScript">Apa itu JavaScript & Panduan JavaScript dasar</a></li>
+        <li><a href="#eventListenersDasar">Event Listeners Dasar Dalam Javascript</a></li>
 
         <p class="article-category">Kategori: Alat Pengembangan</p>
         <li><a href="#caraMemakaiAI">Cara memakai AI untuk membantu pemrograman.</a></li>
 
         <p class="article-category">Kategori: Cache</p>
         <li><a href="#cacheAdalah">Apa itu cache?</a></li>
+
+        <p class="article-category">Kategori: Spesialisasi Pengembangan Web</p>
+        <li><a href="#frontend">Apa itu Frontend?</a></li>
+        <li><a href="#backend">Apa itu Backend?</a></li>
+        <li><a href="#fullstack">Apa itu Fullstack?</a></li>
 
         <p class="article-category">Tools yang kami gunakan</p>
         <li><a href="#toolsYangKamiGunakan">Tools yang kami gunakan</a></li>
@@ -1000,6 +1007,46 @@ console.log("Halo Dunia!");
   </p>
 </article>
 
+<article id="eventListenersDasar" style="margin-top: 250px;">
+  <h1 style="justify-self: center; margin-bottom: 100px;">Event Listeners Dasar Dalam Javascript</h1>
+  <p>
+    Dalam pengembangan website, interaksi pengguna merupakan bagian yang sangat penting. Ketika pengguna mengklik tombol, mengetik pada input, atau menggerakkan mouse, website perlu merespons tindakan tersebut. Di sinilah event listener berperan dalam JavaScript.
+  </p>
+
+  <br><br>
+  <p>
+    Event listener adalah mekanisme dalam JavaScript yang digunakan untuk mendeteksi dan merespons suatu event (kejadian) pada elemen HTML. Event dapat berupa klik, input, submit, hover, dan berbagai aksi lainnya yang dilakukan oleh pengguna.
+    <br>
+    Dengan event listener, kamu dapat menjalankan kode JavaScript tertentu saat sebuah event terjadi.
+  </p>
+
+  <p>
+    Event listener bekerja dengan cara “mendengarkan” event pada suatu elemen. Ketika event tersebut terjadi, fungsi yang terhubung akan dijalankan secara otomatis.
+  </p>
+
+  <p>
+    JavaScript menyediakan metode <code>addEventListener()</code> untuk menambahkan event listener pada elemen tertentu.
+  </p>
+
+  <h2>Contoh Event Listener Dasar</h2>
+  <p>
+    Berikut contoh penggunaan event listener untuk mendeteksi klik pada sebuah tombol:
+  </p>
+
+  <pre><code class="code-block">
+&lt;button id="btnKlik">Klik Saya&gt;
+
+&lt;script&gt;
+  const tombol = document.getElementById("btnKlik");
+
+  tombol.addEventListener("click", function () {
+    alert("Tombol berhasil diklik!");
+  });
+&lt;/script&gt;
+  </code></pre>
+
+  <p>Pada contoh di atas, JavaScript akan menampilkan pesan peringatan setiap kali tombol diklik oleh pengguna.</p>
+</article>
 
 <article id="caraMemakaiAI" style="margin-top: 250px;">
     <h1 style="justify-self: center;">Cara Menggunakan AI untuk Membantu Pemrograman</h1>
@@ -1138,6 +1185,85 @@ console.log("Halo Dunia!");
         Jika kamu punya <i>workflow</i> atau tools favorit sendiri, itu sepenuhnya valid.
 
         Yang terpenting: nyaman dipakai dan sesuai kebutuhanmu.
+    </p>
+</article>
+
+<!-- Apa itu Hero Section -->
+<article id="heroSection" style="margin-top: 300px;">
+    <h1 style="justify-self: center; margin-bottom: 100px;">Apa Itu Hero Section?</h1>
+    
+    <h2>Pendahuluan</h2>
+    <p>
+        Hero section merupakan bagian teratas pada sebuah halaman website yang pertama kali dilihat oleh pengunjung. Bagian ini berperan penting karena memberikan kesan awal sekaligus gambaran singkat mengenai isi dan tujuan website.
+    </p>
+
+    <h2>Pengertian Hero Section</h2>
+    <p>
+        Hero section adalah area utama di bagian atas website yang biasanya berisi judul, deskripsi singkat, serta elemen pendukung seperti tombol atau gambar. Tujuannya adalah menyampaikan pesan utama website secara cepat dan jelas kepada pengunjung.
+    </p>
+
+    <h2>Fungsi Hero Section</h2>
+    <p>
+        Hero section memiliki beberapa fungsi utama, yaitu:
+    </p>
+
+    <ol>
+        <strong>
+            <li>Menjelaskan tujuan website dalam waktu singkat</li>
+            <li>Menarik perhatian pengunjung agar tetap berada di halaman</li>
+            <li>Mengarahkan pengunjung untuk melakukan tindakan tertentu melalui tombol aksi.</li>
+        </strong>
+    </ol>
+
+    <h2>Elemen Umum Hero Section</h2>
+    <p>
+        Beberapa elemen yang sering digunakan dalam hero section meliputi:
+    </p>
+
+    <ol>
+        <strong>
+            <li>Judul utama</li>
+            <li>Deskripsi Pendukung</li>
+            <li>Tombol Aksi (call to action)</li>
+            <li>Gambar atau ilustrasi (opsional)</li>
+        </strong>
+    </ol>
+
+    <h2>Kesimpulan</h2>
+    <p>
+        Hero section merupakan elemen penting dalam desain website karena berfungsi sebagai pengenalan awal. Dengan hero section yang jelas dan terstruktur, kamu dapat membantu pengunjung memahami website serta meningkatkan interaksi sejak awal.
+    </p>
+</article>
+
+<!-- Spesialisasi -->
+<article id="frontend" style="margin-top: 300px;">
+    <h1 style="justify-self: center; margin-bottom: 100px;">Apa Itu Frontend</h1>
+    <p>
+        Frontend adalah spesialisasi dalam pengembangan web yang berfokus pada bagian website yang langsung dilihat dan digunakan oleh pengguna. Frontend mencakup tampilan visual, tata letak, serta interaksi pada halaman website.
+
+        Pengembangan frontend umumnya menggunakan HTML, CSS, dan JavaScript untuk memastikan website mudah digunakan, responsif, dan menarik di berbagai perangkat.
+    </p>
+</article>
+
+<article id="backend" style="margin-top: 300px;">
+    <h1 style="justify-self: center; margin-bottom: 100px;">Apa Itu Backend?</h1>
+    <p>
+        Backend adalah spesialisasi dalam pengembangan web yang berfokus pada bagian website yang tidak terlihat langsung oleh pengguna. Backend menangani proses di balik layar, seperti pengolahan data, logika aplikasi, dan komunikasi dengan database.
+    </p>
+
+    <p>
+        Pengembangan backend umumnya menggunakan bahasa pemrograman dan teknologi server untuk memastikan website dapat berjalan dengan aman, cepat, dan sesuai fungsinya.
+    </p>
+</article>
+
+<article id="fullstack" style="margin-top: 300px;">
+    <h1 style="justify-self: center; margin-bottom: 100px;">Apa Itu Fullstack?</h1>
+    <p>
+        Fullstack adalah spesialisasi dalam pengembangan web yang mencakup frontend dan backend sekaligus. Seorang fullstack developer mampu menangani tampilan website yang dilihat pengguna serta proses di balik layar, seperti logika aplikasi dan pengolahan data.
+    </p>
+
+    <p>
+        Dengan menguasai frontend dan backend, kamu dapat membangun sebuah website secara menyeluruh dari sisi tampilan hingga sistemnya.
     </p>
 </article>
 
