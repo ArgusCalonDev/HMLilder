@@ -1,279 +1,390 @@
-<!doctype html>
-<html lang=id>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q49KY3ZE3V"></script>
-<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-Q49KY3ZE3V")</script>
-<meta charset=UTF-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=google-adsense-account content=ca-pub-3975087268988772>
-<title>HMLilder Studio - Html Builder</title>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css>
-<link rel=stylesheet href="src/sidebar.css?v=1.0">
-<link rel=icon type=image/x-icon href="public/fav.ico?v=2">
-<style>:root{--primary:#4361ee;--secondary:#3a0ca3;--dark:#2b2d42;--light:#f8f9fa;--gray:#6c757d;--success:#4cc9f0;--danger:#f72585;--warning:#ffd166;--border-radius:12px;--shadow:0 8px 20px rgba(0,0,0,0.08);--transition:all 0.3s ease}*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,-apple-system,sans-serif}body{background:linear-gradient(135deg,#f5f7fa 0,#e4edf5 100%);color:var(--dark);min-height:100vh;padding:20px;line-height:1.6}.container{max-width:1400px;margin:0 auto}.header{text-align:center;margin-bottom:30px;padding:25px;background:#fff;border-radius:var(--border-radius);box-shadow:var(--shadow)}.logo{font-size:2.8rem;font-weight:800;background:linear-gradient(90deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:10px}.tagline{color:var(--gray);font-size:1.2rem;margin-bottom:15px}.coming-soon-badge{display:inline-block;background:linear-gradient(90deg,#ff9a00,#ff5e00);color:#fff;padding:8px 20px;border-radius:50px;font-weight:700;font-size:1rem;margin-top:10px;animation:pulse 2s infinite;box-shadow:0 4px 15px rgba(255,94,0,.3)}.coming-soon-badge:hover{cursor:pointer;box-shadow:0 6px 20px rgba(255,94,0,.5)}@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}.main-layout{display:flex;flex-wrap:wrap;gap:25px;margin-bottom:40px}.editor-panel,.preview-panel{flex:1;min-width:300px;background:#fff;border-radius:var(--border-radius);box-shadow:var(--shadow);padding:25px}.panel-title{font-size:1.5rem;color:var(--primary);margin-bottom:20px;padding-bottom:10px;border-bottom:2px solid #f0f0f0;display:flex;align-items:center;gap:10px}.panel-title i{font-size:1.3rem}.control-group{margin-bottom:25px}.control-label{display:block;font-weight:600;margin-bottom:8px;color:var(--dark)}.template-options{display:flex;gap:15px;flex-wrap:wrap}.template-option{flex:1;min-width:120px;border:2px solid #e0e0e0;border-radius:10px;padding:15px;text-align:center;cursor:pointer;transition:var(--transition)}.template-option:hover{border-color:var(--primary);transform:translateY(-3px)}.template-option.active{border-color:var(--primary);background-color:rgba(67,97,238,.05)}.template-icon{font-size:2rem;margin-bottom:10px;color:var(--primary)}.template-name{font-weight:600;font-size:.95rem}input,select,textarea{opacity:1!important;cursor:text!important;pointer-events:auto!important;border-color:#e0e0e0!important;width:100%;padding:12px 15px;border:2px solid #e0e0e0;border-radius:8px;font-size:1rem;transition:var(--transition)}input:focus,select:focus,textarea:focus{outline:0;border-color:var(--primary);box-shadow:0 0 0 3px rgba(67,97,238,.1)}textarea{min-height:100px;resize:vertical}.color-options{display:flex;gap:10px;flex-wrap:wrap}.color-option{width:40px;height:40px;border-radius:50%;cursor:pointer!important;pointer-events:auto!important;opacity:1!important;border:3px solid transparent;transition:var(--transition)}.color-option:hover{transform:scale(1.1)}.color-option.active{border-color:var(--dark)}.preview-container{border:2px dashed #e0e0e0;border-radius:10px;padding:20px;min-height:400px;background:#f9fafb;overflow:auto;margin-bottom:20px;transition:var(--transition)}.preview-container:hover{border-color:var(--primary)}.device-toggle{display:flex;justify-content:center;gap:10px;margin-bottom:20px}.device-btn{padding:8px 20px;background:#f0f0f0;border:none;border-radius:6px;cursor:pointer;font-weight:600;transition:var(--transition)}.device-btn.active{background:var(--primary);color:#fff}.output-panel{background:#fff;border-radius:var(--border-radius);box-shadow:var(--shadow);padding:25px;margin-top:20px}.action-buttons{display:flex;gap:15px;flex-wrap:wrap}.btn{padding:14px 28px;border:none;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer;transition:var(--transition);display:flex;align-items:center;justify-content:center;gap:10px;flex:1;min-width:200px}.btn-primary{background:var(--primary);color:#fff}.btn-primary:hover{background:var(--secondary);transform:translateY(-3px);box-shadow:0 10px 20px rgba(67,97,238,.2)}.btn-secondary{background:#f0f0f0;color:var(--dark)}.btn-secondary:hover{background:#e0e0e0;transform:translateY(-3px)}.footer{text-align:center;margin-top:40px;color:var(--gray);font-size:.9rem;padding:20px}.generated-page{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:800px;margin:0 auto;padding:20px}.hero-section{text-align:center;padding:50px 20px;border-radius:15px;margin-bottom:40px}.hero-title{font-size:2.5rem;margin-bottom:15px}.hero-tagline{font-size:1.3rem;margin-bottom:25px;color:#555}.hero-description{font-size:1.1rem;line-height:1.7;margin-bottom:30px;color:#666;max-width:700px;margin-left:auto;margin-right:auto}.cta-button{display:inline-block;padding:15px 35px;background:var(--primary);color:#fff;text-decoration:none;border-radius:8px;font-weight:700;font-size:1.1rem;transition:var(--transition);border:none;cursor:pointer}.cta-button:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,.1)}.features-section{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin:40px 0}.feature-card{background:#f9f9f9;padding:25px;border-radius:10px;border-left:5px solid var(--primary)}@media (max-width:768px){.main-layout{flex-direction:column}.editor-panel,.preview-panel{width:100%}.template-options{flex-direction:column}.btn{min-width:100%}.hero-title{font-size:2rem}.logo{font-size:2.2rem}}.font-options{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:10px}.font-option{border:2px solid #e0e0e0;border-radius:8px;padding:10px;text-align:center;cursor:pointer;transition:all .3s;background:#fff}.font-option:hover{border-color:#4361ee;transform:translateY(-2px)}.font-option.active{border-color:#4361ee;background:#4361ee10;box-shadow:0 0 0 2px #4361ee40}.font-preview{font-size:24px;font-weight:700;margin-bottom:5px;height:40px;display:flex;align-items:center;justify-content:center}.font-name{font-size:12px;color:#555;display:block}.font-option.active .font-name{color:#4361ee;font-weight:600}.footer-img{max-width:40%;max-height:40%;border-radius:10px;box-shadow:rgba(0,0,0,.08) 0 8px 20px}li{margin-left:20px}.lock-badge,.premium-badge,.premium-locked{display:none!important}.footer p:last-child{color:#666!important}</style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q49KY3ZE3V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-Q49KY3ZE3V');
+    </script>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-3975087268988772">
+    <title>HMLilder Studio - Html Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="src/sidebar.css?v=1.0">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+
+    <link rel="stylesheet" href="src/builder.css?v=1">
 </head>
 <body>
-<div id=sidebar-container></div>
-<button class=toggle-btn onclick=toggleSidebar()>☰ Menu</button>
-<script type=module src="src/sidebar.js?v=1.5"></script>
-<script>function toggleSidebar(){const t=document.getElementById("sidebar"),e=document.getElementById("container");t.classList.toggle("active"),e.classList.toggle("shift")}</script>
-<div class=container>
-<header class=header>
-<h1 class=logo><i class="fas fa-code"></i> HMLilder</h1>
-<p class=tagline>Bikin website profesional dalam 5 menit. Tanpa coding, tanpa ribet. (cookie situs berlaku)</p>
-<p class=tagline>Ingin fitur lebih? Coba modifikasi script hasil build!</p>
-<br><br>
-<p>(Opsional) Kamu bisa mendukung pengembangan HMLilder dengan menggunakan layanan yang kami rekomendasikan. Jika kamu memang membutuhkan hosting atau domain, menggunakan link ini bisa membantu kami tanpa biaya tambahan.</p>
-<a class=cta-button style=justify-self:center href="https://my.domainesia.com/ref.php?u=26644">Dukung</a>
-</header>
-<script>atOptions={key:"b525b2db453861c6cbc8a079e750e4cf",format:"iframe",height:90,width:728,params:{}}</script>
-<script src=https://pitofficialfollower.com/b525b2db453861c6cbc8a079e750e4cf/invoke.js></script>
-<div class=main-layout>
-<div class=editor-panel>
-<h2 class=panel-title><i class="fas fa-sliders-h"></i> Editor</h2>
-<label class=control-label>Step by step singkat</label>
-<ol>
-<li>Pilih template</li>
-<li>Edit konten</li>
-<li>Copy/download HTML</li>
-</ol>
-<br><br>
-<div class=control-group>
-<label class=control-label>Pilih Template</label>
-<div class=template-options>
-<div class="template-option active" data-template=landing>
-<div class=template-icon><i class="fas fa-home"></i></div>
-<div class=template-name>Landing Page</div>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="src/sidebar.js?v=1.5"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> HMLilder</h1>
+            <p class="tagline">Bikin website profesional dalam 5 menit. Tanpa coding, tanpa ribet. (cookie situs berlaku)</p>
+            <p class="tagline">Ingin fitur lebih? Coba modifikasi script hasil build!</p>
+            <br><br>
+            
+            <p>(Opsional) Kamu bisa mendukung pengembangan HMLilder dengan menggunakan layanan yang kami rekomendasikan. Jika kamu memang membutuhkan hosting atau domain, menggunakan link ini bisa membantu kami tanpa biaya tambahan.</p>
+            <a class="cta-button" style="justify-self: center;" href="https://my.domainesia.com/ref.php?u=26644">Dukung</a>
+        </header>
+
+        <script>
+            atOptions = {
+                'key' : 'b525b2db453861c6cbc8a079e750e4cf',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+            };
+        </script>
+        <script src="https://pitofficialfollower.com/b525b2db453861c6cbc8a079e750e4cf/invoke.js"></script>
+        
+        <!-- MAIN LAYOUT -->
+        <div class="main-layout">
+            <!-- EDITOR PANEL -->
+            <div class="editor-panel">
+                <h2 class="panel-title"><i class="fas fa-sliders-h"></i> Editor</h2>
+
+                <label class="control-label">Step by step singkat</label>
+                <ol>
+                    <li>Pilih template</li>
+                    <li>Edit konten</li>
+                    <li>Copy/download HTML</li>
+                </ol>
+
+                <br><br>
+                
+                <!-- TEMPLATE SELECTION -->
+                <div class="control-group">
+                    <label class="control-label">Pilih Template</label>
+                    <div class="template-options">
+                        <div class="template-option active" data-template="landing">
+                            <div class="template-icon"><i class="fas fa-home"></i></div>
+                            <div class="template-name">Landing Page</div>
+                        </div>
+                        <div class="template-option" data-template="service">
+                            <div class="template-icon"><i class="fas fa-briefcase"></i></div>
+                            <div class="template-name">Layanan</div>
+                        </div>
+                        <div class="template-option" data-template="product">
+                            <div class="template-icon"><i class="fas fa-shopping-bag"></i></div>
+                            <div class="template-name">Produk</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TEXT INPUTS -->
+                <div class="control-group">
+                    <label class="control-label">Nama Bisnis / Produk</label>
+                    <input type="text" id="businessName" placeholder="Masukkan nama bisnis Anda" value="Nama Bisnis Anda">
+                </div>
+                
+                <div class="control-group">
+                    <label class="control-label">Tagline / Slogan</label>
+                    <input type="text" id="tagline" placeholder="Tagline yang menarik perhatian" value="Solusi Terbaik untuk Bisnis Anda">
+                </div>
+                
+                <div class="control-group">
+                    <label class="control-label">Deskripsi</label>
+                    <textarea id="description" placeholder="Deskripsikan bisnis atau produk Anda">Kami memberikan solusi inovatif dengan kualitas terbaik dan harga terjangkau. Dapatkan penawaran khusus hari ini untuk transformasi digital bisnis Anda.</textarea>
+                    <!-- Tambahkan SETELAH textarea description -->
+                    <div class="control-group template-specific" id="landingSpecific" style="display: none;">
+                        <label class="control-label">Mengapa Memilih Kami? (Landing Page)</label>
+                        <textarea id="landingWhy" placeholder="Deskripsi mengapa user harus memilih..." style="min-height: 80px;">Kami berkomitmen memberikan solusi terbaik dengan inovasi dan kualitas yang tidak diragukan lagi. Setiap produk dan layanan kami dirancang untuk memenuhi kebutuhan spesifik Anda.</textarea>
+                    </div>
+
+                    <div class="control-group template-specific" id="serviceSpecific" style="display: none;">
+                        <label class="control-label">Detail Layanan (Service Page)</label>
+                        <div style="margin-bottom: 10px;">
+                        <input type="text" id="service1Title" placeholder="Judul Layanan 1" value="Layanan Profesional" style="margin-bottom: 5px;">
+                        <textarea id="service1Desc" placeholder="Deskripsi Layanan 1" style="min-height: 60px; margin-bottom: 10px;">Kami memberikan layanan terbaik dengan tim ahli di bidangnya.</textarea>
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <input type="text" id="service2Title" placeholder="Judul Layanan 2" value="Support 24/7" style="margin-bottom: 5px;">
+                        <textarea id="service2Desc" placeholder="Deskripsi Layanan 2" style="min-height: 60px; margin-bottom: 10px;">Tim support kami siap membantu Anda kapan saja, di mana saja.</textarea>
+                    </div>
+                    <div>
+                        <input type="text" id="service3Title" placeholder="Judul Layanan 3" value="Hasil Terjamin" style="margin-bottom: 5px;">
+                        <textarea id="service3Desc" placeholder="Deskripsi Layanan 3" style="min-height: 60px;">Kami menjamin kepuasan dan hasil yang maksimal untuk Anda.</textarea>
+                    </div>
+                </div>
+
+<div class="control-group template-specific" id="productSpecific" style="display: none;">
+    <label class="control-label">Fitur Produk (Product Page)</label>
+    <input type="text" id="productTitle" placeholder="Judul Bagian Fitur" value="✨ Fitur Unggulan" style="margin-bottom: 10px;">
+    <div style="margin-bottom: 10px;">
+        <input type="text" id="productFeature1" placeholder="Fitur 1" value="Fitur premium pertama dengan kualitas terbaik" style="margin-bottom: 5px;">
+    </div>
+    <div style="margin-bottom: 10px;">
+        <input type="text" id="productFeature2" placeholder="Fitur 2" value="Fitur kedua yang akan mengubah cara kerja Anda" style="margin-bottom: 5px;">
+    </div>
+    <div style="margin-bottom: 10px;">
+        <input type="text" id="productFeature3" placeholder="Fitur 3" value="Fitur ketiga dengan teknologi terkini" style="margin-bottom: 5px;">
+    </div>
+    <div>
+        <input type="text" id="productFeature4" placeholder="Fitur 4" value="Fitur keempat yang memberikan nilai tambah" style="margin-bottom: 5px;">
+    </div>
 </div>
-<div class=template-option data-template=service>
-<div class=template-icon><i class="fas fa-briefcase"></i></div>
-<div class=template-name>Layanan</div>
+                </div>
+
+                <!-- Problem-Solution -->
+            <div class="control-group">
+                <label class="control-label">Problem</label>
+                <input type="text" id="problemText" placeholder="Masukkan masalah yang dihadapi pelanggan" value="Kesulitan dalam mengelola bisnis secara efisien" style="margin-bottom: 5px;">
+                <label class="control-label">Solution</label>
+                <input type="text" id="solutionText" placeholder="Masukkan solusi yang ditawarkan" value="Solusi terbaik untuk mengelola bisnis secara efisien" style="margin-bottom: 5px;">
+            </div>
+
+            <!-- cara kerja/alur -->
+            <div class="control-group">
+                <label class="control-label">Cara kerja/Alur</label>
+                <input type="text" id="alurText1" placeholder="Masukkan alur/cara kerja pertama" value="Tekan tombol pesan" style="margin-bottom: 5px;">
+                <input type="text" id="alurText2" placeholder="Masukkan alur/cara kerja kedua" value="Website dikerjakan oleh tim kami" style="margin-bottom: 5px;">
+                <input type="text" id="alurText3" placeholder="Masukkan alur/cara kerja ketiga" value="Website selesai dan online" style="margin-bottom: 5px;">
+            </div>
+
+            <!-- CUSTOM FOOTER -->
+            <div class="control-group">
+                <h3 class="section-title">
+                    <i class="fas fa-shoe-prints"></i> Custom Footer
+                </h3>   
+                    <!-- Input untuk custom footer text -->
+                    <div class="input-group">
+                        <label class="input-label">Footer Teks (Baris 1)</label>
+                        <input 
+                        type="text" 
+                        id="footerText1" 
+                        class="form-control"
+                        placeholder="© 2026 Nama Bisnis Anda. All rights reserved."
+                        maxlength="100"
+                        >
+                    </div>
+        
+                    <div class="input-group">
+                        <label class="input-label">Footer Teks (Baris 2)</label>
+                        <input 
+                        type="text" 
+                        id="footerText2" 
+                        class="form-control"
+                        placeholder="Dibuat dengan ❤️"
+                        maxlength="100"
+                        >
+                    </div>
+        
+                    <!-- Social Media Links -->
+                    <div class="input-group">
+                        <label class="input-label">Link Social Media (Opsional)</label>
+                        <div class="social-inputs">
+                            <input type="text" id="facebookLink" class="form-control" placeholder="Facebook URL">
+                            <input type="text" id="instagramLink" class="form-control" placeholder="Instagram URL">
+                            <input type="text" id="whatsappLink" class="form-control" placeholder="WhatsApp URL">
+                        </div>
+                    </div>
+                </div>
+            
+                
+                <div class="control-group">
+                    <label class="control-label">Teks Tombol CTA</label>
+                    <input type="text" id="ctaText" placeholder="Teks tombol ajakan" value="Hubungi Kami Sekarang">
+                </div>
+                
+ <!-- COLOR SELECTION -->
+<div class="control-group">
+    <label class="control-label">Pilih Warna Tema</label>
+    <div class="color-options">
+        <div class="color-option active" style="background-color: #4361ee;" data-color="#4361ee"></div>
+        <div class="color-option" style="background-color: #06d6a0;" data-color="#06d6a0"></div>
+        <div class="color-option" style="background-color: #f72585;" data-color="#f72585"></div>
+        <div class="color-option" style="background-color: #7209b7;" data-color="#7209b7"></div>
+        <div class="color-option" style="background-color: #ff9e00;" data-color="#ff9e00"></div>
+        <div class="color-option" style="background-color: #3a0ca3;" data-color="#3a0ca3"></div>
+        <div class="color-option" style="background-color: #ef476f;" data-color="#ef476f"></div>
+        <div class="color-option" style="background-color: #118ab2;" data-color="#118ab2"></div>
+        <div class="color-option" style="background-color: #ffd166;" data-color="#ffd166"></div>
+        <div class="color-option" style="background-color: #073b4c;" data-color="#073b4c"></div>    
+    </div>
 </div>
-<div class=template-option data-template=product>
-<div class=template-icon><i class="fas fa-shopping-bag"></i></div>
-<div class=template-name>Produk</div>
-</div>
-</div>
-</div>
-<div class=control-group>
-<label class=control-label>Nama Bisnis / Produk</label>
-<input id=businessName placeholder="Masukkan nama bisnis Anda" value="Nama Bisnis Anda">
-</div>
-<div class=control-group>
-<label class=control-label>Tagline / Slogan</label>
-<input id=tagline placeholder="Tagline yang menarik perhatian" value="Solusi Terbaik untuk Bisnis Anda">
-</div>
-<div class=control-group>
-<label class=control-label>Deskripsi</label>
-<textarea id=description placeholder="Deskripsikan bisnis atau produk Anda">Kami memberikan solusi inovatif dengan kualitas terbaik dan harga terjangkau. Dapatkan penawaran khusus hari ini untuk transformasi digital bisnis Anda.</textarea>
-<div class="control-group template-specific" id=landingSpecific style=display:none>
-<label class=control-label>Mengapa Memilih Kami? (Landing Page)</label>
-<textarea id=landingWhy placeholder="Deskripsi mengapa user harus memilih..." style=min-height:80px>Kami berkomitmen memberikan solusi terbaik dengan inovasi dan kualitas yang tidak diragukan lagi. Setiap produk dan layanan kami dirancang untuk memenuhi kebutuhan spesifik Anda.</textarea>
-</div>
-<div class="control-group template-specific" id=serviceSpecific style=display:none>
-<label class=control-label>Detail Layanan (Service Page)</label>
-<div style=margin-bottom:10px>
-<input id=service1Title placeholder="Judul Layanan 1" value="Layanan Profesional" style=margin-bottom:5px>
-<textarea id=service1Desc placeholder="Deskripsi Layanan 1" style=min-height:60px;margin-bottom:10px>Kami memberikan layanan terbaik dengan tim ahli di bidangnya.</textarea>
-</div>
-<div style=margin-bottom:10px>
-<input id=service2Title placeholder="Judul Layanan 2" value="Support 24/7" style=margin-bottom:5px>
-<textarea id=service2Desc placeholder="Deskripsi Layanan 2" style=min-height:60px;margin-bottom:10px>Tim support kami siap membantu Anda kapan saja, di mana saja.</textarea>
-</div>
-<div>
-<input id=service3Title placeholder="Judul Layanan 3" value="Hasil Terjamin" style=margin-bottom:5px>
-<textarea id=service3Desc placeholder="Deskripsi Layanan 3" style=min-height:60px>Kami menjamin kepuasan dan hasil yang maksimal untuk Anda.</textarea>
-</div>
-</div>
-<div class="control-group template-specific" id=productSpecific style=display:none>
-<label class=control-label>Fitur Produk (Product Page)</label>
-<input id=productTitle placeholder="Judul Bagian Fitur" value="✨ Fitur Unggulan" style=margin-bottom:10px>
-<div style=margin-bottom:10px>
-<input id=productFeature1 placeholder="Fitur 1" value="Fitur premium pertama dengan kualitas terbaik" style=margin-bottom:5px>
-</div>
-<div style=margin-bottom:10px>
-<input id=productFeature2 placeholder="Fitur 2" value="Fitur kedua yang akan mengubah cara kerja Anda" style=margin-bottom:5px>
-</div>
-<div style=margin-bottom:10px>
-<input id=productFeature3 placeholder="Fitur 3" value="Fitur ketiga dengan teknologi terkini" style=margin-bottom:5px>
-</div>
-<div>
-<input id=productFeature4 placeholder="Fitur 4" value="Fitur keempat yang memberikan nilai tambah" style=margin-bottom:5px>
-</div>
-</div>
-</div>
-<div class=control-group>
-<label class=control-label>Problem</label>
-<input id=problemText placeholder="Masukkan masalah yang dihadapi pelanggan" value="Kesulitan dalam mengelola bisnis secara efisien" style=margin-bottom:5px>
-<label class=control-label>Solution</label>
-<input id=solutionText placeholder="Masukkan solusi yang ditawarkan" value="Solusi terbaik untuk mengelola bisnis secara efisien" style=margin-bottom:5px>
-</div>
-<div class=control-group>
-<label class=control-label>Cara kerja/Alur</label>
-<input id=alurText1 placeholder="Masukkan alur/cara kerja pertama" value="Tekan tombol pesan" style=margin-bottom:5px>
-<input id=alurText2 placeholder="Masukkan alur/cara kerja kedua" value="Website dikerjakan oleh tim kami" style=margin-bottom:5px>
-<input id=alurText3 placeholder="Masukkan alur/cara kerja ketiga" value="Website selesai dan online" style=margin-bottom:5px>
-</div>
-<div class=control-group>
-<h3 class=section-title>
-<i class="fas fa-shoe-prints"></i> Custom Footer
-</h3>
-<div class=input-group>
-<label class=input-label>Footer Teks (Baris 1)</label>
-<input id=footerText1 class=form-control placeholder="© 2026 Nama Bisnis Anda. All rights reserved." maxlength=100>
-</div>
-<div class=input-group>
-<label class=input-label>Footer Teks (Baris 2)</label>
-<input id=footerText2 class=form-control placeholder="Dibuat dengan ❤️" maxlength=100>
-</div>
-<div class=input-group>
-<label class=input-label>Link Social Media (Opsional)</label>
-<div class=social-inputs>
-<input id=facebookLink class=form-control placeholder="Facebook URL">
-<input id=instagramLink class=form-control placeholder="Instagram URL">
-<input id=whatsappLink class=form-control placeholder="WhatsApp URL">
-</div>
-</div>
-</div>
-<div class=control-group>
-<label class=control-label>Teks Tombol CTA</label>
-<input id=ctaText placeholder="Teks tombol ajakan" value="Hubungi Kami Sekarang">
-</div>
-<div class=control-group>
-<label class=control-label>Pilih Warna Tema</label>
-<div class=color-options>
-<div class="color-option active" style=background-color:#4361ee data-color=#4361ee></div>
-<div class=color-option style=background-color:#06d6a0 data-color=#06d6a0></div>
-<div class=color-option style=background-color:#f72585 data-color=#f72585></div>
-<div class=color-option style=background-color:#7209b7 data-color=#7209b7></div>
-<div class=color-option style=background-color:#ff9e00 data-color=#ff9e00></div>
-<div class=color-option style=background-color:#3a0ca3 data-color=#3a0ca3></div>
-<div class=color-option style=background-color:#ef476f data-color=#ef476f></div>
-<div class=color-option style=background-color:#118ab2 data-color=#118ab2></div>
-<div class=color-option style=background-color:#ffd166 data-color=#ffd166></div>
-<div class=color-option style=background-color:#073b4c data-color=#073b4c></div>
-</div>
-</div>
-<div class=control-group>
-<h3 class=section-title>
-<i class="fas fa-font"></i> Pilih Font
-</h3>
-<div class=font-options>
-<div class="font-option active" data-font="Arial, sans-serif">
-<div class=font-preview style=font-family:Arial,sans-serif>
-Aa
-</div>
-<span class=font-name>Arial</span>
-</div>
-<div class=font-option data-font="Georgia, serif">
-<div class=font-preview style=font-family:Georgia,serif>
-Aa
-</div>
-<span class=font-name>Serif</span>
-</div>
-<div class=font-option data-font="'Montserrat', sans-serif">
-<div class=font-preview style=font-family:Montserrat,sans-serif>
-Aa
-</div>
-<span class=font-name>Montserrat</span>
-</div>
-</div>
-</div>
-<div class=control-group>
-<label class=control-label>Link Tombol CTA</label>
-<input id=ctaLink placeholder=https://wa.me/628...>
-</div>
-<div class=control-group>
-<label class=control-label>Upload Logo (gambar), opsional</label>
-<input type=file id=imageUpload>
-<p class=tagline>Support file: PNG, JPG, ICO. Maks ukuran file 2MB.</p>
-<div id=imagePreview style=margin-top:10px;display:none>
-<img id=previewImage src="" style=max-width:100px;max-height:100px;border-radius:5px>
-<button onclick=removeImage() style="margin-left:10px;padding:5px 10px;background:#f72585;color:#fff;border:none;border-radius:4px">Hapus</button>
-</div>
-</div>
-</div>
-</div>
-<div class=preview-panel>
-<h2 class=panel-title><i class="fas fa-eye"></i> Live Preview</h2>
-<div class=device-toggle>
-<button class="device-btn active" data-device=desktop>
-<i class="fas fa-desktop"></i> Desktop
-</button>
-<button class=device-btn data-device=tablet>
-<i class="fas fa-tablet-alt"></i> Tablet
-</button>
-<button class=device-btn data-device=mobile>
-<i class="fas fa-mobile-alt"></i> Mobile
-</button>
-</div>
-<div class=preview-container id=previewContainer>
-<div style=text-align:center;padding:50px;color:#999>
-<i class="fas fa-spinner fa-spin fa-2x"></i>
-<p>Memuat preview...</p>
-</div>
-</div>
-</div>
-</div>
-<div class=output-panel>
-<h2 class=panel-title><i class="fas fa-download"></i> Output</h2>
-<div class=action-buttons>
-<button class="btn btn-primary" id=copyBtn>
-<i class="fas fa-copy"></i> Salin Kode HTML
-</button>
-<button class="btn btn-secondary" id=downloadBtn>
-<i class="fas fa-file-download"></i> Download File HTML
-</button>
-</div>
-<div style=margin-top:25px>
-<label class=control-label>Kode HTML Hasil Generate:</label>
-<textarea id=codeOutput rows=10 style="font-family:'Courier New',monospace;font-size:14px" readonly placeholder="Kode HTML akan muncul di sini..."></textarea>
-<label class=control-label>Cara memodifikasi website.</label>
-<ul>
-<li>Setelah selesai mengisi kolom kolom yang ada, copy paste script atau download file html.</li>
-<li>Jika menggunakan metode copy paste, buka editor teks, seperti notepad, lalu lanjut ke langkah 4.</li>
-<li>Jika menggunakan metode download, ubah nama file menjadi index.html untuk file beranda. selain beranda, nama file bebas.</li>
-<li>Mulai modifikasi file. Petunjuk tiap bagian: <a href=#petunjukBagian>disini</a></li>
-<li>Jika sudah, selamat website sudah jadi! Upload ke hosting, seperti Hostinger, Domainesia, Cloudflare, atau Netlify agar website anda bisa online. Anda bisa mengikuti tutorial di internet karena cara mengupload file ke tiap hosting berbeda beda.</li>
-</ul>
-<br><br>
-<label class=control-label>Petunjuk setiap bagian (jika ada pertanyaan, kolom komentar <a href=#disqus_thread>klik disini</a>)</label>
-<ul id=petunjukBagian>
-<li>&lt;!DOCTYPE html&gt; = deklarasi file HTML.</li>
-<li>&lt;html lang="id"&gt; = bahasa file HTML. "id" = Indonesia.</li>
-<li>&lt;head&gt; = bagian kepala pada website, tidak terlihat di badan halaman.</li>
-<li>&lt;meta charset="UTF-8"&gt; = tag meta untuk encoding file (UTF-8), agar karakter unik seperti emoji bisa tampil.</li>
-<li>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; = tag meta untuk halaman responsif di layar kecil seperti HP.</li>
-<li>&lt;title&gt;Nama Bisnis Anda - Tagline&lt;/title&gt; = judul halaman di bagian atas browser.</li>
-<li>&lt;style&gt;...&lt;/style&gt; = elemen CSS untuk atur file agar rapi dan enak dipandang.</li>
-<li>&lt;/head&gt; = penutup tag head</li>
-<li>&lt;body&gt; = bagian badan halaman, yang terlihat oleh pengguna.</li>
-<li>&lt;div class="container"&gt; = "div" menandakan suatu bagian tertentu di halaman. class="..." memberi tanda pada suatu elemen, agar bisa diatur lewat CSS dan javascript.</li>
-<li>&lt;header style="text-align: center; padding: 20px 0;"&gt; = header, bagian paling atas website.</li>
-<li>Didalam header, berisi tag untuk gambar (&lt;img src="letak-gambar.ekstensi" alt="nama bisnis anda"&gt;) jika Anda mengunggah gambar ke dalam halaman. Jika tidak, tag ini kosong.</li>
-<li>&lt;/header&gt; = penutup tag header</li>
-<li>&lt;main&gt; = konten utama</li>
-<li>isi dari tag main adalah konten utama yang terlihat di preview page builder. </li>
-<li>&lt;/main&gt; = penutup main.</li>
-<li>&lt;footer&gt; = bagian paling bawah website</li>
-<li>... isi dari footer</li>
-<li>&lt;/footer&gt; = penutup footer</li>
-<li>&lt;/div&gt; = penutup tag bagian "container" dalam halaman.</li>
-<li>&lt;script&gt;...&lt;/script&gt; = berisi kode javascript.</li>
-<li>&lt;/body&gt; = penutup badan halaman.</li>
-<li>&lt;/html&gt; = penutup halaman HTML.</li>
-</ul>
-</div>
-</div>
-<label class=control-label>Ada pertanyaan? kolom komentar disini!</label>
-<div id=disqus_thread></div>
-<script>var disqus_config=function(){this.page.url=window.location.href,this.page.identifier=window.location.pathname};!function(){var t=document,e=t.createElement("script");e.src="https://ardhyawebstudio.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script>
-<noscript>Tolong aktifkan javascript pada browser anda untuk melihat <a href=https://disqus.com/?ref_noscript>komentar didukung oleh Disqus.</a></noscript>
-<footer class=footer>
-<p>Dibuat dengan ❤️ oleh HMLilder Studio | <span id=currentYear></span> | By Ardhya.</p>
-<img src="public/fav.ico?v=2" alt="HMLilder Logo" class=footer-img>
-<p style=margin-top:10px;font-size:.8rem>Preview hasil di perangkat mobile & desktop. Semua fitur sekarang FREE!</p>
+
+                <!-- FONT SELECTION SECTION -->
+                <div class="control-group">
+                    <h3 class="section-title">
+                        <i class="fas fa-font"></i> Pilih Font
+                    </h3>
+                    <div class="font-options">
+                        <!-- Font Arial (default) -->
+                        <div class="font-option active" data-font="Arial, sans-serif">
+                            <div class="font-preview" style="font-family: Arial, sans-serif;">
+                                Aa
+                            </div>
+                            <span class="font-name">Arial</span>
+                        </div>
+        
+                        <!-- Font Serif (Georgia) -->
+                        <div class="font-option" data-font="Georgia, serif">
+                            <div class="font-preview" style="font-family: Georgia, serif;">
+                                Aa
+                            </div>
+                            <span class="font-name">Serif</span>
+                        </div>
+                        
+                        <!-- Font Montserrat -->
+                        <div class="font-option" data-font="'Montserrat', sans-serif">
+                            <div class="font-preview" style="font-family: 'Montserrat', sans-serif;">
+                                Aa
+                            </div>
+                            <span class="font-name">Montserrat</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="control-group">
+                    <label class="control-label">Link Tombol CTA</label>
+                    <input type="text" id="ctaLink" placeholder="https://wa.me/628..." value="">
+                </div>
+                
+                <div class="control-group">
+                    <label class="control-label">Upload Logo (gambar), opsional</label>
+                    <input type="file" id="imageUpload">
+                    <p class="tagline">Support file: PNG, JPG, ICO. Maks ukuran file 2MB.</p>
+
+                    <!-- Setelah input upload gambar: -->
+                    <div id="imagePreview" style="margin-top: 10px; display: none;">
+                    <img id="previewImage" src="" style="max-width: 100px; max-height: 100px; border-radius: 5px;">
+                    <button onclick="removeImage()" style="margin-left: 10px; padding: 5px 10px; background: #f72585; color: white; border: none; border-radius: 4px;">Hapus</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+            <!-- PREVIEW PANEL -->
+            <div class="preview-panel">
+                <h2 class="panel-title"><i class="fas fa-eye"></i> Live Preview</h2>
+                
+                <!-- DEVICE TOGGLE -->
+                <div class="device-toggle">
+                    <button class="device-btn active" data-device="desktop">
+                        <i class="fas fa-desktop"></i> Desktop
+                    </button>
+                    <button class="device-btn" data-device="tablet">
+                        <i class="fas fa-tablet-alt"></i> Tablet
+                    </button>
+                    <button class="device-btn" data-device="mobile">
+                        <i class="fas fa-mobile-alt"></i> Mobile
+                    </button>
+                </div>
+                
+                <!-- PREVIEW CONTAINER -->
+                <div class="preview-container" id="previewContainer">
+                    <!-- Preview akan diisi oleh JavaScript -->
+                    <div style="text-align: center; padding: 50px; color: #999;">
+                        <i class="fas fa-spinner fa-spin fa-2x"></i>
+                        <p>Memuat preview...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OUTPUT PANEL -->
+        <div class="output-panel">
+            <h2 class="panel-title"><i class="fas fa-download"></i> Output</h2>
+            
+            <div class="action-buttons">
+                <button class="btn btn-primary" id="copyBtn">
+                    <i class="fas fa-copy"></i> Salin Kode HTML
+                </button>
+                
+                <button class="btn btn-secondary" id="downloadBtn">
+                    <i class="fas fa-file-download"></i> Download File HTML
+                </button>
+            </div>
+            
+            <!-- CODE OUTPUT AREA -->
+            <div style="margin-top: 25px;">
+                <label class="control-label">Kode HTML Hasil Generate:</label>
+                <textarea id="codeOutput" rows="10" style="font-family: 'Courier New', monospace; font-size: 14px;" readonly placeholder="Kode HTML akan muncul di sini..."></textarea>
+                <label class="control-label">Cara memodifikasi website.</label>
+                <ul>
+                    <li>Setelah selesai mengisi kolom kolom yang ada, copy paste script atau download file html.</li>
+                    <li>Jika menggunakan metode copy paste, buka editor teks, seperti notepad, lalu lanjut ke langkah 4.</li>
+                    <li>Jika menggunakan metode download, ubah nama file menjadi index.html untuk file beranda. selain beranda, nama file bebas.</li>
+                    <li>Mulai modifikasi file. Petunjuk tiap bagian: <a href="#petunjukBagian">disini</a></li>
+                    <li>Jika sudah, selamat website sudah jadi! Upload ke hosting, seperti Hostinger, Domainesia, Cloudflare, atau Netlify agar website anda bisa online. Anda bisa mengikuti tutorial di internet karena cara mengupload file ke tiap hosting berbeda beda.</li>
+                </ul>
+                <br><br>
+                <label class="control-label">Petunjuk setiap bagian (jika ada pertanyaan, kolom komentar <a href="#disqus_thread">klik disini</a>)</label>
+                <ul id="petunjukBagian">
+                    <li>&lt;!DOCTYPE html&gt; = deklarasi file HTML.</li>
+                    <li>&lt;html lang="id"&gt; = bahasa file HTML. "id" = Indonesia.</li>
+                    <li>&lt;head&gt; = bagian kepala pada website, tidak terlihat di badan halaman.</li>
+                    <li>&lt;meta charset="UTF-8"&gt; = tag meta untuk encoding file (UTF-8), agar karakter unik seperti emoji bisa tampil.</li>
+                    <li>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; = tag meta untuk halaman responsif di layar kecil seperti HP.</li>
+                    <li>&lt;title&gt;Nama Bisnis Anda - Tagline&lt;/title&gt; = judul halaman di bagian atas browser.</li>
+                    <li>&lt;style&gt;...&lt;/style&gt; = elemen CSS untuk atur file agar rapi dan enak dipandang.</li>
+                    <li>&lt;/head&gt; = penutup tag head</li>
+                    <li>&lt;body&gt; = bagian badan halaman, yang terlihat oleh pengguna.</li>
+                    <li>&lt;div class="container"&gt; = "div" menandakan suatu bagian tertentu di halaman. class="..." memberi tanda pada suatu elemen, agar bisa diatur lewat CSS dan javascript.</li>
+                    <li>&lt;header style="text-align: center; padding: 20px 0;"&gt; = header, bagian paling atas website.</li>
+                    <li>Didalam header, berisi tag untuk gambar (&lt;img src="letak-gambar.ekstensi" alt="nama bisnis anda"&gt;) jika Anda mengunggah gambar ke dalam halaman. Jika tidak, tag ini kosong.</li>
+                    <li>&lt;/header&gt; = penutup tag header</li>
+                    <li>&lt;main&gt; = konten utama</li>
+                    <li>isi dari tag main adalah konten utama yang terlihat di preview page builder. </li>
+                    <li>&lt;/main&gt; = penutup main.</li>
+                    <li>&lt;footer&gt; = bagian paling bawah website</li>
+                    <li>... isi dari footer</li>
+                    <li>&lt;/footer&gt; = penutup footer</li>
+                    <li>&lt;/div&gt; = penutup tag bagian "container" dalam halaman.</li>
+                    <li>&lt;script&gt;...&lt;/script&gt; = berisi kode javascript.</li>
+                    <li>&lt;/body&gt; = penutup badan halaman.</li>
+                    <li>&lt;/html&gt; = penutup halaman HTML.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- disquss-->
+        <label class="control-label">Ada pertanyaan? kolom komentar disini!</label>
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+    
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://ardhyawebstudio.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Tolong aktifkan javascript pada browser anda untuk melihat <a href="https://disqus.com/?ref_noscript">komentar didukung oleh Disqus.</a></noscript>
+        
+        <!-- FOOTER -->
+<footer class="footer">
+    <p>Dibuat dengan ❤️ oleh HMLilder Studio | <span id="currentYear"></span> | By Ardhya.</p>
+    <img src="public/fav.ico?v=2" alt="HMLilder Logo" class="footer-img">
+    <p style="margin-top: 10px; font-size: 0.8rem;">Preview hasil di perangkat mobile & desktop. Semua fitur sekarang FREE!</p>
 </footer>
-<script src=src/builder.js></script>
+
+    <script src="src/builder.js"></script>
+
 </body>
 </html>
