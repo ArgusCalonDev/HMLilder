@@ -1,88 +1,352 @@
-<!doctype html>
-<html lang=id>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q49KY3ZE3V"></script>
-<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-Q49KY3ZE3V")</script>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=google-adsense-account content=ca-pub-3975087268988772>
-<title>HMLilder Studio - Html Builder</title>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css>
-<link rel=stylesheet href="src/sidebar.css?v=1.0">
-<link rel=icon type=image/x-icon href="public/fav.ico?v=2">
-<style>:root{--primary:#4361ee;--secondary:#3a0ca3;--dark:#2b2d42;--light:#f8f9fa;--gray:#6c757d;--success:#4cc9f0;--danger:#f72585;--warning:#ffd166;--border-radius:12px;--shadow:0 8px 20px rgba(0,0,0,0.08);--transition:all 0.3s ease}*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,-apple-system,sans-serif}body{background:linear-gradient(135deg,#f5f7fa 0,#e4edf5 100%);color:var(--dark);min-height:100vh;padding:20px;line-height:1.6}.container{max-width:1400px;margin:0 auto}.header{text-align:center;margin-bottom:30px;padding:25px;background:#fff;border-radius:var(--border-radius);box-shadow:var(--shadow)}.logo{font-size:2.8rem;font-weight:800;background:linear-gradient(90deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:10px}.tagline{color:var(--gray);font-size:1.2rem;margin-bottom:15px}.coming-soon-badge{display:inline-block;background:linear-gradient(90deg,#ff9a00,#ff5e00);color:#fff;padding:8px 20px;border-radius:50px;font-weight:700;font-size:1rem;margin-top:10px;animation:pulse 2s infinite;box-shadow:0 4px 15px rgba(255,94,0,.3)}.coming-soon-badge:hover{cursor:pointer;box-shadow:0 6px 20px rgba(255,94,0,.5)}@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}.main-layout{display:flex;flex-wrap:wrap;gap:25px;margin-bottom:40px}.editor-panel,.preview-panel{flex:1;min-width:300px;background:#fff;border-radius:var(--border-radius);box-shadow:var(--shadow);padding:25px}.panel-title{font-size:1.5rem;color:var(--primary);margin-bottom:20px;padding-bottom:10px;border-bottom:2px solid #f0f0f0;display:flex;align-items:center;gap:10px}.panel-title i{font-size:1.3rem}.control-group{margin-bottom:25px}.control-label{display:block;font-weight:600;margin-bottom:8px;color:var(--dark)}.template-options{display:flex;gap:15px;flex-wrap:wrap}.template-option{flex:1;min-width:120px;border:2px solid #e0e0e0;border-radius:10px;padding:15px;text-align:center;cursor:pointer;transition:var(--transition)}.template-option:hover{border-color:var(--primary);transform:translateY(-3px)}.template-option.active{border-color:var(--primary);background-color:rgba(67,97,238,.05)}.template-icon{font-size:2rem;margin-bottom:10px;color:var(--primary)}.template-name{font-weight:600;font-size:.95rem}input,select,textarea{width:100%;padding:12px 15px;border:2px solid #e0e0e0;border-radius:8px;font-size:1rem;transition:var(--transition)}input:focus,select:focus,textarea:focus{outline:0;border-color:var(--primary);box-shadow:0 0 0 3px rgba(67,97,238,.1)}textarea{min-height:100px;resize:vertical}.color-options{display:flex;gap:10px;flex-wrap:wrap}.color-option{width:40px;height:40px;border-radius:50%;cursor:pointer;border:3px solid transparent;transition:var(--transition)}.color-option:hover{transform:scale(1.1)}.color-option.active{border-color:var(--dark)}.premium-color{position:relative}.premium-color::after{content:'PLUS';position:absolute;top:-8px;right:-8px;background:#ff9e00;color:#fff;font-size:9px;padding:2px 5px;border-radius:10px;font-weight:700}.premium-color.premium-unlocked::after{background:#06d6a0}.premium-color.premium-locked{opacity:.5;cursor:not-allowed}.premium-color.premium-locked:hover{transform:none!important}.premium-badge{background:linear-gradient(90deg,#ffd166,#ff9e00);color:var(--dark);font-size:.7rem;padding:3px 8px;border-radius:10px;font-weight:700;margin-left:8px}.preview-container{border:2px dashed #e0e0e0;border-radius:10px;padding:20px;min-height:400px;background:#f9fafb;overflow:auto;margin-bottom:20px;transition:var(--transition)}.preview-container:hover{border-color:var(--primary)}.device-toggle{display:flex;justify-content:center;gap:10px;margin-bottom:20px}.device-btn{padding:8px 20px;background:#f0f0f0;border:none;border-radius:6px;cursor:pointer;font-weight:600;transition:var(--transition)}.device-btn.active{background:var(--primary);color:#fff}.premium-locked{opacity:.6;position:relative;cursor:not-allowed}.premium-locked::after{content:"🔒 PAKET PLUS";position:absolute;top:5px;right:5px;background:linear-gradient(90deg,#ffd166,#ff9e00);color:var(--dark);padding:3px 10px;border-radius:20px;font-size:.7rem;font-weight:700}.output-panel{background:#fff;border-radius:var(--border-radius);box-shadow:var(--shadow);padding:25px;margin-top:20px}.action-buttons{display:flex;gap:15px;flex-wrap:wrap}.btn{padding:14px 28px;border:none;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer;transition:var(--transition);display:flex;align-items:center;justify-content:center;gap:10px;flex:1;min-width:200px}.btn-primary{background:var(--primary);color:#fff}.btn-primary:hover{background:var(--secondary);transform:translateY(-3px);box-shadow:0 10px 20px rgba(67,97,238,.2)}.btn-secondary{background:#f0f0f0;color:var(--dark)}.btn-secondary:hover{background:#e0e0e0;transform:translateY(-3px)}.btn-premium{background:linear-gradient(90deg,#ff9a00,#ff5e00);color:#fff}.btn-premium:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(255,94,0,.2)}.footer{text-align:center;margin-top:40px;color:var(--gray);font-size:.9rem;padding:20px}.generated-page{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:800px;margin:0 auto;padding:20px}.hero-section{text-align:center;padding:50px 20px;border-radius:15px;margin-bottom:40px}.hero-title{font-size:2.5rem;margin-bottom:15px}.hero-tagline{font-size:1.3rem;margin-bottom:25px;color:#555}.hero-description{font-size:1.1rem;line-height:1.7;margin-bottom:30px;color:#666;max-width:700px;margin-left:auto;margin-right:auto}.cta-button{display:inline-block;padding:15px 35px;background:var(--primary);color:#fff;text-decoration:none;border-radius:8px;font-weight:700;font-size:1.1rem;transition:var(--transition);border:none;cursor:pointer}.cta-button:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,.1)}.features-section{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin:40px 0}.feature-card{background:#f9f9f9;padding:25px;border-radius:10px;border-left:5px solid var(--primary)}@media (max-width:768px){.main-layout{flex-direction:column}.editor-panel,.preview-panel{width:100%}.template-options{flex-direction:column}.btn{min-width:100%}.hero-title{font-size:2rem}.logo{font-size:2.2rem}}.font-options{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:10px}.font-option{border:2px solid #e0e0e0;border-radius:8px;padding:10px;text-align:center;cursor:pointer;transition:all .3s;background:#fff}.font-option:hover{border-color:#4361ee;transform:translateY(-2px)}.font-option.active{border-color:#4361ee;background:#4361ee10;box-shadow:0 0 0 2px #4361ee40}.font-preview{font-size:24px;font-weight:700;margin-bottom:5px;height:40px;display:flex;align-items:center;justify-content:center}.font-name{font-size:12px;color:#555;display:block}.font-option.active .font-name{color:#4361ee;font-weight:600}.footer-img{max-width:40%;max-height:40%;border-radius:10px;box-shadow:rgba(0,0,0,.08) 0 8px 20px}#component-preview{max-height:400px;overflow-y:auto}#code-output{max-height:300px;tab-size:2;-moz-tab-size:2}#code-output::-webkit-scrollbar,#component-preview::-webkit-scrollbar{width:8px}#code-output::-webkit-scrollbar-track,#component-preview::-webkit-scrollbar-track{background:#f1f1f1;border-radius:4px}#code-output::-webkit-scrollbar-thumb,#component-preview::-webkit-scrollbar-thumb{background:#4361ee;border-radius:4px}#code-output::-webkit-scrollbar-thumb:hover,#component-preview::-webkit-scrollbar-thumb:hover{background:#3a0ca3}</style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q49KY3ZE3V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-Q49KY3ZE3V');
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-3975087268988772">
+    <title>HMLilder Studio - Html Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="src/sidebar.css?v=1.0">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+ 
+    <link rel="stylesheet" href="src/component.css?v=1">
 </head>
 <body>
-<div id=sidebar-container></div>
-<button class=toggle-btn onclick=toggleSidebar()>☰ Menu</button>
-<script type=module src="src/sidebar.js?v=1.5"></script>
-<script>function toggleSidebar(){const t=document.getElementById("sidebar"),e=document.getElementById("container");t.classList.toggle("active"),e.classList.toggle("shift")}</script>
-<div class=container>
-<header class=header>
-<h1 class=logo><i class="fas fa-code"></i> HMLilder</h1>
-<p class=tagline>Generate komponen untuk website html dengan mudah. 100% gratis</p>
-<br><br>
-<p>(Opsional) Kamu bisa mendukung pengembangan HMLilder dengan menggunakan layanan yang kami rekomendasikan. Jika kamu memang membutuhkan hosting atau domain, menggunakan link ini bisa membantu kami tanpa biaya tambahan.</p>
-<a class=cta-button style=justify-self:center href="https://my.domainesia.com/ref.php?u=26644">Dukung</a>
-</header>
-<script>atOptions={key:"b525b2db453861c6cbc8a079e750e4cf",format:"iframe",height:90,width:728,params:{}}</script>
-<script src=https://pitofficialfollower.com/b525b2db453861c6cbc8a079e750e4cf/invoke.js></script>
-<div class=main-layout>
-<div class=editor-panel>
-<h2 class=panel-title><i class="fas fa-sliders-h"></i> Pengaturan Komponen</h2>
-<div class=control-group>
-<label class=control-label>
-<i class="fas fa-cube"></i> Jenis Komponen
-</label>
-<select id=component-select class=form-control style=cursor:pointer>
-<option value=hero>🏆 Hero Section</option>
-<option value=features>✨ Features Section</option>
-<option value=pricing>💎 Pricing Table</option>
-<option value=testimonials>💬 Testimonials</option>
-<option value=ctabar>📢 Call to Action Bar</option>
-<option value=linkblock>🔗 Link Block</option>
-<option value=minifooter>🔻 Mini Footer</option>
-<option value=pricingcomparison>📊 Pricing Comparison Table</option>
-<option value=projectshowcase>🖼️ Project Showcase</option>
-<option value=achievements>🏆 Achievements Section</option>
-<option value=bioblock>👤 Bio Block</option>
-<option value=upperNavbar>🧭 Navbar Atas</option>
-<option value=sidebar>🧭 Sidebar</option>
-</select>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="src/sidebar.js?v=1.5"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> HMLilder</h1>
+            <p class="tagline">Generate komponen untuk website html dengan mudah. 100% gratis</p>
+            <br><br>
+            
+            <p>(Opsional) Kamu bisa mendukung pengembangan HMLilder dengan menggunakan layanan yang kami rekomendasikan. Jika kamu memang membutuhkan hosting atau domain, menggunakan link ini bisa membantu kami tanpa biaya tambahan.</p>
+            <a class="cta-button" style="justify-self: center;" href="https://my.domainesia.com/ref.php?u=26644">Dukung</a>
+        </header>
+
+        <script>
+            atOptions = {
+                'key' : 'b525b2db453861c6cbc8a079e750e4cf',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+            };
+        </script>
+        <script src="https://pitofficialfollower.com/b525b2db453861c6cbc8a079e750e4cf/invoke.js"></script>
+
+    <!-- MAIN LAYOUT -->
+<div class="main-layout">
+    
+    <!-- EDITOR PANEL (KIRI) -->
+    <div class="editor-panel">
+        <h2 class="panel-title"><i class="fas fa-sliders-h"></i> Pengaturan Komponen</h2>
+        
+        <div class="control-group">
+            <label class="control-label">
+                <i class="fas fa-cube"></i> Jenis Komponen
+            </label>
+            <select id="component-select" class="form-control" style="cursor: pointer;">
+                <option value="hero">🏆 Hero Section</option>
+                <option value="features">✨ Features Section</option>
+                <option value="pricing">💎 Pricing Table</option>
+                <option value="testimonials">💬 Testimonials</option>
+                <option value="ctabar">📢 Call to Action Bar</option>
+                <option value="linkblock">🔗 Link Block</option>
+                <option value="minifooter">🔻 Mini Footer</option>
+                <option value="pricingcomparison">📊 Pricing Comparison Table</option>
+                <option value="projectshowcase">🖼️ Project Showcase</option>
+                <option value="achievements">🏆 Achievements Section</option>
+                <option value="bioblock">👤 Bio Block</option>
+                <option value="upperNavbar">🧭 Navbar Atas</option>
+                <option value="sidebar">🧭 Sidebar</option>
+            </select>
+        </div>
+        
+        <!-- INFO BOX -->
+        <div class="info-box" style="margin-top: 25px; padding: 20px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 10px; border-left: 5px solid #4361ee;">
+            <h4 style="color: #4361ee; margin-bottom: 10px;">
+                <i class="fas fa-info-circle"></i> Cara Pakai
+            </h4>
+            <ol style="margin: 0; padding-left: 20px; color: #555;">
+                <li>Pilih jenis komponen</li>
+                <li>Lihat preview di kanan</li>
+                <li>Salin kode HTML</li>
+                <li>Tempelkan pada website Anda</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- OUTPUT PANEL (KANAN) -->
+    <div class="output-panel">
+        <!-- TEMPAT OUTPUT AKAN DIMASUKKAN OLEH JAVASCRIPT -->
+        <div id="component-output">
+            <!-- Default state -->
+            <div style="text-align: center; padding: 60px 20px; color: #888;">
+                <i class="fas fa-code" style="font-size: 4rem; margin-bottom: 20px; opacity: 0.3;"></i>
+                <h3 style="margin-bottom: 15px; color: #666;">Pilih Komponen</h3>
+                <p>Komponen HTML akan muncul di sini setelah Anda memilih dari dropdown</p>
+                <div style="margin-top: 30px; padding: 15px; background: #f8f9fa; border-radius: 8px; display: inline-block;">
+                    <i class="fas fa-arrow-left" style="margin-right: 10px;"></i>
+                    Gunakan panel di sebelah kiri
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </div>
-<div class=info-box style="margin-top:25px;padding:20px;background:linear-gradient(135deg,#f8f9fa,#e9ecef);border-radius:10px;border-left:5px solid #4361ee">
-<h4 style=color:#4361ee;margin-bottom:10px>
-<i class="fas fa-info-circle"></i> Cara Pakai
-</h4>
-<ol style=margin:0;padding-left:20px;color:#555>
-<li>Pilih jenis komponen</li>
-<li>Lihat preview di kanan</li>
-<li>Salin kode HTML</li>
-<li>Tempelkan pada website Anda</li>
-</ol>
-</div>
-</div>
-<div class=output-panel>
-<div id=component-output>
-<div style="text-align:center;padding:60px 20px;color:#888">
-<i class="fas fa-code" style=font-size:4rem;margin-bottom:20px;opacity:.3></i>
-<h3 style=margin-bottom:15px;color:#666>Pilih Komponen</h3>
-<p>Komponen HTML akan muncul di sini setelah Anda memilih dari dropdown</p>
-<div style=margin-top:30px;padding:15px;background:#f8f9fa;border-radius:8px;display:inline-block>
-<i class="fas fa-arrow-left" style=margin-right:10px></i>
-Gunakan panel di sebelah kiri
-</div>
-</div>
-</div>
-</div>
-</div>
-<footer class=footer>
-&copy; 2026 HMLilder Studio. All rights reserved.
-<div>
-<img src=public/fav.ico alt="Footer Image" class=footer-img>
-</div>
-</footer>
-<script>let currentComponent="hero";const componentSelect=document.getElementById("component-select"),outputPanel=document.querySelector(".output-panel");function initComponentGenerator(){console.log("🚀 Component Generator initialized"),componentSelect.addEventListener("change",(function(){currentComponent=this.value,console.log("Component selected:",currentComponent),generateComponentCode()})),generateComponentCode()}function generateComponentCode(){const e=components[currentComponent];if(!e)return void console.error("Component not found:",currentComponent);const n=`\n  <h2 class="panel-title">\n    <i class="fas fa-code"></i> ${e.name}\n  </h2>\n\n  <p style="color: #666; margin-bottom: 20px;">\n    ${e.description}\n  </p>\n\n  \x3c!-- PREVIEW --\x3e\n  <div style="background: #f8f9fa; border-radius: 10px; padding: 20px; margin-bottom: 20px; border-left: 4px solid #4361ee;">\n    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">\n      <h3 style="margin: 0; color: #2b2d42;">\n        <i class="fas fa-cube"></i> Preview Komponen\n      </h3>\n      <small style="color: #6c757d;">${e.name}</small>\n    </div>\n\n    <div id="component-preview" style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; background: white; overflow: auto;">\n      <style>\n        ${e.css}\n      </style>\n      ${e.html}\n    </div>\n  </div>\n\n  \x3c!-- HTML CODE --\x3e\n  <div style="background: #1e1e1e; border-radius: 10px; padding: 20px; margin-bottom: 20px;">\n    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">\n      <h3 style="margin: 0; color: #fff;">\n        <i class="fas fa-file-code"></i> Kode HTML\n      </h3>\n      <button id="copyHtmlBtn" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">\n        <i class="fas fa-copy"></i> Salin HTML\n      </button>\n    </div>\n\n    <pre style="background: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow: auto; font-family: 'Courier New', monospace; font-size: 14px; margin: 0;">\n${escapeHTML(e.html)}\n    </pre>\n  </div>\n\n  \x3c!-- CSS CODE --\x3e\n  <div style="background: #0f172a; border-radius: 10px; padding: 20px; margin-bottom: 20px;">\n    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">\n      <h3 style="margin: 0; color: #e5e7eb;">\n        <i class="fab fa-css3-alt"></i> Kode CSS\n      </h3>\n      <button id="copyCssBtn" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.9rem;">\n        <i class="fas fa-copy"></i> Salin CSS\n      </button>\n    </div>\n\n    <pre style="background: #020617; color: #e5e7eb; padding: 15px; border-radius: 5px; overflow: auto; font-family: 'Courier New', monospace; font-size: 14px; margin: 0;" id="css-output">\n${escapeHTML(e.css)}\n    </pre>\n  </div>\n\n  \x3c!-- CARA PAKAI --\x3e\n  <div style="background: #e3f2fd; border-radius: 10px; padding: 15px; border-left: 4px solid #2196f3;">\n    <h4 style="margin: 0 0 10px 0; color: #0d47a1;">\n      <i class="fas fa-lightbulb"></i> Cara Pakai\n    </h4>\n    <ol style="margin: 0; padding-left: 20px; color: #1565c0;">\n      <li>Salin kode HTML</li>\n      <li>Salin kode CSS</li>\n      <li>Tempel CSS ke file <code>&lt;style&gt;</code> atau file .css</li>\n      <li>Sesuaikan class sesuai kebutuhan</li>\n    </ol>\n  </div>\n`;outputPanel.innerHTML=n,setupCopyButton(),console.log(`✅ ${e.name} code generated`)}function escapeHTML(e){return e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;")}function setupCopyButton(){const e=document.getElementById("copyBtn"),n=document.getElementById("code-output");e&&n&&e.addEventListener("click",(function(){const o=n.textContent;navigator.clipboard.writeText(o).then((()=>{const n=e.innerHTML;e.innerHTML='<i class="fas fa-check"></i> Tersalin!',e.style.background="#06d6a0",setTimeout((()=>{e.innerHTML=n,e.style.background=""}),2e3),console.log("✅ Code copied to clipboard")})).catch((e=>{console.error("❌ Failed to copy:",e),alert("Gagal menyalin kode. Coba salin manual dari kotak kode.")}))}))}function setupCopyCssButton(){const e=document.getElementById("copyCssBtn"),n=document.getElementById("css-output");e&&n&&e.addEventListener("click",(function(){const o=n.textContent;navigator.clipboard.writeText(o).then((()=>{const n=e.innerHTML;e.innerHTML='<i class="fas fa-check"></i> Tersalin!',e.style.background="#38bdf8",setTimeout((()=>{e.innerHTML=n,e.style.background=""}),2e3),console.log("✅ CSS copied to clipboard")})).catch((e=>{console.error("❌ Failed to copy CSS:",e),alert("Gagal menyalin CSS. Coba salin manual dari kotak kode.")}))}))}function updateComponentDescription(){const e=components[currentComponent],n=document.getElementById("component-description");n&&e&&(n.innerHTML=`\n            <h4 style="margin-bottom: 10px; color: #4361ee;">${e.name}</h4>\n            <p style="color: #666; margin: 0;">${e.description}</p>\n        `)}function initComponentGenerator(){console.log("🚀 Component Generator initialized"),componentSelect.addEventListener("change",(function(){currentComponent=this.value,console.log("Component selected:",currentComponent),generateComponentCode(),updateComponentDescription()})),generateComponentCode(),updateComponentDescription()}</script>
+
+    <footer class="footer">
+        &copy; 2026 HMLilder Studio. All rights reserved. 
+        <div>
+            <img src="public/fav.ico" alt="Footer Image" class="footer-img">
+        </div>
+    </footer>
+
+    <script>
+  // ===== VARIABLES =====
+  let currentComponent = 'hero';
+  const componentSelect = document.getElementById('component-select');
+  const outputPanel = document.querySelector('.output-panel');
+  
+  // ===== INITIALIZE =====
+  function initComponentGenerator() {
+    console.log('🚀 Component Generator initialized');
+    
+    // Event listener untuk select
+    componentSelect.addEventListener('change', function() {
+      currentComponent = this.value;
+      console.log('Component selected:', currentComponent);
+      generateComponentCode();
+    });
+    
+    // Generate komponen pertama kali
+    generateComponentCode();
+  }
+  
+  // ===== GENERATE CODE =====
+  function generateComponentCode() {
+    const component = components[currentComponent];
+    
+    if (!component) {
+      console.error('Component not found:', currentComponent);
+      return;
+    }
+    
+    // Buat output HTML
+const outputHTML = `
+  <h2 class="panel-title">
+    <i class="fas fa-code"></i> ${component.name}
+  </h2>
+
+  <p style="color: #666; margin-bottom: 20px;">
+    ${component.description}
+  </p>
+
+  <!-- PREVIEW -->
+  <div style="background: #f8f9fa; border-radius: 10px; padding: 20px; margin-bottom: 20px; border-left: 4px solid #4361ee;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+      <h3 style="margin: 0; color: #2b2d42;">
+        <i class="fas fa-cube"></i> Preview Komponen
+      </h3>
+      <small style="color: #6c757d;">${component.name}</small>
+    </div>
+
+    <div id="component-preview" style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; background: white; overflow: auto;">
+      <style>
+        ${component.css}
+      </style>
+      ${component.html}
+    </div>
+  </div>
+
+  <!-- HTML CODE -->
+  <div style="background: #1e1e1e; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+      <h3 style="margin: 0; color: #fff;">
+        <i class="fas fa-file-code"></i> Kode HTML
+      </h3>
+      <button id="copyHtmlBtn" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">
+        <i class="fas fa-copy"></i> Salin HTML
+      </button>
+    </div>
+
+    <pre style="background: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow: auto; font-family: 'Courier New', monospace; font-size: 14px; margin: 0;">
+${escapeHTML(component.html)}
+    </pre>
+  </div>
+
+  <!-- CSS CODE -->
+  <div style="background: #0f172a; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+      <h3 style="margin: 0; color: #e5e7eb;">
+        <i class="fab fa-css3-alt"></i> Kode CSS
+      </h3>
+      <button id="copyCssBtn" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.9rem;">
+        <i class="fas fa-copy"></i> Salin CSS
+      </button>
+    </div>
+
+    <pre style="background: #020617; color: #e5e7eb; padding: 15px; border-radius: 5px; overflow: auto; font-family: 'Courier New', monospace; font-size: 14px; margin: 0;" id="css-output">
+${escapeHTML(component.css)}
+    </pre>
+  </div>
+
+  <!-- CARA PAKAI -->
+  <div style="background: #e3f2fd; border-radius: 10px; padding: 15px; border-left: 4px solid #2196f3;">
+    <h4 style="margin: 0 0 10px 0; color: #0d47a1;">
+      <i class="fas fa-lightbulb"></i> Cara Pakai
+    </h4>
+    <ol style="margin: 0; padding-left: 20px; color: #1565c0;">
+      <li>Salin kode HTML</li>
+      <li>Salin kode CSS</li>
+      <li>Tempel CSS ke file <code>&lt;style&gt;</code> atau file .css</li>
+      <li>Sesuaikan class sesuai kebutuhan</li>
+    </ol>
+  </div>
+`;
+
+    
+    // Update output panel
+    outputPanel.innerHTML = outputHTML;
+    
+    // Setup copy button
+    setupCopyButton();
+    setupCopyCssButton
+    
+    console.log(`✅ ${component.name} code generated`);
+  }
+  
+  // ===== HELPER FUNCTIONS =====
+  function escapeHTML(html) {
+    return html
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+  
+  function setupCopyButton() {
+    const copyBtn = document.getElementById('copyBtn');
+    const codeOutput = document.getElementById('code-output');
+    
+    if (copyBtn && codeOutput) {
+      copyBtn.addEventListener('click', function() {
+        // Ambil teks dari pre element (tanpa HTML entities)
+        const textToCopy = codeOutput.textContent;
+        
+        // Copy ke clipboard
+        navigator.clipboard.writeText(textToCopy)
+          .then(() => {
+            // Feedback visual
+            const originalHTML = copyBtn.innerHTML;
+            copyBtn.innerHTML = '<i class="fas fa-check"></i> Tersalin!';
+            copyBtn.style.background = '#06d6a0';
+            
+            setTimeout(() => {
+              copyBtn.innerHTML = originalHTML;
+              copyBtn.style.background = '';
+            }, 2000);
+            
+            console.log('✅ Code copied to clipboard');
+          })
+          .catch(err => {
+            console.error('❌ Failed to copy:', err);
+            alert('Gagal menyalin kode. Coba salin manual dari kotak kode.');
+          });
+      });
+    }
+  }
+
+function setupCopyCssButton() {
+  const copyCssBtn = document.getElementById('copyCssBtn');
+  const cssOutput = document.getElementById('css-output');
+
+  if (copyCssBtn && cssOutput) {
+    copyCssBtn.addEventListener('click', function () {
+      // Ambil teks CSS apa adanya
+      const textToCopy = cssOutput.textContent;
+
+      navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+          // Feedback visual
+          const originalHTML = copyCssBtn.innerHTML;
+          copyCssBtn.innerHTML = '<i class="fas fa-check"></i> Tersalin!';
+          copyCssBtn.style.background = '#38bdf8';
+
+          setTimeout(() => {
+            copyCssBtn.innerHTML = originalHTML;
+            copyCssBtn.style.background = '';
+          }, 2000);
+
+          console.log('✅ CSS copied to clipboard');
+        })
+        .catch(err => {
+          console.error('❌ Failed to copy CSS:', err);
+          alert('Gagal menyalin CSS. Coba salin manual dari kotak kode.');
+        });
+    });
+  }
+}
+
+
+  function updateComponentDescription() {
+    const component = components[currentComponent];
+    const descElement = document.getElementById('component-description');
+    
+    if (descElement && component) {
+        descElement.innerHTML = `
+            <h4 style="margin-bottom: 10px; color: #4361ee;">${component.name}</h4>
+            <p style="color: #666; margin: 0;">${component.description}</p>
+        `;
+    }
+}
+
+// Update init function
+function initComponentGenerator() {
+    console.log('🚀 Component Generator initialized');
+    
+    // Event listener untuk select
+    componentSelect.addEventListener('change', function() {
+        currentComponent = this.value;
+        console.log('Component selected:', currentComponent);
+        generateComponentCode();
+        updateComponentDescription(); // ⬅️ TAMBAH INI
+    });
+    
+    // Generate komponen pertama kali
+    generateComponentCode();
+    updateComponentDescription(); // ⬅️ TAMBAH INI
+}
+</script>
+
 <script src="src/data-component.js?v=1.1"></script>
-<script>document.addEventListener("DOMContentLoaded",initComponentGenerator)</script>
-</div></body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', initComponentGenerator);
+</script>
+
+</body>
 </html>
