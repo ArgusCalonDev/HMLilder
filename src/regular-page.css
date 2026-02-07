@@ -169,7 +169,7 @@
         margin-top: 20px;
     }
 
-/* Tambah di bagian <styl> di head */
+/* Article */
 article[id] {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -237,4 +237,13 @@ code {
 
 .article-category {
     justify-self: start;
+}
+
+article {
+    margin-top: 100px;
+}
+
+article h1 {
+    margin-bottom: 200px;
+    justify-self: center;
 }
