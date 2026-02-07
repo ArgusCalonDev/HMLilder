@@ -36,6 +36,8 @@
         <a href="https://my.domainesia.com/ref.php?u=26644">
             <button>Dukung</button>
         </a>
+
+        <p>Dokumentasi: <a href="index.html#htmlMinifier">klik disini</a></p>
     </header>
     
     <?php
