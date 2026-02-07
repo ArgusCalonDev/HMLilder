@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
 
     <!-- style -->
-    <link rel="stylesheet" href="src/minifier.css">
+    <link rel="stylesheet" href="src/minifier.css?v=1">
 </head>
 <body>
     <div id="sidebar-container"></div>
