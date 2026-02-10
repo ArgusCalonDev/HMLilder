@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="oDoZXjTr8u2-cF-4oykRxiQc2NQEdXIR8UfpE3fzvkE" />
+    <meta name="keywords" content="HMLilder, html builder, tutorial HTML pemula, cara membuat website untuk pemula">
+    <meta name="description" content="HMLilder adalah sebuah website yang menyediakan alat alat untuk membantu pemula memulai pemrograman website.">
+
+    <title>Tools yang Kami Gunakan</title>
+
+    <!-- cloudflare captcha -->
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer
+    ></script>
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+    <link rel="preconnect" href="https://challenges.cloudflare.com">
+
+    <!-- style -->
+    <link rel="stylesheet" href="/src/regular-page.css?v=4">
+
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="/daftar-artikel/sidebar-article.js"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> Tools yang Kami Gunakan</h1>
+        </header>
+
+        <!-- Main Article -->
+<article id="toolsYangKamiGunakan" class="post active">
+    <h1>Tools yang Kami Pakai di HMLilder</h1>
+
+    <p>
+        HMLilder dibangun sebagai platform pembelajaran HTML dan CSS yang ringan, sederhana, dan mudah diakses.
+        Untuk menjalankan dan mengelola website ini, kami menggunakan beberapa tools yang memang kami pakai sehari-hari.
+
+        Artikel ini dibuat sebagai bentuk transparansi, bukan sebagai kewajiban untuk mengikuti.
+        Setiap orang punya kebutuhan dan preferensi masing-masing.
+    </p>
+
+    <h2>Hosting Dan Domain</h2>
+    <li>Hosting Dan Domain</li>
+    <ul>
+        <li><strong>DomaiNesia</strong></li>
+        <p>
+            Untuk kebutuhan hosting dan domain, HMLilder menggunakan layanan dari Domainesia.
+            Layanan ini kami pilih karena cukup stabil untuk website edukasi, harganya terjangkau, dan dukungan teknisnya responsif saat dibutuhkan.
+        </p>
+
+        <img src="data:image/jpeg;base64,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" style="max-width: 45%; max-height: 45%;">
+        <i>Sumber: https://www.google.com/search?q=logo+domainesia&sca_esv=</i>
+
+        <br><br>
+
+        <p>Untuk belajar HTML/CSS/JS, website statis, website dinamis sederhana, maupun website yang mulai berkembang, layanan ini sudah mencukupi tanpa konfigurasi yang ribet.</p>
+
+        <li><strong>👉Lihat layanan DomaiNesia yang kami pakai</strong> <a href="https://my.domainesia.com/ref.php?u=26644">di domainesia.com</a></li>
+
+        <p>
+            (Opsional) Kamu bisa mendukung pengembangan HMLilder dengan menggunakan layanan yang kami rekomendasikan. 
+            Jika kamu memang membutuhkan hosting atau domain, menggunakan link ini bisa membantu kami tanpa biaya tambahan.
+        </p>
+    </ul>
+
+    <h2>Tool Pengolahan Kode</h2>
+    <li>HTML Minifier</li>
+    <ul>
+        <li><strong>Toptal HTML Minifier</strong></li>
+        <p>
+            Untuk optimasi ringan, kami menggunakan HTML Minifier dari Toptal.
+            Tool ini membantu memperkecil ukuran file HTML dengan menghapus spasi dan karakter yang tidak diperlukan, tanpa mengubah struktur kode.
+            Kami juga menggunakan API dari tool ini untuk membuat HTML Minifier HMLilder.
+        </p>
+
+        <img src="data:image/jpeg;base64,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" style="max-width: 45%; max-height: 45%;">
+        <i>Sumber: https://www.google.com/search?q=logo+toptal&sca_esv=</i>
+
+        <p>
+            Biasanya kami gunakan saat:
+        </p>
+
+        <ul>
+            <li><strong>Merapikan file HTML final</strong></li>
+            <li><strong>Mengurangi ukuran file</strong></li>
+            <li><strong>Menyiapkan file sebelum upload</strong></li>
+        </ul>
+
+        <p>Gunakan tool HTMl Minifier dari toptal: <a href="https://toptal.com/developers/html-minifier">toptal.com</a>, atau gunakan layanan HTML Minifier HMLilder <a href="minifier.php"> Disini</a></p>
+    </ul>
+
+    <h2>CDN & Keamanan</h2>
+    <ul>
+        <li>Content Delivery Network (CDN)</li>
+
+        <li><strong>Cloudflare</strong></li>
+        <p>
+            HMLilder menggunakan Cloudflare sebagai Content Delivery Network (CDN) untuk membantu meningkatkan performa dan keamanan website.
+            Cloudflare berfungsi sebagai perantara antara server dan pengunjung, sehingga konten bisa diakses lebih cepat dan lebih stabil.
+        </p>
+
+        <img src="data:image/png;base64,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" style="max-width: 45%; max-height: 45%;">
+        <i>Sumber: https://www.google.com/search?q=logo+cloudflare&sca_esv=</i>
+
+        <p>
+            Kami menggunakan Cloudflare untuk:
+        </p>
+
+        <ul>
+            <li>Mengurangi beban server</li>
+            <li>Meningkatkan kecepatan akses</li>
+            <li>Perlindungan dasar dari trafik mencurigakan</li>
+        </ul>
+
+        <p>Cloudflare bisa digunakan secara gratis dan cocok untuk website statis maupun dinamis tanpa konfigurasi yang rumit. Gunakan Cloudflare: <a href="https://cloudflare.com">cloudflare.com</a></p>
+    </ul>
+
+    <h2>Catatan Penting</h2>
+    <p>
+        Sebagian besar materi di HMLilder tidak membutuhkan layanan berbayar.
+        Hosting dan domain baru diperlukan ketika kamu ingin mempublikasikan project atau menjalankan website sendiri.
+
+        Gunakan tools sesuai kebutuhan, bukan karena ikut-ikutan.
+    </p>
+
+    <h2>Penutup</h2>
+    <p>
+        Semoga artikel ini bisa memberi gambaran tentang tools yang digunakan di balik HMLilder.
+        Jika kamu punya <i>workflow</i> atau tools favorit sendiri, itu sepenuhnya valid.
+
+        Yang terpenting: nyaman dipakai dan sesuai kebutuhanmu.
+    </p>
+</article>
+
+<p style="margin: 40px;">*Iklan</p>
+<script async="async" data-cfasync="false" src="https://pitofficialfollower.com/26935b6baded7cceabda028fed0435e1/invoke.js"></script>
+<div id="container-26935b6baded7cceabda028fed0435e1"></div>
+
+    <!-- disqus -->
+     <h2>Memiliki pertanyaan?</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+    
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ardhyawebstudio.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <footer class="footer">
+        &copy; 2026 HMLilder Studio. All rights reserved.
+        <br><br>
+    </footer>
+</div>
+</body>
+</html>
