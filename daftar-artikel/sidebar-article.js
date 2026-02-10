@@ -9,7 +9,7 @@ const qs =
   String(now.getSeconds()).padStart(2, "0");
 
 // sidebar.js
-fetch("/sidebar.html?v=" + qs, { cache: "no-store" })
+fetch("/daftar-artikel/sidebar-article.html?v=" + qs, { cache: "no-store" })
     .then(res => res.text())
     .then(html => {
         // 1. Inject sidebar HTML
