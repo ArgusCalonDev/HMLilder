@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="oDoZXjTr8u2-cF-4oykRxiQc2NQEdXIR8UfpE3fzvkE" />
+    <meta name="keywords" content="HMLilder, html builder, tutorial HTML pemula, cara membuat website untuk pemula">
+    <meta name="description" content="HMLilder adalah sebuah website yang menyediakan alat alat untuk membantu pemula memulai pemrograman website.">
+
+    <title>Elemen-elemen CSS</title>
+
+    <!-- cloudflare captcha -->
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer
+    ></script>
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+    <link rel="preconnect" href="https://challenges.cloudflare.com">
+
+    <!-- style -->
+    <link rel="stylesheet" href="/src/regular-page.css?v=4">
+
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="/daftar-artikel/sidebar-article.js"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> Elemen-elemen CSS</h1>
+        </header>
+
+        <!-- Main Article -->
+<article id="elemenCSS" class="post active">
+  <h1>Elemen dan Properti Penting dalam CSS</h1>
+
+  <p>
+    Dalam CSS, terdapat banyak properti (sering disebut elemen CSS oleh pemula)
+    yang berfungsi untuk mengatur tata letak, posisi, dan perilaku elemen HTML.
+    Artikel ini membahas beberapa properti CSS yang paling sering digunakan,
+    terutama untuk layout modern.
+  </p>
+
+  <h2>display</h2>
+
+  <p>
+    Properti <code>display</code> menentukan bagaimana sebuah elemen ditampilkan
+    di halaman. Beberapa nilai yang sering digunakan adalah
+    <code>block</code>, <code>inline</code>, <code>inline-block</code>,
+    dan <code>flex</code>.
+  </p>
+
+  <pre><code class="code-block">
+.container {
+  display: flex;
+}
+  </code></pre>
+
+  <p>
+    Saat menggunakan <code>display: flex</code>, elemen anak di dalamnya dapat
+    diatur dengan lebih fleksibel menggunakan properti lain seperti
+    <code>justify-content</code> dan <code>align-items</code>.
+  </p>
+
+  <h2>justify-content</h2>
+
+  <p>
+    <code>justify-content</code> digunakan untuk mengatur posisi elemen secara
+    horizontal (sumbu utama) di dalam container flex.
+  </p>
+
+  <pre><code class="code-block">
+.container {
+  display: flex;
+  justify-content: center;
+}
+  </code></pre>
+
+  <p>
+    Beberapa nilai umum dari <code>justify-content</code> antara lain:
+    <code>flex-start</code>, <code>center</code>, <code>flex-end</code>,
+    <code>space-between</code>, dan <code>space-around</code>.
+  </p>
+
+  <h2>align-items</h2>
+
+  <p>
+    <code>align-items</code> digunakan untuk mengatur posisi elemen secara
+    vertikal (sumbu silang) di dalam container flex.
+  </p>
+
+  <pre><code class="code-block">
+.container {
+  display: flex;
+  align-items: center;
+}
+  </code></pre>
+
+  <p>
+    Properti ini sangat berguna untuk membuat elemen berada di tengah secara
+    vertikal tanpa trik CSS yang rumit.
+  </p>
+
+  <h2>gap</h2>
+
+  <p>
+    <code>gap</code> digunakan untuk memberi jarak antar elemen di dalam layout
+    flex atau grid tanpa perlu margin manual.
+  </p>
+
+  <pre><code class="code-block">
+.container {
+  display: flex;
+  gap: 20px;
+}
+  </code></pre>
+
+  <p>
+    Penggunaan <code>gap</code> membuat kode CSS lebih rapi dan mudah dibaca,
+    terutama pada layout modern.
+  </p>
+
+  <h2>position</h2>
+
+  <p>
+    Properti <code>position</code> mengatur cara sebuah elemen diposisikan.
+    Nilai yang sering digunakan adalah <code>static</code>, <code>relative</code>,
+    <code>absolute</code>, dan <code>fixed</code>.
+  </p>
+
+  <pre><code class="code-block">
+.box {
+  position: relative;
+  top: 10px;
+}
+  </code></pre>
+
+  <p>
+    Dengan <code>position</code>, kamu bisa mengatur elemen secara presisi
+    sesuai kebutuhan layout.
+  </p>
+
+  <h2>overflow</h2>
+
+  <p>
+    <code>overflow</code> menentukan apa yang terjadi jika konten melebihi ukuran
+    elemen.
+  </p>
+
+  <pre><code class="code-block">
+.box {
+  overflow: auto;
+}
+  </code></pre>
+
+  <p>
+    Nilai yang sering digunakan adalah <code>hidden</code>, <code>scroll</code>,
+    dan <code>auto</code>.
+  </p>
+
+  <h2>Kesimpulan</h2>
+
+  <p>
+    Properti-properti CSS di atas adalah fondasi penting dalam membangun layout
+    modern. Dengan memahami fungsi tiap properti, kamu bisa menyusun tampilan
+    website yang rapi, fleksibel, dan mudah dikembangkan dalam jangka panjang.
+  </p>
+</article>
+
+<p style="margin: 40px;">*Iklan</p>
+<script async="async" data-cfasync="false" src="https://pitofficialfollower.com/26935b6baded7cceabda028fed0435e1/invoke.js"></script>
+<div id="container-26935b6baded7cceabda028fed0435e1"></div>
+
+    <!-- disqus -->
+     <h2>Memiliki pertanyaan?</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+    
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ardhyawebstudio.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <footer class="footer">
+        &copy; 2026 HMLilder Studio. All rights reserved.
+        <br><br>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="oDoZXjTr8u2-cF-4oykRxiQc2NQEdXIR8UfpE3fzvkE" />
+    <meta name="keywords" content="HMLilder, html builder, tutorial HTML pemula, cara membuat website untuk pemula">
+    <meta name="description" content="HMLilder adalah sebuah website yang menyediakan alat alat untuk membantu pemula memulai pemrograman website.">
+
+    <title>HMLilder Studio - Html Builder</title>
+
+    <!-- cloudflare captcha -->
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer
+    ></script>
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+    <link rel="preconnect" href="https://challenges.cloudflare.com">
+
+    <!-- style -->
+    <link rel="stylesheet" href="/src/regular-page.css?v=4">
+
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="/daftar-artikel/sidebar-article.js"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> Panduan CSS Dasar</h1>
+        </header>
+
+        <!-- Main Article -->
+<article id="cssDasar" class="post active">
+    <h1>Panduan Dasar CSS untuk Website yang Rapi & Tahan Lama</h1>
+
+    <p>
+        CSS (Cascading Style Sheets) adalah bahasa yang digunakan
+        untuk mengatur tampilan visual dari struktur HTML.
+        Jika HTML adalah kerangka,
+        maka CSS adalah cara kita mengatur bagaimana kerangka itu terlihat
+        dan dirasakan oleh pengguna.
+    </p>
+
+    <p>
+        CSS yang baik bukan soal membuat tampilan paling ramai,
+        tapi soal konsistensi, keterbacaan,
+        dan kemudahan perawatan saat website berkembang.
+        Banyak masalah jangka panjang pada website
+        berawal dari CSS yang ditulis tanpa pola.
+    </p>
+
+    <h2>Menghubungkan CSS ke HTML</h2>
+
+    <p>
+        Praktik paling sehat adalah memisahkan CSS ke file tersendiri.
+        Ini membuat kode lebih bersih dan mudah dikembangkan.
+    </p>
+
+    <pre><code class="code-block">
+&lt;link rel="stylesheet" href="style.css"&gt;
+    </code></pre>
+
+    <p>
+        Dengan cara ini, struktur HTML tetap fokus pada konten,
+        sementara CSS fokus pada tampilan.
+    </p>
+
+    <h2>Selector Elemen</h2>
+
+    <p>
+        Selector elemen digunakan untuk memberi gaya
+        langsung ke tag HTML tertentu.
+        Cocok untuk gaya umum dan global.
+    </p>
+
+    <pre><code class="code-block">
+h1 {
+    color: #333;
+    font-size: 32px;
+}
+
+p {
+    line-height: 1.6;
+    color: #555;
+}
+    </code></pre>
+
+    <p>
+        Gunakan selector elemen untuk aturan dasar.
+        Hindari memberi terlalu banyak aturan spesifik di level ini,
+        karena bisa menyulitkan penyesuaian di masa depan.
+    </p>
+
+    <h2>Menggunakan Class</h2>
+
+    <p>
+        Class adalah cara paling fleksibel dalam CSS.
+        Dengan class, satu gaya bisa digunakan ulang
+        di banyak elemen tanpa mengikat ke struktur tertentu.
+    </p>
+
+    <p>HTML:</p>
+    <pre><code class="code-block">
+&lt;div class="card"&gt;
+    &lt;h2&gt;Judul&lt;/h2&gt;
+    &lt;p&gt;Isi konten&lt;/p&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <p>CSS:</p>
+    <pre><code class="code-block">
+.card {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+}
+    </code></pre>
+
+    <p>
+        Biasakan memberi nama class berdasarkan fungsi,
+        bukan tampilan.
+        Nama seperti <code>.card</code>, <code>.container</code>,
+        atau <code>.button</code> lebih tahan lama
+        dibanding <code>.kotak-abu</code> atau <code>.teks-besar</code>.
+    </p>
+
+    <h2>Menggabungkan Elemen dan Class</h2>
+
+    <p>
+        Untuk kontrol yang lebih rapi,
+        CSS bisa menargetkan elemen tertentu di dalam class.
+        Ini membantu menjaga struktur tetap jelas
+        tanpa perlu class berlebihan.
+    </p>
+
+    <pre><code class="code-block">
+.card h2 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+}
+    </code></pre>
+
+    <p>
+        Pendekatan ini membuat CSS mudah dibaca
+        dan mencerminkan struktur HTML yang sebenarnya.
+    </p>
+
+    <h2>Catatan Penting untuk Jangka Panjang</h2>
+
+    <ul>
+        <li>Jangan terlalu sering memakai selector yang terlalu panjang</li>
+        <li>Gunakan class sebagai alat utama styling</li>
+        <li>Hindari inline CSS kecuali benar-benar darurat</li>
+        <li>Tulis CSS seolah orang lain akan membacanya nanti</li>
+    </ul>
+
+    <p>
+        CSS yang rapi tidak terasa efeknya di proyek kecil,
+        tapi akan sangat terasa ketika website tumbuh,
+        tim bertambah, atau desain berubah.
+    </p>
+
+    <a href="elemen-elemen-css.html">Baca juga: Elemen-elemen CSS</a>
+</article>
+
+<p style="margin: 40px;">*Iklan</p>
+<script async="async" data-cfasync="false" src="https://pitofficialfollower.com/26935b6baded7cceabda028fed0435e1/invoke.js"></script>
+<div id="container-26935b6baded7cceabda028fed0435e1"></div>
+
+    <!-- disqus -->
+     <h2>Memiliki pertanyaan?</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+    
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ardhyawebstudio.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <footer class="footer">
+        &copy; 2026 HMLilder Studio. All rights reserved.
+        <br><br>
+    </footer>
+</div>
+</body>
+</html>
