@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="oDoZXjTr8u2-cF-4oykRxiQc2NQEdXIR8UfpE3fzvkE" />
+    <meta name="keywords" content="HMLilder, html builder, tutorial HTML pemula, cara membuat website untuk pemula">
+    <meta name="description" content="HMLilder adalah sebuah website yang menyediakan alat alat untuk membantu pemula memulai pemrograman website.">
+
+    <title>HMLilder Studio - Dokumentasi Tools</title>
+
+    <!-- cloudflare captcha -->
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer
+    ></script>
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+    <link rel="preconnect" href="https://challenges.cloudflare.com">
+
+    <!-- style -->
+    <link rel="stylesheet" href="/src/regular-page.css?v=4">
+
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="/daftar-artikel/sidebar-article.js"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> Dokumentasi Tools HMLilder</h1>
+        </header>
+
+        <!-- Main Article -->
+<article id="pageBuilder" class="post active">
+    <h1>Page Builder HMLilder</h1>
+    <p>
+        Page Builder adalah salah satu tool pada HMLilder yang berfungsi sebagai pembuat halaman HTML sederhana.
+    </p>
+
+    <ul>
+        <strong style="margin-top: 50px;">Cara Pakai:</strong>
+        <li>Pilih template yang disediakan</li>
+        <li>Isi kolom "Nama Bisnis Anda" sesuai judul halaman kamu</li>
+        <li>Isi kolom "Tagline/Slogan"</li>
+        <li>Isi kolom "Deskripsi"</li>
+        <li>Isi Kolom dan opsi lainnya yang tersedia, sesuai kebutuhan kamu</li>
+        <li>Preview halaman berada di bagian "Live Preview"</li>
+        <li>Copy atau download HTML, dan modifikasi sesuai kebutuhan.</li>
+    </ul>
+</article>
+
+<article id="componentGenerator" class="post active">
+    <h1>Component Generator HMLilder</h1>
+    <p>
+        Component Generator adalah salah satu tool pada HMLilder yang berfungsi sebagai pembuat potongan komponen website.
+    </p>
+
+    <ul>
+        <strong style="margin-top: 50px;">Cara Pakai:</strong>
+        <li>Pilih komponen yang disediakan</li>
+        <li>Lihat Preview</li>
+        <li>Lihat output kode HTML & CSS</li>
+        <li>Copy kode HTML pada tag &lt;body&gt; pada halaman kamu</li>
+        <li>Copy kode CSS pada tag &lt;style&gt; pada halaman kamu</li>
+        <li>Modifikasi sesuai kebutuhan</li>
+    </ul>
+</article>
+
+<article id="htmlEditor" class="post active">
+    <h1>HTML Editor HMLilder</h1>
+    <p>
+        HTML Editor adalah salah satu tool pada HMLilder yang berfungsi sebagai editor HTML online sederhana.
+    </p>
+
+    <ul>
+        <strong style="margin-top: 50px;">Cara Pakai:</strong>
+        <li>Tulis kode HTML milikmu</li>
+        <li>Lihat preview</li>
+        <li>Download file</li>
+    </ul>
+</article>
+
+<article id="htmlMinifier" class="post active">
+    <h1>HTML Minifier HMLilder</h1>
+    <p>
+        HTML Minifier adalah salah satu tool pada HMLilder yang berfungsi untuk mengkompresi ukuran file HTML milikmu.
+    </p>
+
+    <ul>
+        <strong style="margin-top: 50px;">Cara Pakai:</strong>
+        <li>Paste seluruh kode HTML Milikmu</li>
+        <li>Klik "Minify HTML Sekarang!"</li>
+        <li>Lihat output</li>
+        <li>Copy manual dari kotak output</li>
+    </ul>
+</article>
+
+<p style="margin: 40px;">*Iklan</p>
+<script async="async" data-cfasync="false" src="https://pitofficialfollower.com/26935b6baded7cceabda028fed0435e1/invoke.js"></script>
+<div id="container-26935b6baded7cceabda028fed0435e1"></div>
+
+    <!-- disqus -->
+     <h2>Memiliki pertanyaan?</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+    
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ardhyawebstudio.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <footer class="footer">
+        &copy; 2026 HMLilder Studio. All rights reserved.
+        <br><br>
+    </footer>
+</div>
+</body>
+</html>
