@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="oDoZXjTr8u2-cF-4oykRxiQc2NQEdXIR8UfpE3fzvkE" />
+    <meta name="keywords" content="HMLilder, html builder, tutorial HTML pemula, cara membuat website untuk pemula">
+    <meta name="description" content="HMLilder adalah sebuah website yang menyediakan alat alat untuk membantu pemula memulai pemrograman website.">
+
+    <title>Panduan HTML Dasar</title>
+
+    <!-- cloudflare captcha -->
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer
+    ></script>
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+    <link rel="preconnect" href="https://challenges.cloudflare.com">
+
+    <!-- style -->
+    <link rel="stylesheet" href="/src/regular-page.css?v=4">
+
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="/daftar-artikel/sidebar-article.js"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> Panduan HTML Dasar</h1>
+        </header>
+
+        <!-- Main Article -->
+<article id="PanduanHTMLDasar" class="post active">
+    <h1>Panduan membuat halaman HTML Dasar</h1>
+
+    <p>
+        Membuat website HTML tidak membutuhkan software mahal atau alat khusus.
+        Yang dibutuhkan hanyalah editor teks, browser, dan pemahaman dasar
+        tentang struktur dokumen HTML.
+        Fokus utama di tahap awal adalah <strong>keterbacaan dan kerapian struktur</strong>,
+        bukan tampilan visual.
+    </p>
+
+    <h2>Langkah Dasar Membuat Website HTML</h2>
+
+    <ol>
+        <li>
+            <strong>Pilih Editor Teks</strong><br>
+            Kamu bisa menggunakan editor bawaan seperti Notepad atau TextEdit,
+            namun editor kode seperti Visual Studio Code lebih disarankan
+            karena membantu penulisan kode dengan rapi dan minim kesalahan.
+        </li>
+
+        <img src="public/vscode-icon_11zon.png?v=1"
+             alt="Visual Studio Code"
+             style="max-width: 100px; max-height: 100px;">
+
+        <li>
+            <strong>Buat File HTML Baru</strong><br>
+            Simpan file dengan ekstensi <code>.html</code>.
+            Untuk halaman utama website, gunakan nama <code>index.html</code>
+            karena ini adalah standar yang dikenali oleh hampir semua server.
+        </li>
+
+        <li>
+            <strong>Tulis Struktur Dasar HTML</strong>
+            <pre><code class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Judul Halaman&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Halo, Dunia!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+        </li>
+
+        <img src="public/html_11zon.png?v=1"
+             alt="Contoh kode HTML"
+             style="max-width: 600px; max-height: 400px;">
+
+        <li>
+            <strong>Makna Setiap Bagian</strong><br>
+            HTML bekerja seperti dokumen formal.
+            Setiap bagian memiliki peran yang jelas:
+            <br><br>
+            <code>&lt;!DOCTYPE html&gt;</code> → Menandakan standar HTML modern.<br>
+            <code>&lt;html lang="id"&gt;</code> → Bahasa utama konten halaman.<br>
+            <code>&lt;head&gt;</code> → Informasi halaman untuk browser dan mesin pencari.<br>
+            <code>&lt;meta charset="UTF-8"&gt;</code> → Mendukung karakter internasional.<br>
+            <code>&lt;meta viewport&gt;</code> → Kunci tampilan responsif.<br>
+            <code>&lt;title&gt;</code> → Identitas halaman di tab browser.<br>
+            <code>&lt;body&gt;</code> → Semua konten yang terlihat pengguna.
+        </li>
+
+        <li>
+            <strong>Simpan dan Jalankan</strong><br>
+            Buka file HTML langsung di browser.
+            Pastikan ekstensi file benar dan tidak ganda
+            seperti <code>.html.txt</code>.
+        </li>
+    </ol>
+
+    <p>
+        <strong>Catatan penting:</strong>
+        HTML yang rapi sejak awal akan sangat membantu
+        ketika website berkembang menjadi besar.
+        Hindari kebiasaan asal menulis tag tanpa struktur.
+    </p>
+
+    <p>
+        Untuk latihan awal, kamu bisa menggunakan page builder
+        agar fokus memahami struktur tanpa terganggu detail teknis.
+        <a href="/builder.html">Gunakan page builder</a>
+    </p>
+</article>
+
+
+<p style="margin: 40px;">*Iklan</p>
+<script async="async" data-cfasync="false" src="https://pitofficialfollower.com/26935b6baded7cceabda028fed0435e1/invoke.js"></script>
+<div id="container-26935b6baded7cceabda028fed0435e1"></div>
+
+    <!-- disqus -->
+     <h2>Memiliki pertanyaan?</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+    
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ardhyawebstudio.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <footer class="footer">
+        &copy; 2026 HMLilder Studio. All rights reserved.
+        <br><br>
+    </footer>
+</div>
+</body>
+</html>
