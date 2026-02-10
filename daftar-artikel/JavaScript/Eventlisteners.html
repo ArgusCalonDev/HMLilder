@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="oDoZXjTr8u2-cF-4oykRxiQc2NQEdXIR8UfpE3fzvkE" />
+    <meta name="keywords" content="HMLilder, html builder, tutorial HTML pemula, cara membuat website untuk pemula">
+    <meta name="description" content="HMLilder adalah sebuah website yang menyediakan alat alat untuk membantu pemula memulai pemrograman website.">
+
+    <title>Event Listeners Dasar</title>
+
+    <!-- cloudflare captcha -->
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer
+    ></script>
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+    <link rel="preconnect" href="https://challenges.cloudflare.com">
+
+    <!-- style -->
+    <link rel="stylesheet" href="/src/regular-page.css?v=4">
+
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="/daftar-artikel/sidebar-article.js"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> Event Listeners Dasar</h1>
+        </header>
+
+        <!-- Main Article -->
+<article id="eventListenersDasar" class="post active">
+  <h1>Event Listeners Dasar Dalam Javascript</h1>
+  <p>
+    Dalam pengembangan website, interaksi pengguna merupakan bagian yang sangat penting. Ketika pengguna mengklik tombol, mengetik pada input, atau menggerakkan mouse, website perlu merespons tindakan tersebut. Di sinilah event listener berperan dalam JavaScript.
+  </p>
+
+  <br><br>
+  <p>
+    Event listener adalah mekanisme dalam JavaScript yang digunakan untuk mendeteksi dan merespons suatu event (kejadian) pada elemen HTML. Event dapat berupa klik, input, submit, hover, dan berbagai aksi lainnya yang dilakukan oleh pengguna.
+    <br>
+    Dengan event listener, kamu dapat menjalankan kode JavaScript tertentu saat sebuah event terjadi.
+  </p>
+
+  <p>
+    Event listener bekerja dengan cara “mendengarkan” event pada suatu elemen. Ketika event tersebut terjadi, fungsi yang terhubung akan dijalankan secara otomatis.
+  </p>
+
+  <p>
+    JavaScript menyediakan metode <code>addEventListener()</code> untuk menambahkan event listener pada elemen tertentu.
+  </p>
+
+  <h2>Contoh Event Listener Dasar</h2>
+  <p>
+    Berikut contoh penggunaan event listener untuk mendeteksi klik pada sebuah tombol:
+  </p>
+
+  <pre><code class="code-block">
+&lt;button id="btnKlik">Klik Saya&gt;
+
+&lt;script&gt;
+  const tombol = document.getElementById("btnKlik");
+
+  tombol.addEventListener("click", function () {
+    alert("Tombol berhasil diklik!");
+  });
+&lt;/script&gt;
+  </code></pre>
+
+  <p>Pada contoh di atas, JavaScript akan menampilkan pesan peringatan setiap kali tombol diklik oleh pengguna.</p>
+</article>
+
+<p style="margin: 40px;">*Iklan</p>
+<script async="async" data-cfasync="false" src="https://pitofficialfollower.com/26935b6baded7cceabda028fed0435e1/invoke.js"></script>
+<div id="container-26935b6baded7cceabda028fed0435e1"></div>
+
+    <!-- disqus -->
+     <h2>Memiliki pertanyaan?</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+    
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ardhyawebstudio.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <footer class="footer">
+        &copy; 2026 HMLilder Studio. All rights reserved.
+        <br><br>
+    </footer>
+</div>
+</body>
+</html>

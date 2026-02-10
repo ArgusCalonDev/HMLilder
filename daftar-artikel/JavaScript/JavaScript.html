@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="oDoZXjTr8u2-cF-4oykRxiQc2NQEdXIR8UfpE3fzvkE" />
+    <meta name="keywords" content="HMLilder, html builder, tutorial HTML pemula, cara membuat website untuk pemula">
+    <meta name="description" content="HMLilder adalah sebuah website yang menyediakan alat alat untuk membantu pemula memulai pemrograman website.">
+
+    <title>JavaScript Dasar</title>
+
+    <!-- cloudflare captcha -->
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer
+    ></script>
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+    <link rel="preconnect" href="https://challenges.cloudflare.com">
+
+    <!-- style -->
+    <link rel="stylesheet" href="/src/regular-page.css?v=4">
+
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="/daftar-artikel/sidebar-article.js"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> JavaScript</h1>
+        </header>
+
+        <!-- Main Article -->
+<article id="JavaScript" class="post active">
+  <h1>JavaScript Dasar untuk Pemula</h1>
+
+  <p>
+    JavaScript adalah bahasa pemrograman yang digunakan untuk membuat website
+    menjadi interaktif. Jika HTML berfungsi sebagai struktur dan CSS sebagai
+    tampilan, maka JavaScript berperan sebagai logika dan perilaku.
+  </p>
+
+  <p>
+    Dengan JavaScript, kita bisa merespons klik pengguna, memproses data,
+    menampilkan informasi secara dinamis, dan membangun aplikasi web sederhana
+    langsung di browser.
+  </p>
+
+  <h2>Cara Menulis JavaScript</h2>
+
+  <p>
+    JavaScript dapat ditulis langsung di dalam file HTML menggunakan tag
+    <code>&lt;script&gt;</code> atau dipisahkan ke dalam file berekstensi
+    <code>.js</code>.
+  </p>
+
+  <pre><code class="code-block">
+console.log("Halo, JavaScript!");
+// output: "Halo, Javascript!"
+  </code></pre>
+
+  <p>
+    Kode di atas akan menampilkan teks ke dalam console browser, bukan ke halaman
+    website. Untuk melihat output, klik tombol f12 pada keyboard, kemudian pilih tab "Console."
+  </p>
+
+  <h2>Variabel</h2>
+
+  <p>
+    Variabel digunakan untuk menyimpan data. JavaScript modern menyediakan
+    <code>let</code> dan <code>const</code> sebagai cara utama mendeklarasikan
+    variabel.
+  </p>
+
+  <pre><code class="code-block">
+let nama = "Ardhya";
+const umur = 16;
+
+console.log(nama);
+console.log(umur);
+
+// output: "Ardhya"
+// output: 16
+  </code></pre>
+
+  <p>
+    Gunakan <code>const</code> jika nilainya tidak berubah, dan <code>let</code>
+    jika nilainya perlu diperbarui.
+  </p>
+
+  <h2>Tipe Data Dasar</h2>
+
+  <p>
+    JavaScript memiliki beberapa tipe data dasar seperti string, number,
+    boolean, array, dan object.
+  </p>
+
+  <pre><code class="code-block">
+// string
+const judul = "Belajar JavaScript";
+// number 
+const harga = 25000;
+// boolean (true/false)
+const aktif = true;
+
+// array
+const warna = ["merah", "biru", "hijau"];
+
+// object
+const user = {
+  nama: "Adi",
+  role: "Developer"
+};
+  </code></pre>
+
+  <h2>Percabangan</h2>
+
+  <p>
+    Percabangan digunakan untuk menjalankan kode berdasarkan kondisi tertentu.
+  </p>
+
+  <pre><code class="code-block">
+const nilai = 85;
+
+if (nilai >= 75) {
+  console.log("Lulus");
+} else {
+  console.log("Tidak lulus");
+}
+
+// jika nilai lebih dari 75, output menjadi "Lulus", namun jika nilai kurang dari 75, output menjadi "Tidak Lulus."
+  </code></pre>
+
+  <h2>Perulangan</h2>
+
+  <p>
+    Perulangan digunakan untuk menjalankan kode yang sama berulang kali.
+  </p>
+
+  <pre><code class="code-block">
+for (let i = 1; i <= 5; i++) {
+  console.log("Perulangan ke-" + i);
+}
+  </code></pre>
+
+  <h2>Fungsi</h2>
+
+  <p>
+    Fungsi digunakan untuk mengelompokkan kode agar dapat digunakan kembali dan
+    membuat program lebih terstruktur.
+  </p>
+
+  <pre><code class="code-block">
+function sapa(nama) {
+  return "Halo, " + nama;
+}
+
+console.log(sapa("Ardhya"));
+
+// output: "Halo, Ardhya"
+  </code></pre>
+
+  <h2>Komentar</h2>
+
+  <p>
+    Komentar digunakan untuk menandakan suatu bagian dalam kode JavaScript. Hal ini biasanya digunakan untuk kolaborasi, agar kolaborator bisa memahami
+    bagian kode yang ditulis. Dalam JavaScript, komentar diawali dengan "//". Sebagai contoh:
+  </p>
+
+  <pre><code class="code-block">
+console.log("Halo Dunia!");
+// ini adalah komentar!
+  </code></pre>
+
+  <h2>Kesimpulan</h2>
+
+  <p>
+    JavaScript adalah fondasi penting dalam pengembangan web modern. Dengan
+    memahami dasar-dasarnya, kamu sudah siap melangkah ke tahap berikutnya seperti
+    manipulasi DOM dan event handling.
+  </p>
+</article>
+
+<p style="margin: 40px;">*Iklan</p>
+<script async="async" data-cfasync="false" src="https://pitofficialfollower.com/26935b6baded7cceabda028fed0435e1/invoke.js"></script>
+<div id="container-26935b6baded7cceabda028fed0435e1"></div>
+
+    <!-- disqus -->
+     <h2>Memiliki pertanyaan?</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+    
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ardhyawebstudio.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <footer class="footer">
+        &copy; 2026 HMLilder Studio. All rights reserved.
+        <br><br>
+    </footer>
+</div>
+</body>
+</html>
