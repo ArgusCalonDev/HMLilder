@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://challenges.cloudflare.com">
 
     <!-- style -->
-    <link rel="stylesheet" href="src/regular-page.css?v=4">
+    <link rel="stylesheet" href="src/regular-page.css?v=5">
 
 </head>
 <body>
@@ -46,11 +46,11 @@
         <header class="header">
             <h1 class="logo"><i class="fas fa-code"></i> HMLilder</h1>
             <p class="tagline">Tools untuk membantu pengembangan website.</p>
-                <br><br>
-            <p>(Opsional) Kamu bisa mendukung pengembangan HMLilder dengan menggunakan layanan yang kami rekomendasikan. Jika kamu memang membutuhkan hosting atau domain, menggunakan link ini bisa membantu kami tanpa biaya tambahan.</p>
-            <a class="cta-button" style="justify-self: center;" href="https://my.domainesia.com/ref.php?u=26644">Dukung</a>
 
-            <p>Terdapat loading pada awal pemuatan halaman website ini.</p>
+                <a href="builder.html">Page Builder</a>
+                <a href="component.html">Component Generator</a>
+                <a href="html-editor.html">HTML Editor</a>
+                <a href="minifier.php">HTML Minifier</a>
         </header>
 
         <script>
@@ -74,7 +74,7 @@
             data-callback="onSuccess"
         ></div>
 
-    <p>Artikel di halaman ini (klik salah satu link untuk melihat artikel):</p>
+    <p>Daftar Artikel</p>
     <ul id="articleIndex">
         <p class="article-category">Kategori: HTML</p>
         <li><a href="daftar-artikel/HTML/Apa-Itu-HTML.html">Apa itu HTML?</a></li>
@@ -124,7 +124,11 @@
 
 <br>
 
-        <section style="padding:40px 20px; background:#f9f9f9;" id="navigation">
+        <p>(Opsional) Kamu bisa mendukung pengembangan HMLilder dengan menggunakan layanan yang kami rekomendasikan. Jika kamu memang membutuhkan hosting atau domain, menggunakan link ini bisa membantu kami tanpa biaya tambahan.</p>
+        <a class="cta-button" style="justify-self: center;" href="https://my.domainesia.com/ref.php?u=26644">Dukung</a>
+
+
+        <section style="padding:40px 20px; background:#f9f9f9; margin-top: 10%;" id="navigation">
             <h3 style="margin-bottom:20px;">Navigasi</h3>
             <div style="display:flex; flex-direction:column; gap:12px;">
 
@@ -164,6 +168,12 @@
                 Editor HTML
                 </a>
 
+                <a href="minifier.php" 
+                style="padding:12px 16px; background:white; border-radius:8px; 
+                text-decoration:none; color:#222; border:1px solid #eee;">
+                Minifier HTML
+                </a>
+
                 <a href="builded-site.html"
                 style="padding:12px 16px; background:white; border-radius:8px; 
                 text-decoration:none; color:#222; border:1px solid #eee;">
@@ -176,98 +186,10 @@
 
     <br><br>
 
-    <!-- disqus -->
-     <h2>Memiliki pertanyaan terhadap suatu artikel? Tulis disini!</h2>
-    <div id="disqus_thread"></div>
-    <script>
-        var disqus_config = function () {
-            this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-    
-        (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://ardhyawebstudio.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
     <footer class="footer">
         &copy; 2026 HMLilder Studio. All rights reserved.
         <br><br>
     </footer>
-
-<script>
-// Artikel Toggler - CLASS BASED VERSION
-document.addEventListener('DOMContentLoaded', function() {
-    const articles = document.querySelectorAll('article[id]');
-    let currentArticle = null;
-    
-    // 1. Sembunyikan semua artikel DENGAN CLASS
-    articles.forEach(article => {
-        article.classList.remove('active');
-    });
-    
-    // 2. Cari menu artikel
-    const allParagraphs = Array.from(document.querySelectorAll('p'));
-    const articleParagraph = allParagraphs.find(p => 
-        p.textContent.includes('Artikel di halaman ini (klik salah satu link untuk melihat artikel):')
-    );
-    
-    if (articleParagraph) {
-        const articleMenu = articleParagraph.nextElementSibling;
-        
-        if (articleMenu && articleMenu.tagName === 'UL') {
-            // 3. Pasang event listener ke menu
-            articleMenu.addEventListener('click', function(e) {
-                const link = e.target.closest('a[href^="#"]');
-                
-                if (link) {
-                    e.preventDefault();
-                    const targetId = link.getAttribute('href').substring(1);
-                    
-                    // Sembunyikan artikel aktif
-                    if (currentArticle) {
-                        currentArticle.classList.remove('active');
-                    }
-                    
-                    // Tampilkan artikel baru
-                    const targetArticle = document.getElementById(targetId);
-                    if (targetArticle) {
-                        targetArticle.classList.add('active');
-                        currentArticle = targetArticle;
-                        
-                        // Update URL
-                        window.location.hash = targetId;
-                        
-                        // Smooth scroll
-                        setTimeout(() => {
-                            targetArticle.scrollIntoView({ 
-                                behavior: 'smooth', 
-                                block: 'start' 
-                            });
-                        }, 50);
-                    }
-                }
-            });
-        }
-    }
-    
-    // 4. Tentukan artikel awal
-    const hash = window.location.hash.substring(1);
-    if (hash && document.getElementById(hash)) {
-        const initialArticle = document.getElementById(hash);
-        initialArticle.classList.add('active');
-        currentArticle = initialArticle;
-    } else if (articles.length > 0) {
-        // Default: artikel pertama
-        articles[0].classList.add('active');
-        currentArticle = articles[0];
-    }
-});
-</script>
 
     <!-- 100% privacy-first analytics -->
     <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
