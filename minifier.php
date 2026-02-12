@@ -37,7 +37,7 @@
             <button>Dukung</button>
         </a>
 
-        <p>Dokumentasi: <a href="index.html#htmlMinifier">klik disini</a></p>
+        <p>Dokumentasi: <a href="daftar-artikel/Tools-Templates/Dokumentasi-Tools-HML.html#htmlMinifier">klik disini</a></p>
     </header>
     
     <?php
