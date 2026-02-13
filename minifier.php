@@ -28,9 +28,9 @@
 
 <div class="container">
     <header class="header">
-        <h1><i class="fas fa-code"></i>HMLilder - HTML Minifier</h1>
+        <h1><i class="fas fa-code"></i>HTML Minifier</h1>
 
-        <p class="tagline">Kompres ukuran file HTML dengan minify file HTML milikmu.</p>
+        <p class="tagline">Kode Lebih Kecil, Website Lebih Ngebut.</p>
 
         <p>(Opsional) Kamu bisa mendukung pengembangan HMLilder dengan menggunakan layanan yang kami rekomendasikan. Jika kamu memang membutuhkan hosting atau domain, menggunakan link ini bisa membantu kami tanpa biaya tambahan.</p>
         <a href="https://my.domainesia.com/ref.php?u=26644">
