@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="oDoZXjTr8u2-cF-4oykRxiQc2NQEdXIR8UfpE3fzvkE" />
+    <meta name="keywords" content="HMLilder, html builder, tutorial HTML pemula, cara membuat website untuk pemula">
+    <meta name="description" content="HMLilder adalah sebuah website yang menyediakan alat alat untuk membantu pemula memulai pemrograman website.">
+
+    <title>Membuat website HTML tanpa laptop</title>
+
+    <!-- cloudflare captcha -->
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer
+    ></script>
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+    <link rel="preconnect" href="https://challenges.cloudflare.com">
+
+    <!-- style -->
+    <link rel="stylesheet" href="/src/regular-page.css?v=4">
+
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="/daftar-artikel/sidebar-article.js"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> Membuat website HTML tanpa laptop</h1>
+        </header>
+
+        <!-- Main Article -->
+<article id="membuatWebsiteHTMLTanpaLaptop" class="post active">
+    <h1>Membuat Website HTML Menggunakan HP Android Tanpa Laptop</h1>
+    <p>
+        Membuat website tidak selalu membutuhkan laptop atau komputer dengan spesifikasi tinggi. Dengan HP Android dan koneksi internet yang stabil, kamu sudah bisa membuat dan mengunggah website sederhana berbasis HTML. Berikut langkah-langkahnya dari awal hingga website online.
+    </p>
+
+    <h2>1. Install Aplikasi Code Editor di HP</h2>
+    <p>
+        Langkah pertama adalah memasang aplikasi editor kode.
+    </p>
+
+    <p>
+        Beberapa aplikasi yang bisa kamu gunakan di Android:
+    </p>
+
+    <ul>
+        <li>Acode</li>
+        <li>Spck Editor</li>
+        <li>QuickEdit</li>
+    </ul>
+
+    <p>Cari di Play Store, lalu install salah satu. Setelah terpasang, kamu sudah siap menulis kode HTML.</p>
+
+    <h2>2. Membuat file HTML pertama</h2>
+    
+    <ol>
+        <li>Buka aplikasi editor kode</li>
+        <li>Buat file baru dengan nama: <code>index.html</code></li>
+        <li>Isi dengan struktur dasar HTML berikut:</li>
+    
+    <pre><code class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Website Pertama&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Halo Dunia!&lt;/h1&gt;
+    &lt;p&gt;Website ini dibuat hanya dengan HP Android.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+
+        <li>Simpan file tersebut.</li>
+    </ol>
+
+    <p>
+        Untuk melihat hasilnya:
+    </p>
+
+    <ul>
+        <li>Buka file melalui file manager</li>
+        <li>Pilih "buka dengan browser"</li>
+    </ul>
+
+    <p>
+        Jika berhasil, halaman sederhana akan muncul di browser.
+    </p>
+
+    <h2>3. Menambahkan CSS (opsional)</h2>
+    <p>
+        Untuk mempercantik tampilan halaman, kamu dapat menambahkan css langsung dalam file HTML tersebut. 
+        Kamu dapat melihat panduan dasar CSS di <a href="/daftar-artikel/CSS/Panduan-css-Dasar.html">sini</a>.
+    </p>
+
+    <h2>4. Menyiapkan Website Agar Bisa Online</h2>
+    <p>
+        Agar website bisa diakses orang lain, kamu perlu mengunggahnya ke layanan hosting. Untuk pemula, berikut beberapa hosting gratis yang bisa digunakan:
+    </p>
+
+    <ul>
+        <li><a href="https://pages.cloudflare.com">Cloudflare Pages</a></li>
+        <li><a href="https://netlify.com">Netlify</a></li>
+        <li><a href="https://vercel.com">Vercel</a></li>
+        <li><a href="https://github.com">Github pages</a></li>
+    </ul>
+
+    <h2>5. Cara upload ke hosting gratis</h2>
+    <h3>A. Cloudflare Pages</h3>
+    <ol>
+        <li>Buat akun di Cloudflare</li>
+        <li>Masuk ke menu Compute &gt; Workers And Pages</li>
+        <li>Klik tombol "Create Application" di pojok kanan atas</li>
+        <li>Di Bagian bawah, pilih "Looking to deploy Pages? Get started"</li>
+        <li>Upload file HTML atau file statis milikmu dalam bentuk ZIP</li>
+        <li>Link dan projek akan otomatis dibuat</li>
+        <li>Website langsung online dengan domain gratis dari Cloudflare.</li>
+    </ol>
+
+    <h3>B. Netlify</h3>
+    <ol>
+        <li>Buat akun di Netlify.</li>
+        <li>Login ke dashboard.</li>
+        <li>Pilih “Add new site”.</li>
+        <li>Gunakan opsi drag-and-drop.</li>
+        <li>Upload file HTML kamu.</li>
+        <li>Website langsung online dengan domain gratis dari Netlify.</li>
+    </ol>
+
+    <h3>C. Vercel</h3>
+    <ol>
+        <li>Buat akun di Vercel.</li>
+        <li>Hubungkan ke repository Git (biasanya dari GitHub).</li>
+        <li>Upload project HTML.</li>
+        <li>Klik deploy.</li>
+        <li>Tunggu proses selesai, lalu dapatkan link website.</li>
+    </ol>
+
+    <h3>D. Github Pages</h3>
+    <ol>
+        <li>Buat akun di GitHub.</li>
+        <li>Buat repository baru.</li>
+        <li>Upload file <code>index.html</code>.</li>
+        <li>Masuk ke Settings &gt; Pages.</li>
+        <li>Aktifkan GitHub Pages.</li>
+        <li>Website akan tersedia di domain <code>username.github.io/repository</code></li>
+    </ol>
+
+    <h2>Penutup</h2>
+    <p>
+        Membuat website HTML menggunakan HP Android tanpa laptop sangat memungkinkan, terutama untuk website sederhana. Dengan editor ringan dan hosting gratis, kamu sudah bisa memulai perjalanan sebagai web developer.
+        <br><br>
+        Jika ingin panduan lebih lengkap tentang masing-masing layanan hosting, kamu bisa mencari tutorial detailnya di internet sesuai platform yang dipilih.
+        <br><br>
+        Yang terpenting adalah mulai dari sekarang. Tidak perlu menunggu perangkat mahal untuk belajar membuat website.
+    </p>
+
+    <a href="Panduan-HTML-Dasar.html">Baca panduan HTML dasar</a>
+</article>
+
+<p style="margin: 40px;">*Iklan</p>
+<script async="async" data-cfasync="false" src="https://pitofficialfollower.com/26935b6baded7cceabda028fed0435e1/invoke.js"></script>
+<div id="container-26935b6baded7cceabda028fed0435e1"></div>
+
+    <!-- disqus -->
+     <h2>Memiliki pertanyaan?</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+    
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ardhyawebstudio.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <footer class="footer">
+        &copy; 2026 HMLilder Studio. All rights reserved.
+        <br><br>
+    </footer>
+</div>
+</body>
+</html>
