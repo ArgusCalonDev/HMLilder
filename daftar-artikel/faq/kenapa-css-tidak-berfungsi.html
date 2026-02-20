@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="oDoZXjTr8u2-cF-4oykRxiQc2NQEdXIR8UfpE3fzvkE" />
+    <meta name="keywords" content="HMLilder, html builder, tutorial HTML pemula, cara membuat website untuk pemula">
+    <meta name="description" content="CSS tidak berjalan atau tidak terhubung ke HTML? Pelajari penyebab umum seperti salah path, typo, specificity, hingga cache browser dan cara memperbaikinya.">
+
+    <title>Kenapa CSS Tidak Berfungsi? Penyebab Umum & Cara Mengatasinya</title>
+
+    <!-- cloudflare captcha -->
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer
+    ></script>
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+    <link rel="preconnect" href="https://challenges.cloudflare.com">
+
+    <!-- style -->
+    <link rel="stylesheet" href="/src/regular-page.css?v=4">
+
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="/daftar-artikel/sidebar-article.js"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> Kenapa CSS Saya Tidak Berfungsi?</h1>
+        </header>
+
+        <!-- Main Article -->
+        <article class="post active">
+            <h1>Kenapa CSS Saya Tidak Berfungsi?</h1>
+            <h2>
+                Pendahuluan
+            </h2>
+
+            <p>
+                Salah satu masalah paling umum yang dialami pemula adalah CSS yang tidak bereaksi sama sekali. Sudah menulis style, sudah save file, tapi tampilan tetap polos seperti tanpa desain. Masalah ini biasanya bukan karena CSS sulit, melainkan karena kesalahan kecil yang sering tidak disadari.
+            </p>
+            <p>
+                Di artikel ini kita akan membahas penyebab paling umum dan cara mengeceknya secara sistematis.
+            </p>
+
+            <h2>
+                Penyebab Umum CSS Tidak Berfungsi
+            </h2>
+
+            <h3>
+                1. File CSS Tidak Terhubung dengan Benar
+            </h3>
+            <p>
+                Pastikan di dalam <code>&lt;head&gt;</code> ada kode seperti ini:
+            </p>
+
+            <pre><code class="code-block">
+&lt;link rel="stylesheet" href="style.css"&gt;
+            </code></pre>
+
+            <p>
+                Periksa:
+            </p>
+
+            <ul>
+                <li>Nama file benar (tidak typo)</li>
+                <li>Lokasi sesuai dengan path</li>
+                <li>Ekstensi benar (<code>.css</code>)</li>
+            </ul>
+
+            <p>
+                Jika file berada di folder lain, gunakan path yang sesuai, misalnya:
+            </p>
+
+            <pre><code class="code-block">
+&lt;link rel="stylesheet" href="css/style.css"&gt;
+            </code></pre>
+
+            <h3>2. Path file salah</h3>
+            <p>
+                Jika file HTML berada di folder berbeda dari CSS, kamu mungkin perlu menambahkan <code>../</code> untuk naik satu folder.
+            </p>
+
+            <h3>3. CSS Tertimpa (Override) oleh Style Lain</h3>
+            <p>CSS bisa kalah oleh selector yang lebih spesifik.</p>
+            <p>Contoh:</p>
+
+            <pre><code class="code-block">
+p { 
+    color: red;
+}
+.container p { 
+    color: blue; 
+}
+            </code></pre>
+
+            <p>Paragraf didalam class <code>container</code> akan berwarna biru karena selector lebih spesifik.</p>
+
+            <h3>4. Cache browser</h3>
+            <p>
+                Kadang perubahan tidak muncul karena browser menyimpan versi lama. Coba:
+            </p>
+
+            <ul>
+                <li>Hard refresh halaman(ctrl + f5)</li>
+                <li>Clear cache browser</li>
+                <li>Atau buka di mode incognito</li>
+            </ul>
+
+            <h3>5. Typo atau kurang tanda kurung</h3>
+            <p>
+                Contoh kesalahan umum:
+            </p>
+
+            <pre><code class="code-block">
+p {
+    color: red
+            </code></pre>
+
+            <p>Seharusnya:</p>
+
+            <pre><code class="code-block">
+p {
+    color: red;
+}
+            </code></pre>
+
+            <h2>Kesimpulan</h2>
+            <p>
+                Jika CSS tidak berfungsi, jangan panik. Periksa secara berurutan: koneksi file, path, typo, specificity, dan cache. Sebagian besar masalah hanya kesalahan kecil yang mudah diperbaiki jika dicek dengan teliti.
+            </p>
+        </article>
+
+        <p>(Opsional) Kamu bisa mendukung pengembangan HMLilder dengan menggunakan layanan yang kami rekomendasikan. Jika kamu memang membutuhkan hosting atau domain, menggunakan link ini bisa membantu kami tanpa biaya tambahan.</p>
+        <a class="cta-button" style="justify-self: center;" href="https://my.domainesia.com/ref.php?u=26644">Dukung</a>
+
+<p style="margin: 40px;">*Iklan</p>
+<script async="async" data-cfasync="false" src="https://pitofficialfollower.com/26935b6baded7cceabda028fed0435e1/invoke.js"></script>
+<div id="container-26935b6baded7cceabda028fed0435e1"></div>
+
+    <!-- disqus -->
+     <h2>Memiliki pertanyaan?</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+    
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ardhyawebstudio.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <footer class="footer">
+        &copy; 2026 HMLilder Studio. All rights reserved.
+        <br><br>
+    </footer>
+</div>
+</body>
+</html>

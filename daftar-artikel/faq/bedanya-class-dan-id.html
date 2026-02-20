@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="oDoZXjTr8u2-cF-4oykRxiQc2NQEdXIR8UfpE3fzvkE" />
+    <meta name="keywords" content="HMLilder, html builder, perbedaan class dan id, tutorial HTML pemula">
+    <meta name="description" content="Pelajari perbedaan class dan id dalam HTML. Kapan menggunakan class, kapan menggunakan id, serta contoh penggunaannya dalam CSS dan JavaScript.">
+
+    <title>Perbedaan Class dan ID di HTML Lengkap dengan Contoh</title>
+
+    <!-- cloudflare captcha -->
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer
+    ></script>
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+    <link rel="preconnect" href="https://challenges.cloudflare.com">
+
+    <!-- style -->
+    <link rel="stylesheet" href="/src/regular-page.css?v=4">
+
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="/daftar-artikel/sidebar-article.js"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> Perbedaan Class dan ID di HTML</h1>
+        </header>
+
+        <!-- Main Article -->
+        <article class="post active">
+            <h1>Perbedaan Class dan ID di HTML</h1>
+
+            <h2>Pendahuluan</h2>
+            <p>
+                Dalam HTML, <strong>class</strong> dan <strong>id</strong> digunakan untuk memberikan identitas pada elemen.
+                Keduanya sering digunakan dalam CSS dan JavaScript, tetapi memiliki fungsi dan aturan yang berbeda.
+                Memahami perbedaannya penting agar struktur kode tetap rapi dan tidak bermasalah.
+            </p>
+
+            <h2>Apa Itu Class?</h2>
+            <p>
+                Class digunakan untuk menandai <strong>beberapa elemen sekaligus</strong>.
+                Satu class bisa dipakai berkali-kali dalam satu halaman.
+            </p>
+
+<pre><code class="code-block">
+&lt;div class="box"&gt;Konten 1&lt;/div&gt;
+&lt;div class="box"&gt;Konten 2&lt;/div&gt;
+</code></pre>
+
+            <p>Contoh CSS:</p>
+
+<pre><code class="code-block">
+.box {
+    background-color: lightblue;
+}
+</code></pre>
+
+            <h2>Apa Itu ID?</h2>
+            <p>
+                ID digunakan untuk menandai <strong>satu elemen unik</strong>.
+                Dalam satu halaman HTML, satu ID hanya boleh digunakan sekali.
+            </p>
+
+<pre><code class="code-block">
+&lt;div id="header"&gt;Header Website&lt;/div&gt;
+</code></pre>
+
+            <p>Contoh CSS:</p>
+
+<pre><code class="code-block">
+#header {
+    background-color: gray;
+}
+</code></pre>
+
+            <h2>Perbedaan Utama Class dan ID</h2>
+            <ul>
+                <li><strong>Jumlah penggunaan:</strong> Class bisa digunakan berkali-kali, ID hanya sekali.</li>
+                <li><strong>Penulisan CSS:</strong> Class menggunakan tanda titik (.), ID menggunakan tanda pagar (#).</li>
+                <li><strong>Spesifisitas CSS:</strong> ID memiliki prioritas lebih tinggi dibanding class.</li>
+                <li><strong>JavaScript:</strong> ID sering digunakan untuk memilih satu elemen spesifik.</li>
+            </ul>
+
+            <h2>Kapan Menggunakan Class dan ID?</h2>
+            <p>
+                Gunakan <strong>class</strong> untuk styling berulang seperti tombol, kartu, atau layout.
+                Gunakan <strong>id</strong> untuk elemen unik seperti header utama, navigasi, atau bagian tertentu yang perlu ditargetkan secara spesifik.
+            </p>
+
+            <h2>Kesimpulan</h2>
+            <p>
+                Class cocok untuk elemen yang berulang, sedangkan ID digunakan untuk elemen unik.
+                Menggunakan keduanya dengan tepat akan membuat kode HTML lebih terstruktur dan mudah dikelola.
+            </p>
+        </article>
+
+        <p>(Opsional) Kamu bisa mendukung pengembangan HMLilder dengan menggunakan layanan yang kami rekomendasikan. Jika kamu memang membutuhkan hosting atau domain, menggunakan link ini bisa membantu kami tanpa biaya tambahan.</p>
+        <a class="cta-button" style="justify-self: center;" href="https://my.domainesia.com/ref.php?u=26644">Dukung</a>
+
+<p style="margin: 40px;">*Iklan</p>
+<script async="async" data-cfasync="false" src="https://pitofficialfollower.com/26935b6baded7cceabda028fed0435e1/invoke.js"></script>
+<div id="container-26935b6baded7cceabda028fed0435e1"></div>
+
+     <h2>Memiliki pertanyaan?</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;
+            this.page.identifier = window.location.pathname;
+        };
+    
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ardhyawebstudio.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+
+    <footer class="footer">
+        &copy; 2026 HMLilder Studio. All rights reserved.
+        <br><br>
+    </footer>
+</div>
+</body>
+</html>

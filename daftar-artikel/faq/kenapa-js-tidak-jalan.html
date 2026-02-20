@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="oDoZXjTr8u2-cF-4oykRxiQc2NQEdXIR8UfpE3fzvkE" />
+    <meta name="keywords" content="HMLilder, html builder, javascript tidak jalan, error javascript pemula">
+    <meta name="description" content="JavaScript tidak berjalan? Pelajari penyebab umum seperti salah penempatan script, file tidak terhubung, error console, atau DOM belum dimuat.">
+
+    <title>Kenapa JavaScript Saya Tidak Jalan? Ini Penyebab dan Solusinya</title>
+
+    <!-- cloudflare captcha -->
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer
+    ></script>
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+    <link rel="preconnect" href="https://challenges.cloudflare.com">
+
+    <!-- style -->
+    <link rel="stylesheet" href="/src/regular-page.css?v=4">
+
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="/daftar-artikel/sidebar-article.js"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> Kenapa JavaScript Saya Tidak Jalan?</h1>
+        </header>
+
+        <!-- Main Article -->
+        <article class="post active">
+            <h1>Kenapa JavaScript Saya Tidak Jalan?</h1>
+
+            <h2>Pendahuluan</h2>
+            <p>
+                Salah satu masalah paling sering dialami pemula adalah JavaScript yang tidak berjalan.
+                Tombol diklik tapi tidak bereaksi, alert tidak muncul, atau fitur tidak berfungsi.
+                Biasanya penyebabnya sederhana dan bisa diperbaiki dengan cepat.
+            </p>
+
+            <h2>Penyebab Umum JavaScript Tidak Berjalan</h2>
+
+            <h3>1. File JavaScript Tidak Terhubung</h3>
+            <p>
+                Pastikan file JS sudah dihubungkan dengan benar menggunakan tag <code>&lt;script&gt;</code>.
+            </p>
+
+<pre><code class="code-block">
+&lt;script src="script.js"&gt;&lt;/script&gt;
+</code></pre>
+
+            <p>
+                Periksa kembali nama file dan path folder. Salah huruf saja bisa membuat file tidak terbaca.
+            </p>
+
+            <h3>2. Salah Penempatan Script</h3>
+            <p>
+                Jika script ditempatkan di bagian <code>&lt;head&gt;</code> tanpa atribut <code>defer</code>,
+                kadang JavaScript dijalankan sebelum HTML selesai dimuat.
+            </p>
+
+            <p>Solusi:</p>
+
+<pre><code class="code-block">
+&lt;script src="script.js" defer&gt;&lt;/script&gt;
+</code></pre>
+
+            <p>Atau letakkan sebelum tag <code>&lt;/body&gt;</code>.</p>
+
+            <h3>3. Ada Error di Console</h3>
+            <p>
+                Buka Developer Tools (F12) lalu cek tab <strong>Console</strong>.
+                Jika ada error berwarna merah, JavaScript bisa berhenti berjalan.
+            </p>
+
+            <h3>4. DOM Belum Dimuat</h3>
+            <p>
+                Jika kamu memanggil elemen sebelum halaman selesai dimuat,
+                elemen tersebut akan bernilai null.
+            </p>
+
+            <p>Gunakan event berikut:</p>
+
+<pre><code class="code-block">
+document.addEventListener("DOMContentLoaded", function() {
+    // kode di sini
+});
+</code></pre>
+
+            <h3>5. Salah Penulisan Kode (Syntax Error)</h3>
+            <p>
+                Kurang tanda titik koma, kurung, atau tanda kutip bisa menyebabkan script gagal dijalankan.
+                JavaScript sangat sensitif terhadap kesalahan kecil.
+            </p>
+
+            <h2>Kesimpulan</h2>
+            <p>
+                Jika JavaScript tidak berjalan, periksa koneksi file, posisi script,
+                cek console untuk error, dan pastikan DOM sudah dimuat sebelum menjalankan kode.
+                Dengan debugging yang tepat, masalah ini biasanya bisa diselesaikan dengan cepat.
+            </p>
+        </article>
+
+        <p>(Opsional) Kamu bisa mendukung pengembangan HMLilder dengan menggunakan layanan yang kami rekomendasikan. Jika kamu memang membutuhkan hosting atau domain, menggunakan link ini bisa membantu kami tanpa biaya tambahan.</p>
+        <a class="cta-button" style="justify-self: center;" href="https://my.domainesia.com/ref.php?u=26644">Dukung</a>
+
+<p style="margin: 40px;">*Iklan</p>
+<script async="async" data-cfasync="false" src="https://pitofficialfollower.com/26935b6baded7cceabda028fed0435e1/invoke.js"></script>
+<div id="container-26935b6baded7cceabda028fed0435e1"></div>
+
+     <h2>Memiliki pertanyaan?</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;
+            this.page.identifier = window.location.pathname;
+        };
+    
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ardhyawebstudio.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+
+    <footer class="footer">
+        &copy; 2026 HMLilder Studio. All rights reserved.
+        <br><br>
+    </footer>
+</div>
+</body>
+</html>

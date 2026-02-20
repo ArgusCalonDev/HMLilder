@@ -173,28 +173,6 @@
         margin-top: 20px;
     }
 
-/* Article */
-article[id] {
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* Force hide dengan CSS lebih kuat! */
-article:not(.active) {
-    display: none !important;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    pointer-events: none;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-article.active {
-    display: block !important;
-    opacity: 1;
-    height: auto;
-}
-
 img {
     max-width: 50%;
     max-height: 40%;
