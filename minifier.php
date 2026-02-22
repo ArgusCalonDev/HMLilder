@@ -122,5 +122,9 @@
     <footer>
         &copy; 2026 HMLilder. Dibuat oleh Ardhya. Powered by Toptal HTML Minifier | Rate limit: 30 req/menit | Ukuran max: 5MB [web:7]
     </footer>
+
+        <!-- 100% privacy-first analytics -->
+    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
 </body>
 </html>
