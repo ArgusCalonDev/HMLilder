@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="oDoZXjTr8u2-cF-4oykRxiQc2NQEdXIR8UfpE3fzvkE" />
+    <meta name="keywords" content="HMLilder, html builder, tutorial HTML pemula, cara membuat website untuk pemula">
+    <meta name="description" content="Pelajari apa itu localhost, kenapa penting untuk belajar website, dan bagaimana menjalankan website secara lokal di komputer atau Android. Panduan mudah untuk pemula agar bisa mencoba website sebelum dipublikasikan ke internet.">
+
+    <title>Localhost: Cara Menjalankan Website di Komputer atau Android untuk Pemula</title>
+
+    <!-- cloudflare captcha -->
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer
+    ></script>
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+    <link rel="preconnect" href="https://challenges.cloudflare.com">
+
+    <!-- style -->
+    <link rel="stylesheet" href="/src/regular-page.css?v=4">
+
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="/daftar-artikel/sidebar-article.js"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> Localhost: Cara Menjalankan Website di Komputer atau Android untuk Pemula</h1>
+        </header>
+
+        <!-- Main Article -->
+<article id="tutorialLocalhost" class="post active">
+    <h1>Apa Itu Localhost?</h1>
+
+    <p>
+        Localhost adalah istilah yang digunakan untuk menjalankan website atau aplikasi web
+        di perangkat sendiri, tanpa perlu koneksi internet dan tanpa diunggah ke hosting.
+    </p>
+
+    <p>
+        Saat membuka website melalui localhost, website tersebut hanya berjalan di komputer
+        atau perangkat yang kamu gunakan. Orang lain tidak bisa mengaksesnya, karena website
+        belum dipublikasikan ke internet.
+    </p>
+
+    <p>
+        Localhost biasanya digunakan saat belajar, melakukan percobaan, atau mengembangkan
+        website sebelum benar-benar di-online-kan.
+    </p>
+
+    <h3>Apa Itu Localhost?</h3>
+
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAwFBMVEUkt9P///8AAACJioolutccjKGLoa8PtNGf2efb29sVuNWsrK0RtdKsucHq8/WZ1eSTrLgZf5Lt7u7Ky8v29/e7vb2Qp7bf4ODMzc2eoKGMkJH4+fnLzMxsbW3P09Tx8vKBmaghmK8SAABETVODlaFVX2ZjcXp9jpkyODsjJih1hpFufYcPCwhARUd8fn9yd3kWFxebnZ4fISIqLzJdp7iMiIZPUlNXXF2pqqpISEgGDRCztrdvb29UVVXG0de4ydDQH9cJAAAEJklEQVR4nO3c4VLaQBSGYXeXxkaw1oQQsjFJW2mRWoPBlkBT6/3fVXcX6GA1MXoszCTf8wNoGJ3hnXMIOqYHBwAAAAAAAAAAAAAAAAAAAAAAAAAA8EKdHdn36/wvOgdvduSwgQE7Hz/xHfn0sYH9dhVP9zvc94t9bZ03O8zHT5s2fp3T+i+++1IB8nEesJdy2pDvfDT6rO+/jMYX6m7y1br8tlXvQndgoZcw1x2qx66jy9ix6VPSzXdbk+98YFkD1e9S30/4N2tgDUZb+XxV44p1/ZT5/pSxzJYqmlu4BWNFWpIv+TlsS76xpfFrVc8afOGfzf3F33qZ7qBvpBq5M/0wXJh/yPXxB2I1pR53kU+vMlvnG3qMidXDoDpfIITIuGxJvqvt5Z1xrpd3vL26ZvJstat+wfoqYawGK+irY6FJ+KipaMvy8vPxeHPquFF3s6+jy7/PiVUNj4luwAo9f75cMM9mmQwd9aDs1JG25tRRZVY2XfW0PV/XtynOmpsPP7RRPOeHNuR7APlIjr7/EDvz4/vRvl/vK+u9pZ1Un+dt037hd3iCfAQ95KNAPhIsLwnykWB5STB9JMhHguUlQT4SLC8Jpo8E00eC6SNBPhIsLwmmjwT5SLC8JJg+EuQjwfKSYPpIMH0kyEeC5SUpmb7Ir8ww7zOWl12NgHyMu1UV+lyl43bp86XtG5evZHlJ+WKOfMhXR9XyJmIexasg02WqNjJcREv9rrjOF9zm5qIhFsxz87f1cb6UCVtEXKTd1ufz+dQLzIWAXZ55ksfMnwdedL3Jx1N1UEf9Ofe6PFK5uXq6YK7gi+Dx6W1cvorlvdbXCvkqkMP1kNl980zIN/n0wOVSnaVz8xUFG66X1sbyupsIuWDB1ebwMJ1mPNl67xNq6FZXHAVLxq5uzK636L2vbPrOmLuKoAKJX+ujapULcS+fzNXKhvo5T186k/Flgnxm+hxutnWZscVkc1Qv8b/5GDcjJ8wKh7eTVuWrOHXM1WKqGeyrWvo8Klxz1H6QT+q6jo7orN73WpSv4tQRTm5kZAbO5bm8mPXVbopodv+971bd5OqDij5D2zySPNVn4DR/vGDj8pVMn5voW08sVqfbZCELc1jd6Y8k+qTr6bc833x2HsrMnD6cQJoPLLFcf11b8/0njcuHX1iRIB8JlpcE00eC6SPB9JEgHwmWlwT5SLC8JJg+EuQjwfKSIB8JlpcE00eCfCRYXhJMHwmmjwTTR4J8JFheEuQjwfKSYPpIMH0kdfI5x7XUuEymcflqLO/vD1YtH363L9/T03dcs57qd9y6fE9NXzKoG894YoGbl6/6/22Oa49erQVuXL7eSf9duTvr/TMN7iq+3buT3r5f72vrHVboHT1b9ffb96sFAAAAAAAAAAAAAAAAAAAAAAAAgP35A3JQh9apgFCgAAAAAElFTkSuQmCC"
+     alt="Gambar Localhost">
+
+    <p>
+        Secara sederhana, localhost berarti "komputer ini sendiri". Dalam dunia web, localhost
+        merujuk pada server lokal yang berjalan di perangkat kita.
+    </p>
+
+    <p>
+        Biasanya, localhost diakses melalui alamat <code>localhost</code> atau <code>127.0.0.1</code>.
+        Alamat ini selalu mengarah ke perangkat yang sedang digunakan, bukan ke server di internet.
+    </p>
+
+    <p>
+        Dengan localhost, kita bisa:
+    </p>
+
+    <ul>
+        <li>Membuka file HTML, CSS, dan JavaScript seperti website sungguhan</li>
+        <li>Mencoba fitur website tanpa takut dilihat orang lain</li>
+        <li>Melakukan eksperimen tanpa biaya hosting</li>
+    </ul>
+
+    <h3>Kenapa Localhost Penting untuk Pemula?</h3>
+
+    <p>
+        Localhost sangat penting terutama untuk pemula karena:
+    </p>
+
+    <ul>
+        <li>Membuat belajar website lebih mudah tanpa harus membeli hosting atau domain</li>
+        <li>Kesalahan coding tidak akan berdampak ke website publik</li>
+        <li>Proses edit dan refresh halaman lebih cepat karena berjalan di perangkat sendiri</li>
+    </ul>
+
+    <p>
+        Banyak website besar juga dikembangkan pertama kali di localhost sebelum dipublikasikan
+        ke internet.
+    </p>
+
+    <h3>Contoh Penggunaan Localhost</h3>
+
+    <p>
+        Beberapa contoh situasi di mana localhost sering digunakan:
+    </p>
+
+    <ul>
+        <li>Saat belajar HTML, CSS, dan JavaScript</li>
+        <li>Saat mencoba website interaktif atau dinamis</li>
+        <li>Saat mengembangkan website sebelum diunggah ke hosting</li>
+        <li>Saat belajar backend atau database</li>
+    </ul>
+
+    <p>
+        Singkatnya, localhost adalah tempat aman untuk belajar dan mencoba.
+    </p>
+
+    <h3>Apakah Website Localhost Bisa Diakses Orang Lain?</h3>
+
+    <p>
+        Tidak bisa. Website yang berjalan di localhost hanya bisa diakses dari perangkat
+        yang menjalankan server tersebut.
+    </p>
+
+    <p>
+        Agar website bisa diakses oleh orang lain, file website harus diunggah ke hosting
+        dan memiliki alamat domain atau subdomain yang bisa diakses melalui internet.
+    </p>
+
+    <h3>Apakah Kita Bisa Menjalankan Localhost di Android?</h3>
+
+    <p>
+        Bisa. Localhost tidak hanya bisa dijalankan di komputer, tetapi juga di perangkat
+        Android.
+    </p>
+
+    <p>
+        Salah satu cara paling sederhana adalah menggunakan aplikasi <strong>Localhost Lite</strong>
+        yang tersedia di Play Store. Aplikasi ini memungkinkan kamu menjalankan server lokal
+        langsung di HP tanpa konfigurasi yang rumit.
+    </p>
+
+    <p>
+        Dengan aplikasi tersebut, kamu bisa:
+    </p>
+
+    <ul>
+        <li>Menyimpan file HTML di HP</li>
+        <li>Menjalankan website secara lokal</li>
+        <li>Membuka website melalui browser di Android</li>
+    </ul>
+
+    <h3>Kesimpulan</h3>
+
+    <p>
+        Localhost adalah lingkungan lokal untuk menjalankan website di perangkat sendiri.
+        Sangat cocok digunakan untuk belajar, mencoba, dan mengembangkan website sebelum
+        dipublikasikan ke internet.
+    </p>
+
+    <p>
+        Website yang berjalan di localhost tidak bisa diakses orang lain. Localhost bisa
+        dijalankan di komputer maupun Android menggunakan aplikasi tertentu seperti Localhost Lite.
+    </p>
+</article>
+
+        <p>(Opsional) Kamu bisa mendukung pengembangan HMLilder dengan menggunakan layanan yang kami rekomendasikan. Jika kamu memang membutuhkan hosting atau domain, menggunakan link ini bisa membantu kami tanpa biaya tambahan.</p>
+        <a class="cta-button" style="justify-self: center;" href="https://my.domainesia.com/ref.php?u=26644">Dukung</a>
+
+<p style="margin: 40px;">*Iklan</p>
+<script async="async" data-cfasync="false" src="https://pitofficialfollower.com/26935b6baded7cceabda028fed0435e1/invoke.js"></script>
+<div id="container-26935b6baded7cceabda028fed0435e1"></div>
+
+    <!-- disqus -->
+     <h2>Memiliki pertanyaan?</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+    
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ardhyawebstudio.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <footer class="footer">
+        &copy; 2026 HMLilder Studio. All rights reserved.
+        <br><br>
+    </footer>
+</div>
+
+    <!-- 100% privacy-first analytics -->
+    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
+</body>
+</html>
