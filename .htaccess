@@ -6,16 +6,15 @@ Options -Indexes
 # Allow CORS
 Header set Access-Control-Allow-Origin "*"
 
-<IfModule mod_headers.c>
-  <FilesMatch "\.(html|htm)$">
-        Header set Cache-Control "no-cache, no-store, must-revalidate"
-        Header set Pragma "no-cache"
-        Header set Expires 0
-  </FilesMatch>
-</IfModule>
-
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # parameter i
+  # Biar gak looping kalau udah ada parameter 'i'
+  RewriteCond %{QUERY_STRING} !^i= [NC]
+    
+    # Ambil waktu: TahunBulanTanggalJamMenit (Redirect Sementara 302)
+  RewriteRule ^$ /?i=%{TIME_YEAR}%{TIME_MON}%{TIME_DAY}%{TIME_HOUR}%{TIME_MIN} [R=302,L]
 
   # 1. PHP Redirect (prioritas tertinggi)
   RewriteCond %{THE_REQUEST} \s/+(.+)\.php[\s?] [NC]
@@ -36,6 +35,14 @@ Header set Access-Control-Allow-Origin "*"
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME}.html -f
   RewriteRule ^(.+)$ $1.html [L,QSA]
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires 0
+  </FilesMatch>
 </IfModule>
 
 <IfModule mod_deflate.c>
