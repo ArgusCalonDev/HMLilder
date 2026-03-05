@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="oDoZXjTr8u2-cF-4oykRxiQc2NQEdXIR8UfpE3fzvkE" />
+    <meta name="keywords" content="HMLilder, html builder, tutorial HTML pemula, cara membuat website untuk pemula">
+    <meta name="description" content="HTML bukan bahasa pemrograman, tetapi fondasi utama website. Pelajari peran HTML, CSS, dan JavaScript dalam membangun halaman web secara lengkap.">
+
+    <title>Apakah HTML Itu Bahasa Pemrograman? Penjelasan Lengkap untuk Pemula</title>
+
+    <!-- cloudflare captcha -->
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer
+    ></script>
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+    <link rel="preconnect" href="https://challenges.cloudflare.com">
+
+    <!-- style -->
+    <link rel="stylesheet" href="/src/regular-page.css?v=4">
+
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="/daftar-artikel/sidebar-article.js"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> Apakah HTML Itu Bahasa Pemrograman? Penjelasan Lengkap untuk Pemula</h1>
+        </header>
+
+        <!-- Main Article -->
+<article id="apakahHTMLItuBahasaPemrograman" class="post active">
+    <h1>Apakah HTML Itu Bahasa Pemrograman? Penjelasan Lengkap untuk Pemula</h1>
+    <h2>
+        Pendahuluan
+    </h2>
+
+    <p>
+        Banyak orang yang baru belajar membuat website sering bertanya: <i>Apakah HTML itu bahasa pemrograman?</i>
+    </p>
+
+    <p>
+        Pertanyaan ini sangat umum muncul, terutama bagi pemula yang baru mengenal dunia pengembangan web. HTML memang selalu menjadi hal pertama yang dipelajari ketika seseorang mulai membuat website. Namun, secara teknis, HTML sebenarnya <strong>bukan bahasa pemrograman.</strong>
+    </p>
+
+    <p>
+        Lalu sebenarnya HTML itu apa? Dan mengapa HTML tetap sangat penting dalam pembuatan website?
+    </p>
+
+    <br><br>
+
+    <p>Artikel ini akan menjelaskan jawabannya secara sederhana dan jelas.</p>
+
+
+    <hr>
+
+    <h2>HTML Bukan Bahasa Pemrograman</h2>
+    <p>
+        HTML adalah singkatan dari HyperText Markup Language.
+        Perlu diperhatikan bahwa HTML disebut sebagai markup language, bukan programming language.
+        Bahasa pemrograman biasanya memiliki kemampuan untuk melakukan logika dan pengambilan keputusan, seperti:
+    </p>
+
+    <ul>
+        <li>percabangan (if, else)</li>
+        <li>perulangan (loop)</li>
+        <li>perhitungan</li>
+        <li>manipulasi data</li>
+    </ul>
+
+    <p>Contohnya bisa ditemukan pada Python, JavaScript, atau C++.</p>
+
+    <p>
+        HTML tidak memiliki kemampuan tersebut. HTML hanya digunakan untuk <strong>menyusun dan memberi struktur pada konten halaman web.</strong>
+        Dengan kata lain, HTML berfungsi seperti kerangka atau struktur dasar dari sebuah halaman website.
+    </p>
+
+    <h2>HTML Adalah Pondasi Website</h2>
+    <p>
+        Walaupun HTML bukan bahasa pemrograman, perannya dalam pengembangan web sangat penting.
+        HTML berfungsi untuk menentukan struktur dasar sebuah halaman, seperti:
+    </p>
+
+    <ul>
+        <li>judul</li>
+        <li>paragraf</li>
+        <li>gambar</li>
+        <li>tombol</li>
+        <li>navigasi</li>
+        <li>dan berbagai elemen lainnya</li>
+    </ul>
+
+    <p>
+        sebagai contoh sederhana:
+    </p>
+
+    <pre><code class="code-block">
+<h1>Selamat Datang</h1>
+<p>Ini adalah halaman website saya.</p>
+    </code></pre>
+
+    <p>
+        Kode tersebut memberi tahu browser bahwa ada sebuah judul dan sebuah paragraf yang harus ditampilkan.
+        Tanpa HTML, browser tidak akan tahu bagaimana menyusun isi halaman website.
+    </p>
+
+
+    <h2>CSS Membuat Halaman Website Menjadi Cantik</h2>
+    <p>
+        Jika HTML adalah struktur dasar sebuah website, maka CSS (Cascading Style Sheets) berperan dalam mengatur tampilannya.
+        CSS digunakan untuk mengatur berbagai aspek visual, seperti:
+    </p>
+
+    <ul>
+        <li>warna</li>
+        <li>ukuran teks</li>
+        <li>font</li>
+        <li>jarak antara elemen</li>
+        <li>tata letak halaman</li>
+        <li>animasi sederhana</li>
+        <li>dan masih banyak lagi</li>
+    </ul>
+
+    <p>
+        Dengan CSS, sebuah website bisa tampil lebih menarik dan nyaman dilihat oleh pengguna.
+        Tanpa CSS, halaman HTML akan tetap berfungsi, tetapi tampilannya akan sangat sederhana.
+    </p>
+
+    <h2>JavaScript Membuat Website Menjadi Interaktif</h2>
+    <p>
+        Selain struktur dan tampilan, website modern juga membutuhkan interaktivitas. Di sinilah peran JavaScript.
+        JavaScript adalah bahasa pemrograman yang berjalan di browser dan memungkinkan website untuk melakukan berbagai hal, seperti:
+    </p>
+
+    <ul>
+        <li>merespons klik pengguna</li>
+        <li>memvalidasi form</li>
+        <li>menampilkan popup</li>
+        <li>memperbarui konten tanpa memuat ulang halaman</li>
+        <li>membuat aplikasi web yang kompleks</li>
+    </ul>
+
+    <p>
+        Dengan JavaScript, website tidak hanya menampilkan informasi, tetapi juga dapat berinteraksi dengan pengguna secara dinamis.
+    </p>
+
+    <h2>Mengapa Belajar HTML Tetap Sangat Penting</h2>
+    <p>
+        Walaupun HTML bukan bahasa pemrograman, mempelajarinya tetap merupakan langkah <strong>paling penting dalam pengembangan web.</strong>
+        HTML adalah <strong>pondasi utama dari semua halaman website.</strong>
+        CSS dan JavaScript bekerja di atas struktur HTML. Tanpa HTML, kedua teknologi tersebut <strong>tidak memiliki tempat untuk diterapkan.</strong>
+        Karena itu, memahami HTML dengan baik akan sangat membantu ketika belajar CSS, JavaScript, maupun framework web modern.
+        Bisa dikatakan bahwa HTML adalah <strong>fondasi</strong> yang menopang seluruh bangunan website.
+    </p>
+
+    <h2>Kesimpulan</h2>
+    <p>
+        HTML bukan bahasa pemrograman karena tidak memiliki kemampuan logika seperti percabangan atau perulangan. HTML adalah bahasa markup yang digunakan untuk menyusun struktur dasar halaman web.
+        Dalam pengembangan website:
+    </p>
+
+    <ul>
+        <li>HTML membangun struktur halaman</li>
+        <li>CSS mengatur tampilan visual</li>
+        <li>JavaScript menambahkan interaktivitas</li>
+    </ul>
+
+    <p>
+        Ketiganya bekerja bersama untuk membangun sebuah website yang lengkap.
+        Meskipun bukan bahasa pemrograman, HTML tetap menjadi langkah pertama dan fondasi penting yang harus dipahami oleh setiap orang yang ingin belajar membuat website.
+    </p>
+</article>
+
+        <p>(Opsional) Kamu bisa mendukung pengembangan HMLilder dengan menggunakan layanan yang kami rekomendasikan. Jika kamu memang membutuhkan hosting atau domain, menggunakan link ini bisa membantu kami tanpa biaya tambahan.</p>
+        <a class="cta-button" style="justify-self: center;" href="https://my.domainesia.com/ref.php?u=26644">Dukung</a>
+
+<p style="margin: 40px;">*Iklan</p>
+<script async="async" data-cfasync="false" src="https://pitofficialfollower.com/26935b6baded7cceabda028fed0435e1/invoke.js"></script>
+<div id="container-26935b6baded7cceabda028fed0435e1"></div>
+
+    <!-- disqus -->
+     <h2>Memiliki pertanyaan?</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+    
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ardhyawebstudio.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <footer class="footer">
+        &copy; 2026 HMLilder Studio. All rights reserved.
+        <br><br>
+    </footer>
+</div>
+
+    <!-- 100% privacy-first analytics -->
+    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
+</body>
+</html>
