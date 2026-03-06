@@ -71,7 +71,7 @@
                 <option value="hero">🏆 Hero Section</option>
                 <option value="features">✨ Features Section</option>
                 <option value="pricing">💎 Pricing Table</option>
-                <option value="testimonials">💬 Testimonials</option>
+                <option value="testimonial">💬 Testimonials</option>
                 <option value="ctabar">📢 Call to Action Bar</option>
                 <option value="linkblock">🔗 Link Block</option>
                 <option value="minifooter">🔻 Mini Footer</option>
@@ -193,7 +193,7 @@ const outputHTML = `
       </button>
     </div>
 
-    <pre style="background: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow: auto; font-family: 'Courier New', monospace; font-size: 14px; margin: 0;">
+    <pre id="code-output" style="background: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow: auto; font-family: 'Courier New', monospace; font-size: 14px; margin: 0;">
 ${escapeHTML(component.html)}
     </pre>
   </div>
@@ -234,7 +234,7 @@ ${escapeHTML(component.css)}
     
     // Setup copy button
     setupCopyButton();
-    setupCopyCssButton
+    setupCopyCssButton();
     
     console.log(`✅ ${component.name} code generated`);
   }
@@ -250,7 +250,7 @@ ${escapeHTML(component.css)}
   }
   
   function setupCopyButton() {
-    const copyBtn = document.getElementById('copyBtn');
+    const copyBtn = document.getElementById('copyHtmlBtn');
     const codeOutput = document.getElementById('code-output');
     
     if (copyBtn && codeOutput) {
