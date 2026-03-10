@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="oDoZXjTr8u2-cF-4oykRxiQc2NQEdXIR8UfpE3fzvkE" />
     <meta name="keywords" content="HMLilder, html builder, tutorial HTML pemula, cara membuat website untuk pemula">
-    <meta name="description" content="Pada level 1 ini kamu akan belajar dasar-dasar pemrograman website. Simak pembelajarannya!">
+    <meta name="description" content="Tabel digunakan untuk menampilkan data dalam bentuk baris dan kolom.
+        Dengan tabel, informasi bisa disusun lebih rapi dan mudah dibaca.">
 
-    <title>Level 1 - HMLilder</title>
+    <title>Cara membuat tabel di HTML</title>
 
     <!-- cloudflare captcha -->
     <script
@@ -44,47 +45,65 @@
     <div class="container">
         <!-- HEADER -->
         <header class="header">
-            <h1 class="logo"><i class="fas fa-code"></i> Level 1</h1>
+            <h1 class="logo"><i class="fas fa-code"></i></h1>
         </header>
 
-        <p>Pada level 1 kali ini, kamu akan belajar tentang dasar-dasar pemrograman web, mulai dari apa itu website, cara kerja website, dan lain sebagainya. Simak pembelajaran berikut agar kamu bisa melanjutkan ke level selanjutnya!</p>
+        <!-- Main Article -->
+<article id="membuat-tabel-html" class="post active">
+    <h1>Membuat Tabel di HTML</h1>
 
-        <h2>Daftar level 1</h2>
-        <h3>1. Pengenalan web</h3>
-        <ul>
-            <li><a href="apa-itu-website.html">Apa itu website? Pengertian dan fungsinya</a></li>
-            <li><a href="bagaimana-cara-kerja-website-di-internet.html">Bagaimana cara kerja website di internet?</a></li>
-            <li><a href="perbedaan-website-statis-dan-dinamis.html">Perbedaan website statis dan website dinamis</a></li>
-            <li><a href="apa-itu-domain-dan-hosting.html">Apa itu domain dan hosting?</a></li>
-            <li><a href="apa-itu-browser.html">Apa itu browser?</a></li>
-        </ul>
+    <p>
+        Tabel digunakan untuk menampilkan data dalam bentuk baris dan kolom.
+        Dengan tabel, informasi bisa disusun lebih rapi dan mudah dibaca.
+    </p>
 
-        <h3>2. Persiapan membuat website</h3>
-        <ul>
-            <li><a href="tools-yang-dibutuhkan-untuk-membuat-website.html">Tools yang dibutuhkan untuk membuat website</a></li>
-            <li><a href="cara-membuat-website-html.html">Cara membuat website HTML pertama</a></li>
-            <li><a href="struktur-dasar-file-html.html">Struktur dasar file HTML</a></li>
-            <li><a href="cara-menjalankan-website-di-browser.html">Cara menjalankan website di browser</a></li>
-        </ul>
+    <p>
+        Di HTML, tabel dibuat menggunakan beberapa tag seperti
+        <b>&lt;table&gt;</b>, <b>&lt;tr&gt;</b>, <b>&lt;th&gt;</b>, dan <b>&lt;td&gt;</b>.
+    </p>
 
-        <h3>3. Dasar HTML</h3>
-        <ul>
-            <li><a href="apa-itu-html.html">Apa itu HTML?</a></li>
-            <li><a href="mengenal-tag-html.html">Mengenal tag HTML</a></li>
-            <li><a href="struktur-dasar-html.html">Struktur dasar HTML (<code>html</code>, <code>head</code>, <code>body</code>)</a></li>
-            <li><a href="heading-di-html.html">Heading di HTML</a></li>
-            <li><a href="paragraf-dan-line-break.html">Paragraf dan Line Break</a></li>
-            <li><a href="komentar-di-html.html">Komentar di HTML</a></li>
-        </ul>
+    <h2>Contoh Tabel Sederhana</h2>
 
-        <h3>4. Konten dasar di HTML</h3>
-        <ul>
-            <li><a href="cara-membuat-link-di-html.html">Membuat link (<code>a</code>)</a></li>
-            <li><a href="cara-menampilkan-gambar-di-html.html">Menampilkan gambar (<code>img</code>)</a></li>
-            <li><a href="cara-membuat-list-di-html.html">Membuat list (<code>ul</code>, <code>ol</code>, <code>li</code>)</a></li>
-            <li><a href="cara-membuat-tabel-di-html.html">Membuat tabel (<code>table</code>)</a></li>
-            <li><a href="cara-membuat-form-dasar.html">Membuat form dasar (<code>input</code>, <code>button</code>)</a></li>
-        </ul>
+    <pre><code class="code-block">
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nama&lt;/th&gt;
+        &lt;th&gt;Umur&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Adi&lt;/td&gt;
+        &lt;td&gt;17&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Budi&lt;/td&gt;
+        &lt;td&gt;18&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+    </code></pre>
+
+    <h2>Penjelasan Tag</h2>
+
+    <p>
+        <b>&lt;table&gt;</b> digunakan untuk membuat tabel.
+    </p>
+
+    <p>
+        <b>&lt;tr&gt;</b> digunakan untuk membuat baris tabel.
+    </p>
+
+    <p>
+        <b>&lt;th&gt;</b> digunakan untuk judul kolom.
+    </p>
+
+    <p>
+        <b>&lt;td&gt;</b> digunakan untuk isi data tabel.
+    </p>
+
+    <p>
+        Dengan menggunakan tag-tag tersebut, kamu bisa menampilkan data
+        dalam bentuk tabel yang terstruktur.
+    </p>
+</article>
 
         <p>(Opsional) Kamu bisa mendukung pengembangan HMLilder dengan menggunakan layanan yang kami rekomendasikan. Jika kamu memang membutuhkan hosting atau domain, menggunakan link ini bisa membantu kami tanpa biaya tambahan.</p>
         <a class="cta-button" style="justify-self: center;" href="https://my.domainesia.com/ref.php?u=26644">Dukung</a>
