@@ -504,18 +504,22 @@ function updateCodeOutput() {
 
     // Full HTML code
     const fullHTML = `<!DOCTYPE html>
-<!-- bahasa file html. "id" = indonesia -->
+<!-- HTML -->
 <html lang="id">
-<!-- kepala dari file html -->
+
+<!-- Kepala dari file HTML -->
 <head>
+
     <!-- UTF-8 berarti support konten unik seperti emoji -->
     <meta charset="UTF-8">
-    <!-- responsif di layan kecil -->
+
+    <!-- responsif di layar kecil -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- judul website -->
     <title>${businessName} - ${tagline}</title>
     
-    <!-- style dari website -->
+    <!-- Style website -->
     <style>
     ${
         (facebook || instagram || whatsapp) ?
@@ -624,44 +628,49 @@ function updateCodeOutput() {
     </style>
 </head>
 <body>
-    <!-- konten web -->
+    <!-- Konten website -->
     <div class="container">
-        <!-- header = bagian atas web -->
+
+        <!-- Bagian atas dari website -->
         <header style="text-align: center; padding: 20px 0;">
             <!-- logo -->
             ${logoHTMLCode}
         </header>
-        <!-- konten utama -->
+
+        <!-- Konten utama -->
         <main>
-            <!-- hero = konten mencolok/menarik pengunjung dari website -->
+            <!-- Hero = konten paling mencolok/menarik pada website -->
             <section class="hero">
-                <!-- judul -->
+                <!-- Judul -->
                 <h1>${businessName}</h1>
                 <!-- tagline -->
+
                 <p class="tagline">${tagline}</p>
+                
                 <!-- deskripsi -->
                 <p class="description">${description}</p>
+
+                <!-- Tombol Call To Action -->
+                ${ctaLink ? `<a href="${ctaLink}" target="_blank" class="cta-button">${ctaText}</a>` : `<button class="cta-button">${ctaText}</button>`}
+
                 <!-- features -->
                 ${featuresHTML}
 
                 <!-- problem-solution -->
                 <h1>Masalah</h1>
+
                 <p class="description">${problemText}</p>
                 <h1>Solusi</h1>
                 <p class="description">${solutionText}</p>
 
                 <br><br>
-                <!-- alur pengerjaan -->
+                <!-- Alur pengerjaan -->
                 <h1>Alur Pengerjaan</h1>
                 <ol>
                     <li>${alurText1}</li>
                     <li>${alurText2}</li>
                     <li>${alurText3}</li>
                 </ol>
-
-                <br><br>
-                <!-- tombol -->
-                ${ctaLink ? `<a href="${ctaLink}" target="_blank" class="cta-button">${ctaText}</a>` : `<button class="cta-button">${ctaText}</button>`}
             </section>
         </main>
         <!-- footer = bagian paling bawah website, biasanya isi credit/copyright. -->
