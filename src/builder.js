@@ -347,6 +347,9 @@ function updatePreview() {
             <p class="hero-description" style="font-family: ${currentFont};
             ${currentFont.includes('Montserrat') ? 'font-weight: 600;' : ''}">${description}</p>
 
+            <button class="cta-button" style="background: ${currentColor}; font-family: ${currentFont};
+            ${currentFont.includes('Montserrat') ? 'font-weight: 600;' : ''}" ${ctaAction}>${ctaText}</button>
+
             ${featuresHTML}
 
             <h1>Masalah</h1>
@@ -362,10 +365,6 @@ function updatePreview() {
                 <li>${alurText2}</li>
                 <li>${alurText3}</li>
             </ol>
-
-            <br><br>
-            <button class="cta-button" style="background: ${currentColor}; font-family: ${currentFont};
-            ${currentFont.includes('Montserrat') ? 'font-weight: 600;' : ''}" ${ctaAction}>${ctaText}</button>
         </div>
 
         ${customFooterHTML}
