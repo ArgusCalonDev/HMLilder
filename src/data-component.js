@@ -1170,4 +1170,1329 @@ const components = {
     description:
     "Upper Navbar adalah bar kecil yang berada di atas navbar utama, biasanya digunakan untuk menampilkan informasi kontak, pengumuman singkat, atau link media sosial."
   },
+
+  forminput: {
+    name: "Form Input",
+    html: `
+<!-- 
+KOMPONEN: FORM INPUT DENGAN FLOATING LABEL
+Deskripsi:
+Input field dengan label yang akan naik ke atas saat input aktif atau terisi.
+Cocok untuk form login, register, atau contact form.
+-->
+
+<div class="hml-input-group">
+
+  <!-- Input field utama -->
+  <input 
+    type="text" 
+    id="nama" 
+    class="hml-input"
+    placeholder=" " 
+    required
+  >
+
+  <!-- Label input -->
+  <label for="nama" class="hml-label">
+    Nama Lengkap
+  </label>
+
+</div>`,
+
+    css: `
+/* 
+================================
+KOMPONEN: HML INPUT FIELD
+================================
+*/
+
+/* Container utama input */
+.hml-input-group{
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 20px 0;
+}
+
+
+/* 
+Input field
+placeholder dikosongkan (" ") supaya
+floating label bisa bekerja
+*/
+.hml-input{
+  width: 100%;
+  padding: 14px 12px;
+  font-size: 16px;
+
+  border: 2px solid #ccc;
+  border-radius: 8px;
+
+  outline: none;
+
+  background: transparent;
+  transition: border-color 0.2s ease;
+}
+
+
+/* 
+Efek saat input difokuskan
+*/
+.hml-input:focus{
+  border-color: #4f46e5;
+}
+
+
+/* 
+Label posisi awal (di tengah input)
+*/
+.hml-label{
+  position: absolute;
+  left: 12px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  font-size: 14px;
+  color: #777;
+
+  background: white;
+  padding: 0 4px;
+
+  transition: 0.2s ease;
+
+  pointer-events: none;
+}
+
+
+/* 
+Saat input difokuskan
+label naik ke atas
+*/
+.hml-input:focus + .hml-label{
+  top: -8px;
+  font-size: 12px;
+  color: #4f46e5;
+}
+
+
+/* 
+Jika input sudah terisi
+label tetap berada di atas
+*/
+.hml-input:not(:placeholder-shown) + .hml-label{
+  top: -8px;
+  font-size: 12px;
+}`,
+
+    description: "Input field dengan label yang akan naik ke atas saat input aktif atau terisi. Cocok untuk form login, register, atau contact form."
+  },
+
+  accordioncss: {
+    name: "Accordion",
+    html: `
+<!-- 
+KOMPONEN: ACCORDION CSS ONLY
+Deskripsi:
+Accordion yang bisa membuka dan menutup konten tanpa JavaScript.
+Menggunakan teknik checkbox + CSS.
+-->
+
+<div class="hml-accordion">
+
+  <!-- Item accordion -->
+  <div class="hml-accordion-item">
+
+    <!-- Checkbox tersembunyi sebagai kontrol -->
+    <input type="checkbox" id="accordion1" class="hml-accordion-toggle">
+
+    <!-- Judul accordion -->
+    <label for="accordion1" class="hml-accordion-header">
+      Apa itu HMLilder?
+    </label>
+
+    <!-- Konten accordion -->
+    <div class="hml-accordion-content">
+      <p>
+        HMLilder adalah platform tools yang membantu developer 
+        mempercepat pembuatan website dengan berbagai generator 
+        komponen dan utility frontend.
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- Item accordion kedua -->
+  <div class="hml-accordion-item">
+
+    <!-- Checkbox kontrol -->
+    <input type="checkbox" id="accordion2" class="hml-accordion-toggle">
+
+    <!-- Judul -->
+    <label for="accordion2" class="hml-accordion-header">
+      Apakah HMLilder gratis?
+    </label>
+
+    <!-- Konten -->
+    <div class="hml-accordion-content">
+      <p>
+        Sebagian besar tools HMLilder bisa digunakan secara gratis
+        untuk membantu developer bekerja lebih cepat.
+      </p>
+    </div>
+
+  </div>
+
+</div>`,
+
+    css: `
+/*
+================================
+KOMPONEN: HML ACCORDION
+Accordion animasi tanpa JavaScript
+================================
+*/
+
+
+/* Container utama accordion */
+.hml-accordion{
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+
+/* Setiap item accordion */
+.hml-accordion-item{
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* Checkbox disembunyikan */
+.hml-accordion-toggle{
+  display: none;
+}
+
+
+/* 
+Header accordion (bagian yang diklik)
+*/
+.hml-accordion-header{
+  display: block;
+  padding: 14px 16px;
+  cursor: pointer;
+
+  font-weight: 600;
+
+  background: #f7f7f7;
+
+  transition: background 0.2s ease;
+}
+
+
+/* Efek hover */
+.hml-accordion-header:hover{
+  background: #ececec;
+}
+
+
+/*
+Konten accordion
+default: tertutup
+*/
+.hml-accordion-content{
+  max-height: 0;
+  overflow: hidden;
+
+  padding: 0 16px;
+
+  background: white;
+
+  transition: max-height 0.3s ease;
+}
+
+
+/* 
+Saat checkbox dicentang
+konten terbuka
+*/
+.hml-accordion-toggle:checked 
++ .hml-accordion-header 
++ .hml-accordion-content{
+
+  max-height: 200px;
+  padding: 16px;
+}
+
+
+/* Styling paragraf di dalam konten */
+.hml-accordion-content p{
+  margin: 0;
+  line-height: 1.6;
+  color: #444;
+}`,
+
+    description: "Accordion yang bisa membuka dan menutup konten tanpa JavaScript. Menggunakan teknik checkbox + CSS."
+  },
+
+  badges: {
+    name: "Badge",
+    html: `
+<!-- 
+KOMPONEN: BADGE
+Deskripsi:
+Badge adalah label kecil untuk menampilkan status, kategori, atau informasi singkat.
+-->
+
+<div class="hml-badge-container">
+
+  <!-- Badge primary -->
+  <span class="hml-badge hml-badge-primary">
+    Primary
+  </span>
+
+  <!-- Badge success -->
+  <span class="hml-badge hml-badge-success">
+    Success
+  </span>
+
+  <!-- Badge warning -->
+  <span class="hml-badge hml-badge-warning">
+    Warning
+  </span>
+
+  <!-- Badge danger -->
+  <span class="hml-badge hml-badge-danger">
+    Danger
+  </span>
+
+  <!-- Badge neutral -->
+  <span class="hml-badge">
+    Default
+  </span>
+
+</div>`,
+
+    css: `
+/*
+================================
+KOMPONEN: HML BADGE
+Label kecil untuk status / kategori
+================================
+*/
+
+
+/* Container demo badge */
+.hml-badge-container{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+
+/* 
+Badge dasar
+digunakan oleh semua varian
+*/
+.hml-badge{
+  display: inline-block;
+
+  padding: 4px 10px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  border-radius: 999px;
+
+  background: #e5e7eb;
+  color: #333;
+
+  line-height: 1;
+}
+
+
+/* Badge primary */
+.hml-badge-primary{
+  background: #4f46e5;
+  color: white;
+}
+
+
+/* Badge success */
+.hml-badge-success{
+  background: #22c55e;
+  color: white;
+}
+
+
+/* Badge warning */
+.hml-badge-warning{
+  background: #f59e0b;
+  color: white;
+}
+
+
+/* Badge danger */
+.hml-badge-danger{
+  background: #ef4444;
+  color: white;
+}`,
+
+    description: "Badge adalah label kecil untuk menampilkan status, kategori, atau informasi singkat."
+  },
+
+  minimaltimeline: {
+    name: "Minimal Vertical Timeline",
+    html: `
+<!-- 
+KOMPONEN: TIMELINE V1
+Deskripsi:
+Timeline vertikal sederhana untuk menampilkan urutan kejadian.
+Cocok untuk roadmap, sejarah produk, atau progress project.
+-->
+
+<div class="hml-timeline">
+
+  <!-- Item timeline -->
+  <div class="hml-timeline-item">
+
+    <!-- Titik timeline -->
+    <div class="hml-timeline-dot"></div>
+
+    <!-- Konten timeline -->
+    <div class="hml-timeline-content">
+
+      <!-- Waktu / tanggal event -->
+      <span class="hml-timeline-date">
+        Desember 2025
+      </span>
+
+      <!-- Judul event -->
+      <h3 class="hml-timeline-title">
+        HMLilder dibuat
+      </h3>
+
+      <!-- Deskripsi event -->
+      <p class="hml-timeline-text">
+        Platform tools untuk mempercepat pemrograman website mulai dikembangkan.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- Item timeline kedua -->
+  <div class="hml-timeline-item">
+
+    <div class="hml-timeline-dot"></div>
+
+    <div class="hml-timeline-content">
+
+      <span class="hml-timeline-date">
+        Januari 2026
+      </span>
+
+      <h3 class="hml-timeline-title">
+        Component Generator
+      </h3>
+
+      <p class="hml-timeline-text">
+        Fitur generator komponen HTML + CSS mulai dirilis.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- Item timeline ketiga -->
+  <div class="hml-timeline-item">
+
+    <div class="hml-timeline-dot"></div>
+
+    <div class="hml-timeline-content">
+
+      <span class="hml-timeline-date">
+        Februari 2026
+      </span>
+
+      <h3 class="hml-timeline-title">
+        Tools Frontend Bertambah
+      </h3>
+
+      <p class="hml-timeline-text">
+        HMLilder mulai memiliki berbagai tools frontend seperti editor dan minifier.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>`,
+    css: `
+/*
+================================
+KOMPONEN: HML TIMELINE V1
+Timeline vertikal minimal
+================================
+*/
+
+
+/* Container utama timeline */
+.hml-timeline{
+  position: relative;
+  padding-left: 30px;
+  max-width: 600px;
+}
+
+
+/* Garis vertikal timeline */
+.hml-timeline::before{
+  content: "";
+  position: absolute;
+
+  left: 10px;
+  top: 0;
+  bottom: 0;
+
+  width: 2px;
+  background: #ddd;
+}
+
+
+/* Setiap item timeline */
+.hml-timeline-item{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+
+/* Titik pada timeline */
+.hml-timeline-dot{
+  position: absolute;
+
+  left: -2px;
+  top: 6px;
+
+  width: 12px;
+  height: 12px;
+
+  background: #4f46e5;
+
+  border-radius: 50%;
+
+  border: 3px solid white;
+}
+
+
+/* Konten timeline */
+.hml-timeline-content{
+  background: #f9f9f9;
+
+  padding: 14px 16px;
+
+  border-radius: 6px;
+}
+
+
+/* Tanggal event */
+.hml-timeline-date{
+  font-size: 12px;
+  color: #888;
+}
+
+
+/* Judul event */
+.hml-timeline-title{
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+
+/* Deskripsi event */
+.hml-timeline-text{
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}`,
+
+    description: "Timeline vertikal sederhana untuk menampilkan urutan kejadian. Cocok untuk roadmap, sejarah produk, atau progress project."
+  },
+
+  alternatingtimeline: {
+    name: "Alternating Timeline",
+    html: `
+<!--
+KOMPONEN: TIMELINE V2 (ALTERNATING)
+Deskripsi:
+Timeline vertikal dengan layout zig-zag kiri dan kanan.
+Sering dipakai untuk landing page, roadmap produk, atau sejarah perusahaan.
+-->
+
+<div class="hml-timeline-v2">
+
+  <!-- Item timeline -->
+  <div class="hml-timeline-v2-item">
+
+    <!-- Konten event -->
+    <div class="hml-timeline-v2-content">
+
+      <!-- Waktu kejadian -->
+      <span class="hml-timeline-v2-date">
+        Januari 2026
+      </span>
+
+      <!-- Judul event -->
+      <h3 class="hml-timeline-v2-title">
+        HMLilder dibuat
+      </h3>
+
+      <!-- Deskripsi -->
+      <p class="hml-timeline-v2-text">
+        Ide awal platform tools untuk mempercepat pembuatan website mulai dikembangkan.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- Item timeline kedua -->
+  <div class="hml-timeline-v2-item">
+
+    <div class="hml-timeline-v2-content">
+
+      <span class="hml-timeline-v2-date">
+        Februari 2026
+      </span>
+
+      <h3 class="hml-timeline-v2-title">
+        Component Generator dirilis
+      </h3>
+
+      <p class="hml-timeline-v2-text">
+        Fitur generator komponen HTML + CSS mulai tersedia untuk developer.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- Item timeline ketiga -->
+  <div class="hml-timeline-v2-item">
+
+    <div class="hml-timeline-v2-content">
+
+      <span class="hml-timeline-v2-date">
+        Maret 2026
+      </span>
+
+      <h3 class="hml-timeline-v2-title">
+        Tools Frontend Bertambah
+      </h3>
+
+      <p class="hml-timeline-v2-text">
+        HMLilder mulai memiliki editor HTML online dan tool minifier.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>`,
+
+    css: `
+/*
+================================
+KOMPONEN: HML TIMELINE V2
+Alternating timeline (zig-zag)
+================================
+*/
+
+
+/* Container utama timeline */
+.hml-timeline-v2{
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+
+/* Garis utama timeline di tengah */
+.hml-timeline-v2::before{
+  content: "";
+  position: absolute;
+
+  left: 50%;
+  top: 0;
+  bottom: 0;
+
+  width: 2px;
+  background: #ddd;
+
+  transform: translateX(-50%);
+}
+
+
+/* Setiap item timeline */
+.hml-timeline-v2-item{
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+
+/* Item ganjil berada di kiri */
+.hml-timeline-v2-item:nth-child(odd){
+  left: 0;
+  text-align: right;
+}
+
+
+/* Item genap berada di kanan */
+.hml-timeline-v2-item:nth-child(even){
+  left: 50%;
+}
+
+
+/* Titik timeline */
+.hml-timeline-v2-item::before{
+  content: "";
+  position: absolute;
+
+  top: 26px;
+
+  width: 14px;
+  height: 14px;
+
+  background: #4f46e5;
+  border-radius: 50%;
+
+  border: 3px solid white;
+}
+
+
+/* Posisi titik untuk item kiri */
+.hml-timeline-v2-item:nth-child(odd)::before{
+  right: -8px;
+}
+
+
+/* Posisi titik untuk item kanan */
+.hml-timeline-v2-item:nth-child(even)::before{
+  left: -8px;
+}
+
+
+/* Kotak konten event */
+.hml-timeline-v2-content{
+  background: #f9f9f9;
+
+  padding: 16px;
+  border-radius: 6px;
+}
+
+
+/* Tanggal event */
+.hml-timeline-v2-date{
+  font-size: 12px;
+  color: #888;
+}
+
+
+/* Judul event */
+.hml-timeline-v2-title{
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+
+/* Deskripsi */
+.hml-timeline-v2-text{
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}`,
+
+    description: "Timeline vertikal dengan layout zig-zag kiri dan kanan. Sering dipakai untuk landing page, roadmap produk, atau sejarah perusahaan."
+  },
+
+  icontimeline: {
+    name: "Icon Timeline",
+    html: `
+<!--
+KOMPONEN: TIMELINE V3 (ICON TIMELINE)
+Deskripsi:
+Timeline vertikal dengan icon pada setiap event.
+Icon menggunakan tag <img> dengan gambar placeholder.
+-->
+
+<div class="hml-timeline-v3">
+
+  <!-- Item timeline -->
+  <div class="hml-timeline-v3-item">
+
+    <!-- Icon event -->
+    <div class="hml-timeline-v3-icon">
+      <img src="https://via.placeholder.com/24" alt="icon event">
+    </div>
+
+    <!-- Konten event -->
+    <div class="hml-timeline-v3-content">
+
+      <!-- Tanggal -->
+      <span class="hml-timeline-v3-date">
+        Januari 2026
+      </span>
+
+      <!-- Judul -->
+      <h3 class="hml-timeline-v3-title">
+        Ide HMLilder muncul
+      </h3>
+
+      <!-- Deskripsi -->
+      <p class="hml-timeline-v3-text">
+        Konsep platform tools frontend mulai dirancang untuk mempercepat workflow developer.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- Item timeline kedua -->
+  <div class="hml-timeline-v3-item">
+
+    <div class="hml-timeline-v3-icon">
+      <img src="https://via.placeholder.com/24" alt="icon event">
+    </div>
+
+    <div class="hml-timeline-v3-content">
+
+      <span class="hml-timeline-v3-date">
+        Februari 2026
+      </span>
+
+      <h3 class="hml-timeline-v3-title">
+        Component Generator
+      </h3>
+
+      <p class="hml-timeline-v3-text">
+        Generator komponen HTML + CSS mulai tersedia untuk mempercepat pembuatan UI.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- Item timeline ketiga -->
+  <div class="hml-timeline-v3-item">
+
+    <div class="hml-timeline-v3-icon">
+      <img src="https://via.placeholder.com/24" alt="icon event">
+    </div>
+
+    <div class="hml-timeline-v3-content">
+
+      <span class="hml-timeline-v3-date">
+        Maret 2026
+      </span>
+
+      <h3 class="hml-timeline-v3-title">
+        Tools Frontend
+      </h3>
+
+      <p class="hml-timeline-v3-text">
+        HMLilder mulai memiliki HTML editor dan minifier online.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>`,
+
+    css: `
+/*
+================================
+KOMPONEN: HML TIMELINE V3
+Timeline dengan icon
+================================
+*/
+
+
+/* Container timeline */
+.hml-timeline-v3{
+  position: relative;
+  padding-left: 50px;
+  max-width: 600px;
+}
+
+
+/* Garis utama timeline */
+.hml-timeline-v3::before{
+  content: "";
+  position: absolute;
+
+  left: 20px;
+  top: 0;
+  bottom: 0;
+
+  width: 2px;
+  background: #ddd;
+}
+
+
+/* Item timeline */
+.hml-timeline-v3-item{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+
+/* Container icon */
+.hml-timeline-v3-icon{
+  position: absolute;
+
+  left: -4px;
+  top: 4px;
+
+  width: 32px;
+  height: 32px;
+
+  background: white;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #4f46e5;
+}
+
+
+/* Styling gambar icon */
+.hml-timeline-v3-icon img{
+  width: 16px;
+  height: 16px;
+}
+
+
+/* Konten event */
+.hml-timeline-v3-content{
+  background: #f9f9f9;
+
+  padding: 14px 16px;
+
+  border-radius: 6px;
+}
+
+
+/* Tanggal */
+.hml-timeline-v3-date{
+  font-size: 12px;
+  color: #888;
+}
+
+
+/* Judul */
+.hml-timeline-v3-title{
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+
+/* Deskripsi */
+.hml-timeline-v3-text{
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}`,
+
+    description: "Timeline vertikal dengan icon pada setiap event. Icon menggunakan tag <img> dengan gambar placeholder."
+  },
+
+  skeletonloading: {
+    name: "Skeleton Loading",
+    html: `
+<!--
+KOMPONEN: SKELETON LOADING
+Deskripsi:
+Placeholder konten yang ditampilkan saat data sedang loading.
+Biasanya digunakan pada card, artikel, atau daftar konten.
+-->
+
+<div class="hml-skeleton-card">
+
+  <!-- Skeleton untuk gambar -->
+  <div class="hml-skeleton hml-skeleton-image"></div>
+
+  <!-- Skeleton untuk judul -->
+  <div class="hml-skeleton hml-skeleton-title"></div>
+
+  <!-- Skeleton untuk teks -->
+  <div class="hml-skeleton hml-skeleton-text"></div>
+  <div class="hml-skeleton hml-skeleton-text short"></div>
+
+</div>`,
+
+    css: `
+/*
+================================
+KOMPONEN: HML SKELETON LOADING
+Placeholder konten dengan animasi shimmer
+================================
+*/
+
+
+/* Container card skeleton */
+.hml-skeleton-card{
+  width: 300px;
+  padding: 16px;
+
+  border-radius: 8px;
+  background: #fafafa;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+/* Elemen skeleton dasar */
+.hml-skeleton{
+  position: relative;
+
+  background: #e5e7eb;
+  border-radius: 6px;
+
+  overflow: hidden;
+}
+
+
+/* Animasi shimmer */
+.hml-skeleton::after{
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: -100%;
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.5),
+    transparent
+  );
+
+  animation: hml-skeleton-loading 1.4s infinite;
+}
+
+
+/* Keyframe animasi */
+@keyframes hml-skeleton-loading{
+  100%{
+    left: 100%;
+  }
+}
+
+
+/* Skeleton gambar */
+.hml-skeleton-image{
+  width: 100%;
+  height: 150px;
+}
+
+
+/* Skeleton judul */
+.hml-skeleton-title{
+  width: 80%;
+  height: 18px;
+}
+
+
+/* Skeleton teks */
+.hml-skeleton-text{
+  width: 100%;
+  height: 12px;
+}
+
+
+/* Variasi teks pendek */
+.hml-skeleton-text.short{
+  width: 60%;
+}`,
+
+    description: "Placeholder konten yang ditampilkan saat data sedang loading. Biasanya digunakan pada card, artikel, atau daftar konten."
+  },
+
+  scrolldownindicator: {
+    name: "Scroll Down Indicator",
+    html: `
+<!--
+KOMPONEN: SCROLL DOWN INDICATOR
+Deskripsi:
+Indikator kecil untuk memberi tahu user bahwa halaman bisa di-scroll.
+Biasanya ditempatkan di bagian hero section.
+-->
+
+<div class="hml-scroll-indicator">
+
+  <!-- Bentuk mouse -->
+  <div class="hml-scroll-mouse">
+
+    <!-- Titik animasi -->
+    <div class="hml-scroll-dot"></div>
+
+  </div>
+
+  <!-- Teks -->
+  <span class="hml-scroll-text">
+    Scroll Down
+  </span>
+
+</div>`,
+    css: `
+/*
+================================
+KOMPONEN: HML SCROLL INDICATOR
+Indikator scroll dengan animasi
+================================
+*/
+
+
+/* Container indikator */
+.hml-scroll-indicator{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 6px;
+
+  font-family: sans-serif;
+}
+
+
+/* Bentuk mouse */
+.hml-scroll-mouse{
+  width: 26px;
+  height: 40px;
+
+  border: 2px solid #333;
+  border-radius: 14px;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+}
+
+
+/* Titik animasi */
+.hml-scroll-dot{
+  width: 4px;
+  height: 8px;
+
+  background: #333;
+
+  border-radius: 2px;
+
+  animation: hml-scroll-animation 1.5s infinite;
+}
+
+
+/* Animasi titik turun */
+@keyframes hml-scroll-animation{
+
+  0%{
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  50%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+}
+
+
+/* Teks indikator */
+.hml-scroll-text{
+  font-size: 12px;
+  color: #666;
+}`,
+
+    description: "Indikator kecil untuk memberi tahu user bahwa halaman bisa di-scroll. Biasanya ditempatkan di bagian hero section."
+  },
+
+  stepper: {
+    name: "Stepper",
+    html: `
+<!--
+KOMPONEN: STEP PROGRESS (STEPPER)
+Deskripsi:
+Menampilkan langkah-langkah dalam sebuah proses.
+Biasanya dipakai pada form multi-step atau wizard setup.
+-->
+
+<div class="hml-stepper">
+
+  <!-- Step 1 -->
+  <div class="hml-step active">
+
+    <!-- Nomor step -->
+    <div class="hml-step-circle">
+      1
+    </div>
+
+    <!-- Label step -->
+    <span class="hml-step-label">
+      Informasi
+    </span>
+
+  </div>
+
+
+  <!-- Step 2 -->
+  <div class="hml-step active">
+
+    <div class="hml-step-circle">
+      2
+    </div>
+
+    <span class="hml-step-label">
+      Akun
+    </span>
+
+  </div>
+
+
+  <!-- Step 3 -->
+  <div class="hml-step">
+
+    <div class="hml-step-circle">
+      3
+    </div>
+
+    <span class="hml-step-label">
+      Verifikasi
+    </span>
+
+  </div>
+
+
+  <!-- Step 4 -->
+  <div class="hml-step">
+
+    <div class="hml-step-circle">
+      4
+    </div>
+
+    <span class="hml-step-label">
+      Selesai
+    </span>
+
+  </div>
+
+</div>`,
+
+    css: `
+/*
+================================
+KOMPONEN: HML STEPPER
+Progress langkah-langkah
+================================
+*/
+
+
+/* Container stepper */
+.hml-stepper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 600px;
+  margin: auto;
+}
+
+
+/* Setiap step */
+.hml-step{
+  position: relative;
+  text-align: center;
+  flex: 1;
+}
+
+
+/* Garis penghubung antar step */
+.hml-step:not(:last-child)::after{
+  content: "";
+
+  position: absolute;
+  top: 14px;
+  right: -50%;
+
+  width: 100%;
+  height: 2px;
+
+  background: #ddd;
+
+  z-index: -1;
+}
+
+
+/* Lingkaran step */
+.hml-step-circle{
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+
+  background: #ddd;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  margin: auto;
+}
+
+
+/* Step aktif */
+.hml-step.active .hml-step-circle{
+  background: #4f46e5;
+  color: white;
+}
+
+
+/* Label step */
+.hml-step-label{
+  display: block;
+  margin-top: 6px;
+
+  font-size: 12px;
+  color: #555;
+}`,
+    description: "Menampilkan langkah-langkah dalam sebuah proses. Biasanya dipakai pada form multi-step atau wizard setup."
+  }
 };
