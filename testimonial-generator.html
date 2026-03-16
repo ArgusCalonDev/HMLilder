@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q49KY3ZE3V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-Q49KY3ZE3V');
+    </script>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-3975087268988772">
+    <title>HMLilder - Testimonial Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="src/sidebar.css?v=1.0">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+
+    <link rel="stylesheet" href="src/testimonial-generator.css?v=1.0">
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="src/sidebar.js?v=1.5"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-comments"></i> Testimonial Generator</h1>
+            <p class="tagline">Buat testimonial yang menarik untuk website Anda.</p>
+
+            <p>Opsional: kamu bisa membantu pengembangan HMLilder dengan membeli template website. Jika kamu membutuhkan paket template website, kamu bisa membeli template website pada tombol dibawah ini.</p>
+            <a href="https://lynk.id/ardhyadigital">
+                <button style="background-color: #1a5fb4; color: #ffffff; border: none; padding: 16px 32px; border-radius: 9px; font-size: 1.2rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">Beli Template</button>
+            </a>
+        </header>
+
+        <script>
+            atOptions = {
+                'key' : 'b525b2db453861c6cbc8a079e750e4cf',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+            };
+        </script>
+        <script src="https://pitofficialfollower.com/b525b2db453861c6cbc8a079e750e4cf/invoke.js"></script>
+
+        <!-- GENERATOR SECTION -->
+        <section class="generator-section">
+            <div class="generator-panel">
+                <h2><i class="fas fa-plus"></i> Kelola Testimonial</h2>
+                <button class="add-testimonial-btn" onclick="addTestimonial()">
+                    <i class="fas fa-plus"></i> Tambah Testimonial
+                </button>
+                <div id="testimonial-forms"></div>
+            </div>
+            
+            <div class="preview-panel">
+                <h2><i class="fas fa-eye"></i> Preview</h2>
+                <div class="preview-area">
+                    <div class="testimonial-grid" id="testimonial-preview"></div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="output-panel">
+            <h2><i class="fas fa-code"></i> Kode Hasil</h2>
+            <div class="code-section">
+                <h3>HTML</h3>
+                <div class="code-output" id="html-output">&lt;div class="testimonial-grid"&gt;
+  &lt;!-- Testimonial items will appear here --&gt;
+&lt;/div&gt;</div>
+            </div>
+            <div class="code-section">
+                <h3>CSS</h3>
+                <div class="code-output" id="css-output">.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  object-fit: cover;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.testimonial-role {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  line-height: 1.5;
+}</div>
+            </div>
+            <button class="copy-btn" onclick="copyCode()">
+                <i class="fas fa-copy"></i> Salin Kode
+            </button>
+        </div>
+
+        
+    </div>
+
+    <script src="src/testimonial-generator.js?v=1.0"></script>
+</body>
+</html>
