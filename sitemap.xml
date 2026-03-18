@@ -8,8 +8,8 @@
 
 
 <url>
-  <loc>https://hmlilder.web.id/?i=202603161743</loc>
-  <lastmod>2026-03-16T10:43:28+00:00</lastmod>
+  <loc>https://hmlilder.web.id/</loc>
+  <lastmod>2026-03-18T03:29:12+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
@@ -19,22 +19,37 @@
 </url>
 <url>
   <loc>https://hmlilder.web.id/btn-generator</loc>
-  <lastmod>2026-03-16T03:32:14+00:00</lastmod>
+  <lastmod>2026-03-18T03:33:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://hmlilder.web.id/card-composer</loc>
-  <lastmod>2026-03-16T03:35:12+00:00</lastmod>
+  <lastmod>2026-03-18T03:32:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://hmlilder.web.id/testimonial-generator</loc>
-  <lastmod>2026-03-16T10:43:00+00:00</lastmod>
+  <lastmod>2026-03-18T03:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hmlilder.web.id/alert-generator</loc>
+  <lastmod>2026-03-18T03:32:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hmlilder.web.id/badge-generator</loc>
+  <lastmod>2026-03-18T03:33:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hmlilder.web.id/pricing-card-generator</loc>
+  <lastmod>2026-03-18T03:32:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://hmlilder.web.id/minifier</loc>
-  <lastmod>2026-03-16T10:43:46+00:00</lastmod>
+  <lastmod>2026-03-18T03:34:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -49,27 +64,57 @@
 </url>
 <url>
   <loc>https://hmlilder.web.id/docs/</loc>
-  <lastmod>2026-03-12T07:25:26+00:00</lastmod>
+  <lastmod>2026-03-17T11:06:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://hmlilder.web.id/docs/docs-component</loc>
-  <lastmod>2026-03-12T07:25:30+00:00</lastmod>
+  <lastmod>2026-03-17T11:06:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hmlilder.web.id/docs/docs-btn-generator</loc>
+  <lastmod>2026-03-17T11:06:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hmlilder.web.id/docs/docs-card-generator</loc>
+  <lastmod>2026-03-17T11:06:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hmlilder.web.id/docs/docs-testimonial-generator</loc>
+  <lastmod>2026-03-17T11:06:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hmlilder.web.id/docs/docs-alert-generator</loc>
+  <lastmod>2026-03-17T11:06:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hmlilder.web.id/docs/docs-badge-generator</loc>
+  <lastmod>2026-03-17T11:06:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hmlilder.web.id/docs/docs-pricing-card-generator</loc>
+  <lastmod>2026-03-17T11:06:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://hmlilder.web.id/docs/docs-minifier</loc>
-  <lastmod>2026-03-12T07:25:32+00:00</lastmod>
+  <lastmod>2026-03-17T11:06:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://hmlilder.web.id/docs/docs-builder</loc>
-  <lastmod>2026-03-12T07:25:34+00:00</lastmod>
+  <lastmod>2026-03-17T11:06:31+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://hmlilder.web.id/docs/docs-htmleditor</loc>
-  <lastmod>2026-03-12T07:25:28+00:00</lastmod>
+  <lastmod>2026-03-17T11:06:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
