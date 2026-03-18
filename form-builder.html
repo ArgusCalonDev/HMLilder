@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q49KY3ZE3V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-Q49KY3ZE3V');
+    </script>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-3975087268988772">
+    <title>HMLilder - Simple Form Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="src/sidebar.css?v=1.0">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+
+    <link rel="stylesheet" href="src/form-builder.css?v=1.0">
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="src/sidebar.js?v=1.5"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-wpforms"></i> Simple Form Builder</h1>
+            <p class="tagline">Buat form dengan cepat dan mudah untuk website Anda.</p>
+        </header>
+
+        <script>
+            atOptions = {
+                'key' : 'b525b2db453861c6cbc8a079e750e4cf',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+            };
+        </script>
+        <script src="https://pitofficialfollower.com/b525b2db453861c6cbc8a079e750e4cf/invoke.js"></script>
+
+        <!-- GENERATOR SECTION -->
+        <section class="generator-section">
+            <div class="generator-panel">
+                <h2><i class="fas fa-plus"></i> Kelola Field Form</h2>
+                
+                <div class="form-group">
+                    <label for="form-title">Judul Form:</label>
+                    <input type="text" id="form-title" placeholder="Masukkan judul form" value="Hubungi Kami" oninput="updateFormPreview()">
+                </div>
+                
+                <button class="add-field-btn" onclick="addFormField()">
+                    <i class="fas fa-plus"></i> Tambah Field
+                </button>
+                
+                <div id="form-fields"></div>
+            </div>
+            
+            <div class="preview-panel">
+                <h2><i class="fas fa-eye"></i> Preview Form</h2>
+                <div class="preview-area">
+                    <div class="form-preview" id="form-preview">
+                        <h3 id="form-title-preview">Hubungi Kami</h3>
+                        <form id="preview-form-element">
+                            <div id="form-fields-preview"></div>
+                            <button type="submit" class="form-submit-btn">Kirim</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="output-panel">
+            <h2><i class="fas fa-code"></i> Kode Hasil</h2>
+            
+            <div class="code-section">
+                <h3>HTML</h3>
+                <div class="code-output" id="html-output">&lt;form id="contact-form"&gt;
+  &lt;!-- Form fields akan muncul di sini --&gt;
+  &lt;button type="submit"&gt;Kirim&lt;/button&gt;
+&lt;/form&gt;</div>
+            </div>
+            
+            <div class="code-section">
+                <h3>CSS</h3>
+                <div class="code-output" id="css-output">/* CSS akan muncul di sini */</div>
+            </div>
+            
+            <div class="code-section">
+                <h3>JavaScript</h3>
+                <div class="code-output" id="js-output">/* JavaScript akan muncul di sini */</div>
+            </div>
+            
+            <button class="copy-btn" onclick="copyAllCode()">
+                <i class="fas fa-copy"></i> Salin Semua
+            </button>
+            <button class="copy-btn copy-html-btn" onclick="copyHTMLOnly()">
+                <i class="fas fa-copy"></i> HTML Saja
+            </button>
+            <button class="copy-btn copy-css-btn" onclick="copyCSSOnly()">
+                <i class="fas fa-copy"></i> CSS Saja
+            </button>
+        </div>
+
+        
+    </div>
+
+    <script src="src/form-builder.js?v=1.0"></script>
+</body>
+</html>
