@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HMLilder, inline style converter, css class generator">
+    <meta name="description" content="Dokumentasi Inline Style to CSS Class Converter.">
+    <title>Dokumentasi Inline Style to CSS Class</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+    <link rel="stylesheet" href="/src/regular-page.css?v=4">
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="/src/sidebar-article.js"></script>
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> Dokumentasi Inline Style to CSS Class</h1>
+        </header>
+
+        <article id="" class="post active">
+            <p>Tool ini mengonversi elemen HTML dengan atribut inline style menjadi class CSS dan menghapus style inline di output HTML.</p>
+            <p>Langkah singkat:</p>
+            <ol>
+                <li>Tempelkan HTML berisi inline style</li>
+                <li>Klik "Convert ke CSS class"</li>
+                <li>Gunakan hasil HTML dan CSS yang ditampilkan</li>
+            </ol>
+            <p>Contoh input: <code>&lt;div class="box" style="color: red; padding: 10px"&gt;...</code></p>
+            <p>Contoh output CSS: <code>.box { color: red; padding: 10px }</code></p>
+        </article>
+    </div>
+</body>
+</html>
