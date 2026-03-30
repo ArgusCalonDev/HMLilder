@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HMLilder, accessibility checker, a11y, img alt, button text">
+    <meta name="description" content="Dokumentasi Quick Accessibility Checker.">
+    <title>Dokumentasi Quick Accessibility Checker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+    <link rel="stylesheet" href="/src/regular-page.css?v=4">
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="/src/sidebar-article.js"></script>
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> Dokumentasi Quick Accessibility Checker</h1>
+        </header>
+        <article id="" class="post active">
+            <p>Tool ini memeriksa 4 hal kunci: img tanpa alt, button tanpa teks, form label, dan kontras basic (inline style).</p>
+            <ol>
+                <li>Tempel HTML pada textarea.</li>
+                <li>Klik "Jalankan Check".</li>
+                <li>Lihat hasil di panel Analisis.</li>
+            </ol>
+            <p>Hasil berupa daftar issue; jika kosong, muncul pesan sehat.</p>
+        </article>
+    </div>
+</body>
+</html>
