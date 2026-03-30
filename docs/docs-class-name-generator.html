@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="oDoZXjTr8u2-cF-4oykRxiQc2NQEdXIR8UfpE3fzvkE" />
+    <meta name="keywords" content="HMLilder, class name generator, bem, utility css, smart naming helper">
+    <meta name="description" content="Dokumentasi Class Name Generator HMLilder.">
+
+    <title>Dokumentasi Class Name Generator HMLilder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/sidebar.css">
+    <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
+    <link rel="preconnect" href="https://challenges.cloudflare.com">
+    <link rel="stylesheet" href="/src/regular-page.css?v=4">
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <script type="module" src="/src/sidebar-article.js"></script>
+
+    <script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('container');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+    </script>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><i class="fas fa-code"></i> Dokumentasi Class Name Generator</h1>
+        </header>
+
+        <article id="" class="post active">
+            <p>Class Name Generator adalah tool untuk membantu membuat nama kelas CSS yang konsisten dari input nama komponen dan modifier.</p>
+
+            <p>Step by step:</p>
+            <ol>
+                <li>Buka Class Name Generator</li>
+                <li>Masukkan jenis komponen (contoh: card, navbar, hero)</li>
+                <li>Masukkan modifier/variasi (opsional)</li>
+                <li>Klik "Generate Names"</li>
+                <li>Salin hasil dari BEM atau utility naming</li>
+            </ol>
+
+            <p>Fitur: output BEM style (`block__element`, `block--modifier`) dan utility style (`bg-...`, `text-...`, `p-...`).</p>
+        </article>
+
+        <p>Perlu tambahan: gunakan output tersebut sebagai acuan struktur kelas CSS di proyek kamu agar lebih terstandarisasi.</p>
+    </div>
+</body>
+</html>
