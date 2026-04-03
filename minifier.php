@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-adsense-account" content="ca-pub-3975087268988772">
-    <title>HMLilder Studio - Html Minifier</title>
+    <title>Html Minifier</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="src/sidebar.css?v=1.0">
     <link rel="icon" type="image/x-icon" href="public/fav.ico?v=2">
 
     <!-- style -->
-    <link rel="stylesheet" href="src/minifier.css?v=1">
+    <link rel="stylesheet" href="src/minifier.css?v=1.0">
 </head>
 <body>
     <div id="sidebar-container"></div>
@@ -28,16 +28,7 @@
 
 <div class="container">
     <header class="header">
-        <h1><i class="fas fa-code"></i>HTML Minifier</h1>
-
-        <p class="tagline">Kode Lebih Kecil, Website Lebih Ngebut.</p>
-
-        <p>(Opsional) Kamu bisa mendukung pengembangan HMLilder dengan menggunakan layanan yang kami rekomendasikan. Jika kamu memang membutuhkan hosting atau domain, menggunakan link ini bisa membantu kami tanpa biaya tambahan.</p>
-        <a href="https://my.domainesia.com/ref.php?u=26644">
-            <button>Dukung</button>
-        </a>
-
-        <p>Dokumentasi: <a href="docs/docs-minifier.html">klik disini</a></p>
+        <h1 class="logo"><i class="fas fa-code"></i> HTML Minifier</h1>
     </header>
     
     <?php
@@ -119,8 +110,11 @@
     <?php endif; ?>
 </div>
 
-    <footer>
-        &copy; 2026 HMLilder. Dibuat oleh Ardhya. Powered by Toptal HTML Minifier | Rate limit: 30 req/menit | Ukuran max: 5MB [web:7]
+    <footer class="footer-mini" style="text-align: center; padding: 20px; background-color: #f8f9fa; border-top: 1px solid #e9ecef;">
+        <a href="https://lynk.id/ardhyadigital">
+            <button style="background-color: #1a5fb4; color: #ffffff; border: none; padding: 12px 24px; border-radius: 6px; font-size: 1rem; font-weight: 500; cursor: pointer; margin-right: 10px;">Beli Template</button>
+        </a>
+        <a href="docs/docs-minifier.html" style="color: #007bff; text-decoration: none;">Baca Dokumentasi</a>
     </footer>
 
         <!-- 100% privacy-first analytics -->
