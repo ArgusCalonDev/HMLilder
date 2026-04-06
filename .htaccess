@@ -9,13 +9,6 @@ Header set Access-Control-Allow-Origin "*"
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # parameter i
-  # Biar gak looping kalau udah ada parameter 'i'
-  RewriteCond %{QUERY_STRING} !^i= [NC]
-    
-    # Ambil waktu: TahunBulanTanggalJamMenit (Redirect Sementara 302)
-  RewriteRule ^$ /?i=%{TIME_YEAR}%{TIME_MON}%{TIME_DAY}%{TIME_HOUR}%{TIME_MIN} [R=302,L]
-
   # 1. PHP Redirect (prioritas tertinggi)
   RewriteCond %{THE_REQUEST} \s/+(.+)\.php[\s?] [NC]
   RewriteRule ^ /%1 [R=301,L]
