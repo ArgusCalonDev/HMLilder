@@ -189,7 +189,7 @@ function updateCodeOutput() {
             </div>
         </section>
         <footer>
-            <p>Landing page cepat siap dipakai untuk promosi online.</p>
+            <p>&copy; 2026 ${productName}</p>
         </footer>
     </div>
 </body>
