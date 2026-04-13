@@ -115,6 +115,8 @@
             <button style="background-color: #1a5fb4; color: #ffffff; border: none; padding: 12px 24px; border-radius: 6px; font-size: 1rem; font-weight: 500; cursor: pointer; margin-right: 10px;">Beli Template</button>
         </a>
         <a href="docs/docs-minifier.html" style="color: #007bff; text-decoration: none;">Baca Dokumentasi</a>
+
+        &copy; 2026 HMLilder. Dibuat oleh Ardhya. 
     </footer>
 
         <!-- 100% privacy-first analytics -->
